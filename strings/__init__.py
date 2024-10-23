@@ -27,7 +27,7 @@ for filename in os.listdir(r"./strings"):
 
 
 for filename in os.listdir(r"./strings/langs/"):
-    if "tr" not in languages:
+    if "en" not in languages:
         languages["en"] = yaml.safe_load(
             open(r"./strings/langs/en.yml", encoding="utf8")
         )
@@ -46,6 +46,6 @@ for filename in os.listdir(r"./strings/langs/"):
         languages_present[language_name] = languages[language_name]["name"]
     except:
         print(
-            "There is some issue with the language file inside bot. Please report it to the TheChampu at @AdanaliMuhendis on Telegram"
+            "There is some issue with the language file inside bot. Please report it to the TheChampu at @TheChampuClub on Telegram"
         )
         sys.exit()
