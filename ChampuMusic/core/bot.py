@@ -41,7 +41,7 @@ class ChampuBot(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
+                        text="๏ 𝙴𝚔𝚕𝚎 𝙱𝚎𝚗𝚒 ๏",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
