@@ -329,7 +329,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=InlineKeyboardMarkup(buttons_resume),
         )
-    elif command == "Stop" or command == "End":
+    elif command == "son" or command == "End":
         await CallbackQuery.answer()
         await Champu.st_stream(chat_id)
         await set_loop(chat_id, 0)
