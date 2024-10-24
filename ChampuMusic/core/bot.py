@@ -54,7 +54,7 @@ class ChampuBot(Client):
                 await self.send_photo(
                     config.LOGGER_ID,
                     photo=config.START_IMG_URL,
-                    caption=f"╔════❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱════❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖𝘒𝘶𝘭𝘭𝘢𝘯𝘥ı𝘨̆ı𝘯ı𝘻 𝘐̇𝘤̧𝘪𝘯 𝘛𝘦𝘴̧𝘦𝘬𝘬𝘶̈𝘳𝘭𝘦𝘳😍\n║\n╚════════════════❍⊱❁",
+                    caption=f"╔════❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱════❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖Keyifli Dinlemeler...😍\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
@@ -62,7 +62,7 @@ class ChampuBot(Client):
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔═══❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱═══❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖𝘒𝘶𝘭𝘭𝘢𝘯𝘥ı𝘨̆ı𝘯ı𝘻 𝘐̇𝘤̧𝘪𝘯 𝘛𝘦𝘴̧𝘦𝘬𝘬𝘶̈𝘳𝘭𝘦𝘳😍\n║\n╚══════════════❍⊱❁",
+                        f"╔═══❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱═══❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖Keyifli Dinlemeler...😍\n║\n╚══════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
