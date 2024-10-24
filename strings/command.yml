@@ -11,7 +11,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "oynat", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
 CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
@@ -24,7 +24,7 @@ ADDPLAYLIST_COMMAND : ["addplaylist"]
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "songlist"]
-SONG_COMMAND : ["song"]
+SONG_COMMAND : ["song", "bul", "music"]
 LYRICS_COMMAND : ["lyrics"]
 
 
@@ -32,14 +32,14 @@ LYRICS_COMMAND : ["lyrics"]
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause"]
-RESUME_COMMAND : ["resume", "cresume"]
+PAUSE_COMMAND : ["pause", "dur", "cpause"]
+RESUME_COMMAND : ["resume", "devam", "cresume"]
 MUTE_COMMAND : ["mute", "cmute"]
 UNMUTE_COMMAND : ["unmute", "cunmute"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend"]
-SKIP_COMMAND : ["skip", "cskip"]
+STOP_COMMAND : ["stop", "son", "end", "cstop", "cend"]
+SKIP_COMMAND : ["skip", "atla", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
+LOOP_COMMAND : ["loop", "tekrar", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 REBOOT_COMMAND : ["reboot", "end", "stop"]
 

@@ -8,7 +8,7 @@ from ChampuMusic.utils.database import is_music_playing, music_off
 from ChampuMusic.utils.decorators import AdminRightsCheck
 
 
-@app.on_message(filters.command(["pause", "cpause"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["pause", "dur", "cpause"]) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def pause_admin(cli, message: Message, _, chat_id):
     if not await is_music_playing(chat_id):
@@ -19,10 +19,10 @@ async def pause_admin(cli, message: Message, _, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                text="𝙳𝙴𝚅𝙰𝙼", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
+                text="𝚃𝙴𝙺𝚁𝙰𝚁 𝙾𝚈𝙽𝙰𝚃", callback_data=f"ADMIN Replay|{chat_id}"
             ),
         ],
     ]
@@ -40,8 +40,8 @@ __HELP__ = """
 This module allows administrators to pause the music playback in the group.
 
 Commands:
-- /pause: Pause the music playback in groups.
-- /cpause: Pause the music playback in channels.
+- <b>✧ /pause</b> ᴏʀ <b>/dur</b> - Mevcut oynatma akışını duraklatır.
+- /cpause: Kanalda Mevcut oynatma akışını duraklatır.
 
 Note:
 - Only administrators can use these commands.

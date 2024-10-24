@@ -1,29 +1,31 @@
 HELP_1 = """<b><u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
 
-ᴊᴜsᴛ ᴀᴅᴅ <b>ᴄ</b> ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
+Bu Komut <b>ᴄ</b> Kanal Oynatmalarında Kullanılır.
 
 
-/pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
+<b>✧ /pause</b> ᴏʀ <b>/dur</b> - Mevcut oynatma akışını duraklatır.
 
-/resume : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
+<b>✧ /resume</b> ᴏʀ <b>/devam</b> - Duraklatılan akışı devam ettirir.
 
-/skip : sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
+<b>✧ /skip</b> ᴏʀ <b>/atla</b> - Mevcut oynatma akışını atlar ve sıradaki parçayı oynatmaya başlar.
 
-/end ᴏʀ /stop : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
+<b>✧ /stop</b> ᴏʀ <b>/son</b> - Listeyi temizler ve mevcut oynatma akışını sonlandırır.
 
-/player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
+/player : Oynatılan Parça Ayrıntıları.
 
-/queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
+/queue : Parça listesini gösterir.
 """
 
 HELP_2 = """
-<b><u>ᴀᴜᴛʜ ᴜsᴇʀs :</b></u>
+<b><u>𝚈𝙴𝚃𝙺𝙸̇𝙻𝙸̇ 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸𝙻𝙰𝚁 :</b></u>
 
-ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+<b>𝚈𝙴𝚃𝙺𝙸̇𝙻𝙸̇ 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸𝙻𝙰𝚁 𝚂𝙾𝙷𝙱𝙴𝚃𝙸̇𝙽𝙸̇𝚉𝙳𝙴 𝚈𝙾̈𝙽𝙴𝚃𝙸̇𝙲𝙸̇ 𝙷𝙰𝙺𝙻𝙰𝚁𝙸 𝙾𝙻𝙼𝙰𝙳𝙰𝙽 𝚈𝙾̈𝙽𝙴𝚃𝙸̇𝙲𝙸̇ 𝙺𝙾𝙼𝚄𝚃𝙻𝙰𝚁𝙸 𝙺𝚄𝙻𝙻𝙰𝙽𝙰𝙱𝙸̇𝙻𝙸̇𝚁.</b>
 
-/auth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-/unauth [ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ_ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
-/authusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴜᴛʜ ᴜsᴇʀs ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ.
+<b>✧ /auth</b> [Usᴇʀɴᴀᴍᴇ] - 𝙶𝚁𝚄𝙱𝚄𝙽 𝚈𝙴𝚃𝙺𝙸̇𝙻𝙴𝙽𝙳𝙸̇𝚁𝙼𝙴 𝙻𝙸̇𝚂𝚃𝙴𝚂𝙸̇𝙽𝙴 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙴𝙺𝙻𝙴𝙼𝙴.
+
+<b>✧ /unauth</b> [Usᴇʀɴᴀᴍᴇ] - 𝙶𝚁𝚄𝙱𝚄𝙽 𝚈𝙴𝚃𝙺𝙸̇𝙻𝙴𝙽𝙳𝙸̇𝚁𝙼𝙴 𝙻𝙸̇𝚂𝚃𝙴𝚂𝙸̇𝙽𝙳𝙴𝙽 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙲̧𝙸𝙺𝙰𝚁𝙼𝙰.
+
+<b>✧ /authusers</b> - 𝙶𝚁𝚄𝙱𝚄𝙽 𝚈𝙴𝚃𝙺𝙸̇𝙻𝙴𝙽𝙳𝙸̇𝚁𝙼𝙴 𝙻𝙸̇𝚂𝚃𝙴𝚂𝙸̇𝙽𝙸̇ 𝙺𝙾𝙽𝚃𝚁𝙾𝙻 𝙴𝚃𝙼𝙴.
 """
 
 HELP_3 = """

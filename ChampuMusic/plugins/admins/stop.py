@@ -31,7 +31,7 @@ from ChampuMusic.utils.database import (
 
 
 @app.on_message(
-    filters.command(["stop", "end", "cstop", "cend"]) & filters.group & ~BANNED_USERS
+    filters.command(["stop", "son", "end", "cstop", "cend"]) & filters.group & ~BANNED_USERS
 )
 async def stop_music(cli, message: Message):
     if await is_maintenance() is False:
@@ -45,9 +45,9 @@ async def stop_music(cli, message: Message):
                 filter = " ".join(message.command[1:])
                 deleted = await delete_filter(message.chat.id, filter)
                 if deleted:
-                    return await message.reply_text(f"**ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴛᴇʀ {filter}.**")
+                    return await message.reply_text(f"**Filtre Silindi {filter}.**")
                 else:
-                    return await message.reply_text("**ɴᴏ sᴜᴄʜ ғɪʟᴛᴇʀ.**")
+                    return await message.reply_text("**Filtre Mevcut Değil.**")
 
     if await is_commanddelete_on(message.chat.id):
         try:
@@ -122,20 +122,20 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
         if get.status in [ChatMemberStatus.BANNED]:
 
             # Assistant bot has been banned
-            remove_by = member.from_user.mention if member.from_user else "𝐔ɴᴋɴᴏᴡɴ 𝐔sᴇʀ"
+            remove_by = member.from_user.mention if member.from_user else "Kullanıcı Bulunamadı"
             chat_id = member.chat.id
             title = member.chat.title
             username = (
-                f"@{member.chat.username}" if member.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
+                f"@{member.chat.username}" if member.chat.username else "Özel Sohbet"
             )
 
             # Construct message
             left_message = (
-                f"╔══❰#𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁_𝗕𝗮𝗻𝗻𝗲𝗱❱══❍⊱❁۪۪\n║\n"
+                f"╔══❰𝐀𝐒𝐈̇𝐒𝐓𝐀𝐍 𝐁𝐀𝐍𝐋𝐀𝐍𝐃𝐈❱══❍⊱❁۪۪\n║\n"
                 f"║┣⪼ **𝐂ʜᴀᴛ »** {title}\n║\n"
-                f"║┣⪼ **𝐀ssɪsᴛᴀɴᴛ 𝐈ᴅ »** {userbot.id}\n║\n"
-                f"║┣⪼ **𝐍ᴀᴍᴇ »** @{userbot.username}\n║\n"
-                f"║┣⪼ **𝐁ᴀɴ 𝐁ʏ »** {remove_by}\n"
+                f"║┣⪼ **𝐀𝐒𝐈̇𝐒𝐓𝐀𝐍 𝐈𝐃 »** {userbot.id}\n║\n"
+                f"║┣⪼ **𝐈̇𝐒𝐈̇𝐌 »** @{userbot.username}\n║\n"
+                f"║┣⪼ **𝐁𝐀𝐍𝐋𝐀𝐘𝐀𝐍 »** {remove_by}\n"
                 f"╚══════════════════❍⊱❁"
             )
 
@@ -144,7 +144,7 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
                 [
                     [
                         InlineKeyboardButton(
-                            "✨𝐔𝐧𝐛𝐚𝐧 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭✨",
+                            "✨𝐁𝐀𝐍 𝐊𝐀𝐋𝐃𝐈𝐑𝐈𝐋𝐃𝐈✨",
                             callback_data="unban_userbot",
                         )
                     ]
@@ -188,10 +188,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
             and member.old_chat_member
         ):
             left_message = (
-                f"**Assistant Has Left This Chat**\n\n"
+                f"**Assistan Gruptan Ayrıldı**\n\n"
                 f"**Id:** `{userbot.id}`\n"
-                f"**Name:** @{userbot.username}\n\n"
-                f"**Invite Assistant By: /userbotjoin**"
+                f"**İsim:** @{userbot.username}\n\n"
+                f"**Asistanı Davet Eden: /userbotjoin**"
             )
             await app.send_photo(
                 chat_id,
@@ -205,10 +205,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
             await asyncio.sleep(10)
     except UserNotParticipant:
         left_message = (
-            f"**Assistant Has Left This Chat**\n\n"
+            f"**Assistan Gruptan Ayrıldı**\n\n"
             f"**Id:** `{userbot.id}`\n"
-            f"**Name:** @{userbot.username}\n\n"
-            f"**Invite Assistant By: /userbotjoin**"
+            f"**İsim:** @{userbot.username}\n\n"
+            f"**Asistanı Davet Eden: /userbotjoin**"
         )
         await app.send_photo(
             chat_id,
@@ -226,7 +226,7 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
 async def brah(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+        await msg.reply("**😍𝐆𝐎̈𝐑𝐔̈𝐍𝐓𝐔̈𝐋𝐔̈ 𝐒𝐎𝐇𝐁𝐄𝐓 𝐁𝐀𝐒̧𝐋𝐀𝐓𝐈𝐋𝐃𝐈🥳**")
         await Champu.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:
@@ -240,7 +240,7 @@ async def brah(_, msg):
 async def brah2(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("**😕ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ💔**")
+        await msg.reply("**😕𝐆𝐎̈𝐑𝐔̈𝐍𝐓𝐔̈𝐋𝐔̈ 𝐒𝐎𝐇𝐁𝐄𝐓 𝐒𝐎𝐍𝐋𝐀𝐍𝐃𝐈𝐑𝐈𝐋𝐃𝐈💔**")
         await Champu.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:

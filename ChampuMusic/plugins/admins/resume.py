@@ -8,7 +8,7 @@ from ChampuMusic.utils.database import is_music_playing, music_on
 from ChampuMusic.utils.decorators import AdminRightsCheck
 
 
-@app.on_message(filters.command(["resume", "cresume"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["resume", "devam", "cresume"]) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
@@ -17,12 +17,12 @@ async def resume_com(cli, message: Message, _, chat_id):
     await Champu.resume_stream(chat_id)
     buttons_resume = [
         [
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="𝙳𝙴𝚅𝙰𝙼", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="SON", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="ᴘᴀᴜsᴇ",
+                text="DUR",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
         ],
@@ -40,8 +40,8 @@ __HELP__ = """
 This module allows administrators to resume playback of the currently paused track.
 
 Commands:
-- /resume: Resumes playback of the currently paused track for group.
-- /cresume: Resumes playback of the currently paused track for channel.
+- <b>✧ /resume</b> ᴏʀ <b>/devam</b> - Duraklatılan akışı devam ettirir.
+- /cresume: Kanalda duraklatılan akışı devam ettirir.
 
 Note:
 - Only administrators can use these commands.
