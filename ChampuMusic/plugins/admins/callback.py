@@ -351,7 +351,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await mute_off(chat_id)
         await Champu.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
-    elif command == "Loop", "Tekrar":
+    elif command == "Loop" or command == "Tekrar":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
         await CallbackQuery.message.reply_text(_["admin_25"].format(mention, 3))
