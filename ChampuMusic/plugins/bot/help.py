@@ -1,3 +1,4 @@
+
 import re
 from math import ceil
 from typing import Union
@@ -16,8 +17,11 @@ from ChampuMusic.utils.inline.help import private_help_panel
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
 
-COLUMN_SIZE = 4  # number of  button height
-NUM_COLUMNS = 3  # number of button width
+COLUMN_SIZE = 4
+NUM_COLUMNS = 3
+
+
+
 class EqInlineKeyboardButton(InlineKeyboardButton):
     def __eq__(self, other):
         return self.text == other.text
@@ -168,7 +172,7 @@ async def help_button(client, query):
         module = mod_match.group(1)
         prev_page_num = int(mod_match.group(2))
         text = (
-            f"<b><u>Yardım İçin Buraya {HELPABLE[module].__MODULE__}:</u></b>\n"
+            f"<b><u>Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ {HELPABLE[module].__MODULE__}:</u></b>\n"
             + HELPABLE[module].__HELP__
         )
 
@@ -176,9 +180,9 @@ async def help_button(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ 𝐆𝐄𝐑𝐢°", callback_data=f"help_back({prev_page_num})"
+                        text="↪️ ʙᴀᴄᴋ", callback_data=f"help_back({prev_page_num})"
                     ),
-                    InlineKeyboardButton(text="🔄 𝐊𝐀𝐏𝐀𝐓°", callback_data="close"),
+                    InlineKeyboardButton(text="🔄 ᴄʟᴏsᴇ", callback_data="close"),
                 ],
             ]
         )
@@ -321,22 +325,151 @@ async def music_helper_cb(client, CallbackQuery, _):
         await CallbackQuery.edit_message_text(helpers.HELP_15, reply_markup=keyboard)
 
 
+@app.on_callback_query(filters.regex("management_callback") & ~BANNED_USERS)
+@languageCB
+async def management_callback_cb(client, CallbackQuery, _):
+
+    callback_data = CallbackQuery.data.strip()
+
+    cb = callback_data.split(None, 1)[1]
+
+    keyboard = back_to_management(_)
+
+    if cb == "extra":
+
+        await CallbackQuery.edit_message_text(helpers.EXTRA_1, reply_markup=keyboard)
+
+    elif cb == "hb1":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_1, reply_markup=keyboard)
+
+    elif cb == "hb2":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_2, reply_markup=keyboard)
+
+    elif cb == "hb3":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_3, reply_markup=keyboard)
+
+    elif cb == "hb4":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_4, reply_markup=keyboard)
+
+    elif cb == "hb5":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_5, reply_markup=keyboard)
+
+    elif cb == "hb6":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_6, reply_markup=keyboard)
+
+    elif cb == "hb7":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_7, reply_markup=keyboard)
+
+    elif cb == "hb8":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_8, reply_markup=keyboard)
+
+    elif cb == "hb9":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_9, reply_markup=keyboard)
+
+    elif cb == "hb10":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_10, reply_markup=keyboard)
+
+    elif cb == "hb11":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_11, reply_markup=keyboard)
+
+    elif cb == "hb12":
+
+        await CallbackQuery.edit_message_text(helpers.MHELP_12, reply_markup=keyboard)
+
+
+@app.on_callback_query(filters.regex("tools_callback") & ~BANNED_USERS)
+@languageCB
+async def tools_callback_cb(client, CallbackQuery, _):
+
+    callback_data = CallbackQuery.data.strip()
+
+    cb = callback_data.split(None, 1)[1]
+
+    keyboard = back_to_tools(_)
+
+    if cb == "ai":
+
+        await CallbackQuery.edit_message_text(helpers.AI_1, reply_markup=keyboard)
+
+    elif cb == "hb1":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_1, reply_markup=keyboard)
+
+    elif cb == "hb2":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_2, reply_markup=keyboard)
+
+    elif cb == "hb3":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_3, reply_markup=keyboard)
+
+    elif cb == "hb4":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_4, reply_markup=keyboard)
+
+    elif cb == "hb5":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_5, reply_markup=keyboard)
+
+    elif cb == "hb6":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_6, reply_markup=keyboard)
+
+    elif cb == "hb7":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_7, reply_markup=keyboard)
+
+    elif cb == "hb8":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_8, reply_markup=keyboard)
+
+    elif cb == "hb9":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_9, reply_markup=keyboard)
+
+    elif cb == "hb10":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_10, reply_markup=keyboard)
+
+    elif cb == "hb11":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_11, reply_markup=keyboard)
+
+    elif cb == "hb12":
+
+        await CallbackQuery.edit_message_text(helpers.THELP_12, reply_markup=keyboard)
+
+
 @app.on_callback_query(filters.regex("developer"))
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
-            InlineKeyboardButton(text=" 𝐒𝐀𝐇𝐈̇𝐏° ", user_id=config.OWNER_ID[0])
+            InlineKeyboardButton(text="🔰ᴏᴡɴᴇʀ🔰", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(
+                text="📍sᴜᴅᴏᴇʀs📍", url=f"https://t.me/{app.username}?start=sudo"
+            ),
         ],
         [
-            InlineKeyboardButton(text=" ɪɴsᴛᴀ ", url=f"https://www.instagram.com/AdanaliMuhendis/"),
-            InlineKeyboardButton(text=" ʏᴏᴜᴛᴜʙᴇ ", url=f"https://www.youtube.com/@AdanaliMuhendis"),
+            InlineKeyboardButton(text="🎁ɪɴsᴛᴀ🎁", url=f"https://www.instagram.com/shivanshu_deo/"),
+            InlineKeyboardButton(text="💲ʏᴏᴜᴛᴜʙᴇ💲", url=f"https://www.youtube.com/@itsMeChampu"),
         ],
         [
-            InlineKeyboardButton(text="🔙 𝐆𝐄𝐑𝐢°", callback_data="about")
+            InlineKeyboardButton(text="🔙 Back", callback_data="about")
         ],  # Use a default label for the back button
     ]
     await callback_query.message.edit_text(
-        "✦ **𝐁𝐔 𝐁𝐎𝐓, 𝐆𝐑𝐔𝐁𝐔𝐍𝐔𝐙𝐔 𝐘𝐎̈𝐍𝐄𝐓𝐌𝐄𝐘𝐈̇ 𝐊𝐎𝐋𝐀𝐘 𝐕𝐄 𝐃𝐀𝐇𝐀 𝐄𝐆̆𝐋𝐄𝐍𝐂𝐄𝐋𝐈̇ 𝐇𝐀𝐋𝐄 𝐆𝐄𝐓𝐈̇𝐑𝐌𝐄𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐘𝐄𝐓𝐄𝐍𝐄𝐊𝐋𝐈̇ 𝐁𝐈̇𝐑 𝐆𝐄𝐋𝐈̇𝐒̧𝐓𝐈̇𝐑𝐈̇𝐂𝐈̇ 𝐓𝐀𝐑𝐀𝐅𝐈𝐍𝐃𝐀𝐍 𝐘𝐀𝐏𝐈𝐋𝐌𝐈𝐒̧𝐓𝐈𝐑..**\n\n✦ **чαlnízcα вí̇rkαç tíklαmα í̇lє hєr şєчí̇ kσntrσl єdєвí̇lí̇rsí̇ní̇z (sαhí̇вí̇n αчαrlαríní αчαrlαmαk, sudσєrs'í kσntrσl єtmєk vє hαttα hαttα вí̇rkαç tíklαmα í̇lє hєr şєчí̇ kσntrσl єdєвí̇lí̇rsí̇ní̇z.) ínstαgrαm vє чσutuвє'u kєşfєdí̇n.**\n\n✦ **𝙱𝙾𝚃, 𝙶𝚁𝚄𝙱𝚄𝙽𝚄𝚉𝚄 𝚂𝙾𝚁𝚄𝙽𝚂𝚄𝚉 𝙱𝙸̇𝚁 𝚂̧𝙴𝙺𝙸̇𝙻𝙳𝙴 𝚈𝙾̈𝙽𝙴𝚃𝙼𝙴𝙽𝙸̇𝚉𝙴 𝚅𝙴 𝙼𝚄̈𝚉𝙸̇𝙶̆𝙸̇𝙽 𝙺𝙴𝚈𝙵𝙸̇𝙽𝙸̇ 𝙲̧𝙸𝙺𝙰𝚁𝙼𝙰𝙽𝙸𝚉𝙰 𝚈𝙰𝚁𝙳𝙸𝙼𝙲𝙸 𝙾𝙻𝙼𝙰𝙺 𝙸̇𝙲̧𝙸̇𝙽 𝚃𝙰𝚂𝙰𝚁𝙻𝙰𝙽𝙳𝙸. 𝚂𝙰𝙳𝙴𝙲𝙴 𝙰𝚂̧𝙰𝙶̆𝙸𝙳𝙰𝙺𝙸̇ 𝙳𝚄̈𝙶̆𝙼𝙴𝙻𝙴𝚁𝙸̇ 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙽 𝚅𝙴 𝙽𝙴 𝙺𝙰𝙳𝙰𝚁 𝙺𝙾𝙻𝙰𝚈 𝙾𝙻𝙳𝚄𝙶̆𝚄𝙽𝚄 𝙶𝙾̈𝚁𝚄̈𝙽!**",
+        "✦ **ᴛʜɪs ʙᴏᴛ ɪs ᴍᴀᴅᴇ ʙʏ ᴀ sᴋɪʟʟᴇᴅ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴛᴏ ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsʏ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ᴍᴏʀᴇ ғᴜɴ.**\n\n✦ **ᴡɪᴛʜ ᴊᴜsᴛ ᴀ ғᴇᴡ ᴄʟɪᴄᴋs, ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛʀᴏʟ ᴇᴠᴇʀʏᴛʜɪɴɢ—ʟɪᴋᴇ sᴇᴛᴛɪɴɢ ᴜᴘ ᴏᴡɴᴇʀ sᴇᴛᴛɪɴɢs, ᴄʜᴇᴄᴋɪɴɢ sᴜᴅᴏᴇʀs, ᴀɴᴅ ᴇᴠᴇɴ ᴇxᴘʟᴏʀɪɴɢ ɪɴsᴛᴀɢʀᴀᴍ ᴀɴᴅ ʏᴏᴜᴛᴜʙᴇ.**\n\n✦ **ᴛʜᴇ ʙᴏᴛ ɪs ᴅᴇsɪɢɴᴇᴅ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜsɪᴄ ᴛᴏᴏ. ᴊᴜsᴛ ᴜsᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴀɴᴅ sᴇᴇ ʜᴏᴡ ᴇᴀsʏ ɪᴛ ɪs!**",
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
@@ -346,19 +479,32 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
             InlineKeyboardButton(
-                text="⚜️ 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎° ⚜️",
+                text="⚜️ ᴋɪᴅɴᴀᴘ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ⚜️",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            InlineKeyboardButton(text="🎧 𝐌𝐔̈𝐙𝐈̇𝐊° 🎧", callback_data="music"),
-            InlineKeyboardButton(text="♻️ 𝐇𝐄𝐏𝐒𝐈̇° ♻️", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="music"),
+            InlineKeyboardButton(text="ϻᴧηᴧɢєϻєηᴛ", callback_data="management"),
         ],
-        [InlineKeyboardButton(text="✯ 𝐀𝐍𝐀 𝐌𝐄𝐍𝐔̈° ✯", callback_data="go_to_start")],
+        [
+            InlineKeyboardButton(text="ᴛσσʟs", callback_data="tools"),
+            InlineKeyboardButton(text="ᴀʟʟ", callback_data="settings_back_helper"),
+        ],
+        [InlineKeyboardButton(text="✯ ʜᴏᴍᴇ ✯", callback_data="go_to_start")],
     ]
+    k = f"""**❖ ᴛʜɪs ɪs {app.mention} ! 
+
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
+❖ ᴛʜɪs ɪs ϻᴧηᴧɢєϻєηᴛ | ϻυsɪᴄ ʙσᴛ
+❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ
+❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
+❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
+    ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━**"""
     await callback_query.message.edit_text(
-        f"**𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙** {app.mention}\n\n**MÜZİK DENEYİMİNİZİ GELİŞTİRMEK İÇİN TASARLANMIŞ ÇEŞİTLİ ÖZELLİKLERİ KEŞFEDİN. BOT'U KENDİ GRUBUNUZA VEYA KANALINIZA DAVET ETMEK VE KUSURSUZ MÜZİK ENTEGRASYONUNUN KEYFİNİ ÇIKARMAK İÇİN 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎° BUTONUNA TIKLAYINIZ**",
-        reply_markup=InlineKeyboardMarkup(keyboard),
+        text=k, reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
 
@@ -367,8 +513,8 @@ async def music_callback(client: Client, callback_query: CallbackQuery):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="YÖNETiCi°", callback_data="music_callback hb1"),
-                InlineKeyboardButton(text="YETKİLİ°", callback_data="music_callback hb2"),
+                InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="music_callback hb1"),
+                InlineKeyboardButton(text="Aᴜᴛʜ", callback_data="music_callback hb2"),
                 InlineKeyboardButton(
                     text="Bʀᴏᴀᴅᴄᴀsᴛ", callback_data="music_callback hb3"
                 ),
@@ -401,12 +547,118 @@ async def music_callback(client: Client, callback_query: CallbackQuery):
                 InlineKeyboardButton(text="Sᴏɴɢ", callback_data="music_callback hb14"),
                 InlineKeyboardButton(text="Sᴘᴇᴇᴅ", callback_data="music_callback hb15"),
             ],
-            [InlineKeyboardButton(text="✯ 𝐆𝐄𝐑𝐢° ✯", callback_data=f"feature")],
+            [InlineKeyboardButton(text="✯ ʙᴀᴄᴋ ✯", callback_data=f"feature")],
         ]
     )
 
     await callback_query.message.edit(
-        f"**DAHA FAZLA BİLGİ İÇİN AŞAĞIDAKİ BUTONLARA TIKLAYINIZ. HERHANGİ BİR SORUNLA KARŞILAŞIYORSANIZ [SUPPORT CHAT](t.me/AdanaliMuhendis)**\n\n**BÜTÜN KOMUTLAR ŞUNLARLA KULLANILABİLİR: /**",
+        f"``**Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.  Iғ ʏᴏᴜ'ʀᴇ ғᴀᴄɪɴɢ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ʏᴏᴜ ᴄᴀɴ ᴀsᴋ ɪɴ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ.](t.me/TheChampuClub)**\n\n**Aʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /**``",
+        reply_markup=keyboard,
+    )
+
+
+@app.on_callback_query(filters.regex("management"))
+async def management_callback(client: Client, callback_query: CallbackQuery):
+    keyboard = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text="єxᴛʀᴧ", callback_data="management_callback extra"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    text="ʙᴧη", callback_data="management_callback hb1"
+                ),
+                InlineKeyboardButton(
+                    text="ᴋɪᴄᴋs", callback_data="management_callback hb2"
+                ),
+                InlineKeyboardButton(
+                    text="ϻυᴛє", callback_data="management_callback hb3"
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="ᴘɪη", callback_data="management_callback hb4"
+                ),
+                InlineKeyboardButton(
+                    text="sᴛᴧғғ", callback_data="management_callback hb5"
+                ),
+                InlineKeyboardButton(
+                    text="sєᴛ υᴘ", callback_data="management_callback hb6"
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="zσϻʙɪє", callback_data="management_callback hb7"
+                ),
+                InlineKeyboardButton(
+                    text="ɢᴧϻє", callback_data="management_callback hb8"
+                ),
+                InlineKeyboardButton(
+                    text="ɪϻᴘσsᴛєʀ", callback_data="management_callback hb9"
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="sᴧηɢ ϻᴧᴛᴧ", callback_data="management_callback hb10"
+                ),
+                InlineKeyboardButton(
+                    text="ᴛʀᴧηsʟᴧᴛє", callback_data="management_callback hb11"
+                ),
+                InlineKeyboardButton(
+                    text="ᴛ-ɢʀᴧᴘʜ", callback_data="management_callback hb12"
+                ),
+            ],
+            [InlineKeyboardButton(text="✯ ʙᴀᴄᴋ ✯", callback_data=f"feature")],
+        ]
+    )
+
+    await callback_query.message.edit(
+        f"``**Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.  Iғ ʏᴏᴜ'ʀᴇ ғᴀᴄɪɴɢ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ʏᴏᴜ ᴄᴀɴ ᴀsᴋ ɪɴ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ.](t.me/TheChampuClub)**\n\n**Aʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /**``",
+        reply_markup=keyboard,
+    )
+
+
+@app.on_callback_query(filters.regex("tools"))
+async def tools_callback(client: Client, callback_query: CallbackQuery):
+    keyboard = InlineKeyboardMarkup(
+        [
+            [InlineKeyboardButton(text="ᴄʜᴧᴛɢᴘᴛ", callback_data="tools_callback ai")],
+            [
+                InlineKeyboardButton(text="ɢσσɢʟє", callback_data="tools_callback hb1"),
+                InlineKeyboardButton(
+                    text="ᴛᴛs-ᴠσɪᴄє", callback_data="tools_callback hb2"
+                ),
+                InlineKeyboardButton(text="ɪηꜰσ", callback_data="tools_callback hb3"),
+            ],
+            [
+                InlineKeyboardButton(text="ғσηᴛ", callback_data="tools_callback hb4"),
+                InlineKeyboardButton(text="ϻᴧᴛʜ", callback_data="tools_callback hb5"),
+                InlineKeyboardButton(text="ᴛᴧɢᴧʟʟ", callback_data="tools_callback hb6"),
+            ],
+            [
+                InlineKeyboardButton(text="ɪϻᴧɢє", callback_data="tools_callback hb7"),
+                InlineKeyboardButton(text="ʜᴧsᴛᴧɢ", callback_data="tools_callback hb8"),
+                InlineKeyboardButton(
+                    text="sᴛɪᴄᴋєʀs", callback_data="tools_callback hb9"
+                ),
+            ],
+            [
+                InlineKeyboardButton(text="ғυη", callback_data="tools_callback hb10"),
+                InlineKeyboardButton(
+                    text="ǫυσᴛʟʏ", callback_data="tools_callback hb11"
+                ),
+                InlineKeyboardButton(
+                    text="ᴛʀ - ᴅʜ", callback_data="tools_callback hb12"
+                ),
+            ],
+            [InlineKeyboardButton(text="✯ ʙᴀᴄᴋ ✯", callback_data=f"feature")],
+        ]
+    )
+
+    await callback_query.message.edit(
+        f"``**Cʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.  Iғ ʏᴏᴜ'ʀᴇ ғᴀᴄɪɴɢ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ʏᴏᴜ ᴄᴀɴ ᴀsᴋ ɪɴ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ.](t.me/TheChampuClub)**\n\n**Aʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /**``",
         reply_markup=keyboard,
     )
 
@@ -416,18 +668,33 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
             InlineKeyboardButton(
-                text="⚜️ 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎° ⚜️",
+                text="⚜️ ᴋɪᴅɴᴀᴘ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ ⚜️",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            InlineKeyboardButton(text="🎧 𝐌𝐔̈𝐙𝐈̇𝐊° 🎧", callback_data="music"),
-            InlineKeyboardButton(text="♻️ 𝐇𝐄𝐏𝐒𝐈̇° ♻️", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="music"),
+            InlineKeyboardButton(text="ϻᴧηᴧɢєϻєηᴛ", callback_data="management"),
         ],
-        [InlineKeyboardButton(text="✯ 𝐀𝐍𝐀 𝐌𝐄𝐍𝐔̈° ✯", callback_data="go_to_start")],
+        [
+            InlineKeyboardButton(text="ᴛσσʟs", callback_data="tools"),
+            InlineKeyboardButton(text="ᴀʟʟ", callback_data="settings_back_helper"),
+        ],
+        [InlineKeyboardButton(text="✯ ʜᴏᴍᴇ ✯", callback_data="go_to_start")],
     ]
+
+    k = f"""**❖ ᴛʜɪs ɪs {app.mention} ! 
+
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
+❖ ᴛʜɪs ɪs ϻᴧηᴧɢєϻєηᴛ | ϻυsɪᴄ ʙσᴛ
+❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ
+❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
+❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
+    ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
+━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━**"""
     await callback_query.message.edit_text(
-        f"**𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙** {app.mention}\n\n**MÜZİK DENEYİMİNİZİ GELİŞTİRMEK İÇİN TASARLANMIŞ ÇEŞİTLİ ÖZELLİKLERİ KEŞFEDİN. BOT'U KENDİ GRUBUNUZA VEYA KANALINIZA DAVET ETMEK VE KUSURSUZ MÜZİK ENTEGRASYONUNUN KEYFİNİ ÇIKARMAK İÇİN 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎° BUTONUNA TIKLAYINIZ**",
+        text=k,
         reply_markup=InlineKeyboardMarkup(keyboard),
     )
 
@@ -446,21 +713,49 @@ def back_to_music(_):
     return upl
 
 
+def back_to_tools(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["BACK_BUTTON"],
+                    callback_data=f"tools",
+                ),
+            ]
+        ]
+    )
+    return upl
+
+
+def back_to_management(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text=_["BACK_BUTTON"],
+                    callback_data=f"management",
+                ),
+            ]
+        ]
+    )
+    return upl
+
+
 @app.on_callback_query(filters.regex("about"))
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
-            InlineKeyboardButton(text="✨𝐒𝐀𝐇𝐈̇𝐏°✨", callback_data="developer"),
-            InlineKeyboardButton(text="⚡𝐎̈𝐙𝐄𝐋𝐋𝐈̇𝐊°⚡", callback_data="feature"),
+            InlineKeyboardButton(text="✨ᴅᴇᴠᴇʟᴏᴘᴇʀ✨", callback_data="developer"),
+            InlineKeyboardButton(text="⚡ғᴇᴀᴛᴜʀᴇ⚡", callback_data="feature"),
         ],
         [
-            InlineKeyboardButton(text="📓𝐓𝐄𝐌𝐄𝐋 𝐊𝐈𝐋𝐀𝐕𝐔𝐙°📓", callback_data="basic_guide"),
-            InlineKeyboardButton(text="⚜️𝐁𝐀𝐆̆𝐈𝐒̧°⚜️", callback_data="donate"),
+            InlineKeyboardButton(text="📓ʙᴀsɪᴄ ɢᴜɪᴅᴇ📓", callback_data="basic_guide"),
+            InlineKeyboardButton(text="⚜️ᴅᴏɴᴀᴛᴇ⚜️", callback_data="donate"),
         ],
-        [InlineKeyboardButton(text="🔙 𝐆𝐄𝐑𝐢°", callback_data="go_to_start")],
+        [InlineKeyboardButton(text="🔙 Back", callback_data="go_to_start")],
     ]
     await callback_query.message.edit_text(
-        f"**Selamlar {app.mention} ✨**\n\n**𝙶𝚁𝚄𝙿𝙻𝙰𝚁𝙸𝙽𝙸𝚉 𝙸̇𝙲̧𝙸̇𝙽 𝚂𝙿𝙰𝙼'𝚂𝙸𝚉 𝚅𝙴 𝙴𝙶̆𝙻𝙴𝙽𝙲𝙴𝙻𝙸̇ 𝙱𝙸̇𝚁 𝙾𝚁𝚃𝙰𝙼 𝚂𝚄𝙽𝙰𝙽 𝙶𝚄̈𝙲̧𝙻𝚄̈ 𝚅𝙴 𝙼𝚄𝙷𝚃𝙴𝚂̧𝙴𝙼 𝙱𝙸̇𝚁 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙶𝚁𝚄𝙿 𝚈𝙾̈𝙽𝙴𝚃𝙸̇𝙼𝙸̇ 𝚅𝙴 𝙼𝚄̈𝚉𝙸̇𝙺 𝙲̧𝙰𝙻𝙰𝚁 :)**\𝚗\𝚗**● 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸𝙻𝙰𝚁𝙸 𝙺𝙸𝚂𝙸𝚃𝙻𝙰𝚈𝙰𝙱𝙸̇𝙻𝙸̇𝚁𝙸̇𝙼.**\𝚗**● 𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸𝙻𝙰𝚁𝙸 𝚂̧𝚄𝙽𝙻𝙰𝚁𝙻𝙰 𝚂𝙴𝙻𝙰𝙼𝙻𝙰𝚈𝙰𝙱𝙸̇𝙻𝙸̇𝚁𝙸̇𝙼 𝙾̈𝚉𝙴𝙻𝙻𝙴𝚂̧𝚃𝙸̇𝚁𝙸̇𝙻𝙴𝙱𝙸̇𝙻𝙸̇𝚁 𝙷𝙾𝚂̧𝙶𝙴𝙻𝙳𝙸̇𝙽𝙸̇𝚉 𝙼𝙴𝚂𝙰𝙹𝙻𝙰𝚁𝙸 𝚅𝙴 𝙷𝙰𝚃𝚃𝙰 𝙱𝙸̇𝚁 𝙶𝚁𝚄𝙿 𝙺𝚄𝚁𝙰𝙻𝙻𝙰𝚁𝙸 𝙱𝙴𝙻𝙸̇𝚁𝙻𝙴𝚈𝙸̇𝙽.**\𝚗**● 𝙱𝙸̇𝚁 𝙼𝚄̈𝚉𝙸̇𝙺 𝙾𝚈𝙽𝙰𝚃𝙸𝙲𝙸 𝚂𝙸̇𝚂𝚃𝙴𝙼𝙸̇𝙼 𝚅𝙰𝚁.**\𝚗**● 𝙽𝙴𝚁𝙴𝙳𝙴𝚈𝚂𝙴 𝚃𝚄̈𝙼 𝙱𝙴𝙺𝙻𝙴𝙽𝙴𝙽 𝙶𝚁𝚄𝙿 𝚈𝙾̈𝙽𝙴𝚃𝙸̇𝙼 𝙾̈𝚉𝙴𝙻𝙻𝙸̇𝙺𝙻𝙴𝚁𝙸̇𝙼 𝚅𝙰𝚁, 𝙱𝙰𝙽, 𝚂𝙴𝚂𝚂𝙸̇𝚉, 𝙷𝙾𝚂̧𝙶𝙴𝙻𝙳𝙸̇𝙽𝙸̇𝚉, 𝙺𝙸𝙲𝙺, 𝙵𝙴𝙳𝙴𝚁𝙰𝚂𝚈𝙾𝙽, 𝚅𝙴 𝙳𝙰𝙷𝙰 𝙵𝙰𝚉𝙻𝙰𝚂𝙸.**\𝚗**● 𝙱𝙸̇𝚁 𝙽𝙾𝚃 𝚃𝚄𝚃𝙼𝙰 𝚂𝙸̇𝚂𝚃𝙴𝙼𝙸̇𝙼, 𝙺𝙰𝚁𝙰 𝙻𝙸̇𝚂𝚃𝙴𝙻𝙴𝚁𝙸̇𝙼 𝚅𝙴 𝙷𝙰𝚃𝚃𝙰 𝙱𝙴𝙻𝙸̇𝚁𝙻𝙸̇ 𝙰𝙽𝙰𝙷𝚃𝙰𝚁 𝙺𝙴𝙻𝙸̇𝙼𝙴𝙻𝙴𝚁𝙻𝙴 𝙸̇𝙻𝙶𝙸̇𝙻𝙸̇ 𝙾̈𝙽𝙲𝙴𝙳𝙴𝙽 𝙱𝙴𝙻𝙸̇𝚁𝙻𝙴𝙽𝙼𝙸̇𝚂̧ 𝙲𝙴𝚅𝙰𝙿𝙻𝙰𝚁𝙸𝙼 𝚅𝙰𝚁.**\𝚗**● 𝙷𝙴𝚁𝙷𝙰𝙽𝙶𝙸̇ 𝙱𝙸̇𝚁 𝙺𝙾𝙼𝚄𝚃 𝚅𝙴 𝙳𝙰𝙷𝙰 𝙵𝙰𝚉𝙻𝙰 𝚂̧𝙴𝚈𝙸̇ 𝚈𝚄̈𝚁𝚄̈𝚃𝙼𝙴𝙳𝙴𝙽 𝙾̈𝙽𝙲𝙴 𝚈𝙾̈𝙽𝙴𝚃𝙸̇𝙲𝙸̇𝙻𝙴𝚁𝙸̇𝙽 𝙸̇𝚉𝙸̇𝙽𝙻𝙴𝚁𝙸̇𝙽𝙸̇ 𝙺𝙾𝙽𝚃𝚁𝙾𝙻 𝙴𝙳𝙸̇𝙽. **\𝚗\𝚗**➻ 𝙱𝙾𝚃 𝙷𝙰𝙺𝙺𝙸𝙽𝙳𝙰 𝙳𝙰𝙷𝙰 𝙵𝙰𝚉𝙻𝙰 𝙱𝙸̇𝙻𝙶𝙸̇ 𝙰𝙻𝙼𝙰𝙺 𝙸̇𝙲̧𝙸̇𝙽 𝙳𝚄̈𝙶̆𝙼𝙴𝚈𝙴 𝚃𝙸𝙺𝙻𝙰𝚈𝙸𝙽 🦚.**",
+        f"**ʜɪ ɪ ᴀᴍ {app.mention} ✨**\n\n**ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀɴᴅ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴛʜᴀᴛ ɢɪᴠᴇs ʏᴏᴜ sᴘᴀᴍ-ғʀᴇᴇ ᴀɴᴅ ғᴜɴ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs :)**\n\n**● ɪ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs.**\n**● ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴄᴜsᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs ᴀɴᴅ ᴇᴠᴇɴ sᴇᴛ ᴀ ɢʀᴏᴜᴘ's ʀᴜʟᴇs.**\n**● ɪ ʜᴀᴠᴇ ᴀ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ sʏsᴛᴇᴍ.**\n**● ɪ ʜᴀᴠᴇ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴀᴡᴀɪᴛᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ғᴇᴀᴛᴜʀᴇs ʟɪᴋᴇ ʙᴀɴ, ᴍᴜᴛᴇ, ᴡᴇʟᴄᴏᴍᴇ, ᴋɪᴄᴋ, ғᴇᴅᴇʀᴀᴛɪᴏɴ, ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ.**\n**● ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ-ᴋᴇᴇᴘɪɴɢ sʏsᴛᴇᴍ, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇs ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅs.**\n**● ɪ ᴄʜᴇᴄᴋ ғᴏʀ ᴀᴅᴍɪɴs' ᴘᴇʀᴍɪssɪᴏɴs ʙᴇғᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ sᴛᴜғғ.**\n\n**➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʙᴏᴛ 🦚.**",
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
@@ -470,40 +765,39 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
 async def back_button_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
-            InlineKeyboardButton(text="🎭𝐒𝐀𝐇𝐈̇𝐏°🎭", user_id=config.OWNER_ID[0]),
+            InlineKeyboardButton(text="🎭ᴏᴡɴᴇʀ🎭", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(
                 text="🌱ɢɪᴛʜᴜʙ🌱",
                 url="https://github.com/AdanaliMuhendis",
             ),
         ],
         [
-            InlineKeyboardButton(text="⛅𝐆𝐑𝐔𝐏°⛅", url=f"{config.SUPPORT_GROUP}"),
-            InlineKeyboardButton(text="🎄𝐊𝐀𝐍𝐀𝐋°🎄", url=f"{config.SUPPORT_CHANNEL}"),
+            InlineKeyboardButton(text="⛅ɢʀᴏᴜᴘ⛅", url=f"{config.SUPPORT_GROUP}"),
+            InlineKeyboardButton(text="🎄ᴄʜᴀɴɴᴇʟ🎄", url=f"{config.SUPPORT_CHANNEL}"),
         ],
-        [InlineKeyboardButton(text="✯ 𝐀𝐍𝐀 𝐌𝐄𝐍𝐔̈° ✯", callback_data="go_to_start")],
+        [InlineKeyboardButton(text="✯ ʜᴏᴍᴇ ✯", callback_data="go_to_start")],
     ]
 
     await callback_query.message.edit_text(
-        "**๏ 𝐇𝐀𝐊𝐊𝐈𝐌𝐃𝐀 𝐃𝐀𝐇𝐀 𝐅𝐀𝐙𝐋𝐀 𝐁𝐈̇𝐋𝐆𝐈̇ 𝐀𝐋𝐌𝐀𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐃𝐔̈𝐆̆𝐌𝐄𝐘𝐄 𝐓𝐈𝐊𝐋𝐀𝐘𝐈𝐍**\𝐧\𝐧**𝐁𝐎𝐓'𝐓𝐀 𝐇𝐄𝐑𝐇𝐀𝐍𝐆𝐈̇ 𝐁𝐈̇𝐑 𝐇𝐀𝐓𝐀 𝐕𝐄𝐘𝐀 𝐇𝐀𝐓𝐀 𝐁𝐔𝐋𝐔𝐑𝐒𝐀𝐍𝐈𝐙 𝐕𝐄𝐘𝐀 𝐁𝐎𝐓 𝐇𝐀𝐊𝐊𝐈𝐍𝐃𝐀 𝐇𝐄𝐑𝐇𝐀𝐍𝐆𝐈̇ 𝐁𝐈̇𝐑 𝐆𝐄𝐑𝐈̇ 𝐁𝐈̇𝐋𝐃𝐈̇𝐑𝐈̇𝐌 𝐕𝐄𝐑𝐌𝐄𝐊 𝐈̇𝐒𝐓𝐈̇𝐘𝐎𝐑𝐒𝐀𝐍𝐈𝐙 𝐃𝐄𝐒𝐓𝐄𝐊 𝐆𝐑𝐔𝐁𝐔𝐍𝐀 𝐆𝐄𝐋𝐈̇𝐍𝐈̇𝐙 (✿◠‿◠)* *",
+        "**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ**\n\n**ɪғ ʏᴏᴜ ғɪɴᴅ ᴀɴʏ ᴇʀʀᴏʀ ᴏʀ ʙᴜɢ ᴏɴ ʙᴏᴛ ᴏʀ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ᴀɴʏ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ ᴛʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ  (✿◠‿◠)**",
         reply_markup=InlineKeyboardMarkup(keyboard),
     )
 
 
 @app.on_callback_query(filters.regex("donate"))
 async def settings_back_callback(client: Client, callback_query: CallbackQuery):
-    close = [[InlineKeyboardButton(text="✯ 𝐊𝐀𝐏𝐀𝐓° ✯", callback_data="close")]]
+    close = [[InlineKeyboardButton(text="✯ ᴄʟᴏsᴇ ✯", callback_data="close")]]
     await callback_query.message.reply_photo(
-        photo="https://te.legra.ph/Alem-Music-05-27",
-        caption=f"**𝐀𝐥𝐞𝐦 𝐌𝐮̈𝐳𝐢𝐤 𝐁𝐨𝐭 HER GEÇEN GÜN DAHA DA GELİŞMEYE DEVAM EDECEKTİR!**",
+        photo="https://envs.sh/TS-.jpg",
+        caption=f"**sᴜᴘᴘᴏʀᴛ ᴍʏ ᴄᴏᴅɪɴɢ ᴊᴏᴜʀɴᴇʏ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ᴅɪʀᴇᴄᴛʟʏ ᴛᴏ ʜᴇʟᴘ ᴇɴʜᴀɴᴄᴇ ᴍʏ ʙᴏᴛ's ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ.**\n\n**ʏᴏᴜʀ ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴ ᴡɪʟʟ ᴅɪʀᴇᴄᴛʟʏ ғᴜɴᴅ ᴛʜᴇ ᴄʀᴇᴀᴛɪᴏɴ ᴏғ ɪɴɴᴏᴠᴀᴛɪᴠᴇ, ᴜsᴇʀ-ғʀɪᴇɴᴅʟʏ ᴛᴏᴏʟs ᴀɴᴅ ᴇxᴄɪᴛɪɴɢ ʙᴏᴛ ᴄᴀᴘᴀʙɪʟɪᴛɪᴇs.**\n\n**sɪᴍᴘʟʏ sᴄᴀɴ ᴛʜᴇ ᴄᴏᴅᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴀ ᴘᴀʏᴍᴇɴᴛ—ɴᴏ ʜᴀssʟᴇ, ᴊᴜsᴛ ᴀ ǫᴜɪᴄᴋ ᴡᴀʏ ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ʜᴇʟᴘ ʙʀɪɴɢ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs ᴛᴏ ʟɪғᴇ.**\n\n**ᴇᴠᴇʀʏ ᴅᴏɴᴀᴛɪᴏɴ, ʙɪɢ ᴏʀ sᴍᴀʟʟ, ɢᴏᴇs ᴀ ʟᴏɴɢ ᴡᴀʏ ɪɴ ᴘᴜsʜɪɴɢ ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ғᴏʀᴡᴀʀᴅ. ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʙᴇɪɴɢ ᴀ ᴘᴀʀᴛ ᴏғ ᴛʜɪs ᴇxᴄɪᴛɪɴɢ ᴊᴏᴜʀɴᴇʏ!**",
         reply_markup=InlineKeyboardMarkup(close),
     )
 
-#CAPTION AÇIKLAMASI : BOT'UMUN ÖZELLİKLERİNİ VE GELİŞİMİNİ GELİŞTİRMEYE YARDIMCI OLMAK İÇİN DOĞRUDAN BAĞIŞ YAPARAK KODLAMA YOLCULUĞUMU DESTEKLEYİN.**\n\n** KATKILARINIZ YENİLİKÇİ, KULLANICI DOSTU ARAÇLARIN VE HEYECAN VERİCİ BOT KABİLİYETLERİNİN OLUŞTURULMASINA DOĞRUDAN FON VERECEKTİR.**\n\n* *KODU TARAYIN VE ÖDEME YAPIN; ZORLUK YOK, YENİ ÖZELLİKLERİ HAYATA GETİRMENİN VE DESTEKLEMENİN HIZLI BİR YOLU.**\n\n** HER BAĞIŞ, BÜYÜK VEYA KÜÇÜK, BU PROJEYİ İLERLEMEDE ÇOK YOL AÇAR İLERİ. BU HEYECAN VERİCİ YOLCULUK OLDUĞUNUZ İÇİN TEŞEKKÜR EDERİZ!
 
 @app.on_callback_query(filters.regex("basic_guide"))
 async def settings_back_callback(client: Client, callback_query: CallbackQuery):
-    keyboard = [[InlineKeyboardButton(text="✯ 𝐆𝐄𝐑𝐢° ✯", callback_data="about")]]
-    guide_text = f"**𝐇𝐄𝐘! 𝐁𝐔 𝐇𝐈𝐙𝐋𝐈 𝐕𝐄 𝐁𝐀𝐒𝐈̇𝐓 𝐁𝐈̇𝐑 𝐊𝐔𝐋𝐋𝐀𝐍𝐈𝐌 𝐊𝐈𝐋𝐀𝐕𝐔𝐙𝐔𝐃𝐔𝐑** {app.mention} **🎉**\n\n**1. '𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎°' Butonuna tıklayınız.**\n**2. Botu eklemek istediğiniz Grup/Kanal ismine tıklayınız.**\n**3. SORUNSUZ VE TAM İŞLEVSELLİK İÇİN BOT'A GEREKLİ TÜM İZİNLERİ VERİN.**\n\n**Kσmutlαrα єrí̇şmєk í̇çí̇n müzí̇k vєчα чσ̈nєtí̇m tєrcí̇hlєrí̇ αrαsíndα sєçí̇m чαpαвí̇lí̇rsí̇ní̇z.**\n**𝐇𝐀𝐋𝐀 𝐇𝐄𝐑𝐇𝐀𝐍𝐆𝐈̇ 𝐁𝐈̇𝐑 𝐒𝐎𝐑𝐔𝐍𝐋𝐀 𝐊𝐀𝐑𝐒̧𝐈𝐋𝐀𝐒̧𝐈𝐘𝐎𝐑𝐒𝐀𝐍𝐈𝐙 𝐃𝐄𝐒𝐓𝐄𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐁𝐈̇𝐙𝐄 𝐔𝐋𝐀𝐒̧𝐈𝐍𝐈𝐙... ✨**"
+    keyboard = [[InlineKeyboardButton(text="✯ ʙᴀᴄᴋ ✯", callback_data="about")]]
+    guide_text = f"**ʜᴇʏ! ᴛʜɪs ɪs ᴀ ǫᴜɪᴄᴋ ᴀɴᴅ sɪᴍᴘʟᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴜsɪɴɢ** {app.mention} **🎉**\n\n**1. ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʟᴀɴ' ʙᴜᴛᴛᴏɴ.**\n**2. sᴇʟᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴀᴍᴇ.**\n**3. ɢʀᴀɴᴛ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ɴᴇᴄᴇssᴀʀʏ ᴘᴇʀᴍɪssɪᴏɴs ғᴏʀ sᴍᴏᴏᴛʜ ᴀɴᴅ ғᴜʟʟ ғᴜɴᴄᴛɪᴏɴᴀʟɪᴛʏ.**\n\n**ᴛᴏ ᴀᴄᴄᴇss ᴄᴏᴍᴍᴀɴᴅs, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴍᴜsɪᴄ ᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘʀᴇғᴇʀᴇɴᴄᴇs.**\n**ɪғ ʏᴏᴜ sᴛɪʟʟ ғᴀᴄᴇ ᴀɴʏ ɪssᴜᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ ʀᴇᴀᴄʜ ᴏᴜᴛ ғᴏʀ sᴜᴘᴘᴏʀᴛ ✨**"
     await callback_query.message.edit_text(
         text=guide_text, reply_markup=InlineKeyboardMarkup(keyboard)
     )
