@@ -458,8 +458,7 @@ async def play_commnd(
                 "f" if fplay else "d",
             )
             await mystic.delete()
-            await message.reply_photo(
-                photo=img,
+            await message.reply_text(
                 caption=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -476,8 +475,7 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_photo(
-                    photo=details["thumb"],
+                await message.reply_text(
                     caption=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
@@ -494,8 +492,7 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_photo(
-                    photo=img,
+                await message.reply_text(
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
