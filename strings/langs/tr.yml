@@ -67,7 +67,27 @@ admin_31 : "Verilen yüksek süre nedeniyle bot arama yapamıyor. Daha düşük 
 admin_32 : "➻ Lütfen bekleyin... Akış aranıyor."
 admin_33 : "➻ Akış başarıyla {0} dakikaya arandı."
 admin_34 : "➻ Mevcut akışı arama başarısız oldu."
+admin_35 : "**ᴛʜᴇ ᴠᴏᴛɪɴɢ ʜᴀs ᴇɴᴅᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴛʀᴀᴄᴋ ʜᴀs ᴇɴᴅᴇᴅ ғᴏʀ ᴡʜɪᴄʜ ᴛʜᴇ ᴠᴏᴛɪɴɢ ᴡᴀs ᴘʀᴏᴠɪᴅᴇᴅ.**"
+admin_36 : "**ғᴀɪʟᴇᴅ ᴛᴏ ᴘᴇʀғᴏʀᴍ ᴛʜɪs ᴀᴄᴛɪᴏɴ ʙᴇᴄᴀᴜsᴇ ғᴏʀ ᴡʜɪᴄʜ ᴛʀᴀᴄᴋ ᴛʜᴇ ᴠᴏᴛɪɴɢ ᴡᴀs ᴘʀᴏᴠɪᴅᴇᴅ ɪs ᴇɪᴛʜᴇʀ ᴇɴᴅᴇᴅ ᴏʀ sᴛᴏᴘᴘᴇᴅ.**"
+admin_37 : "**sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴏᴛ <code>{0}</code> ᴜᴘᴠᴏᴛᴇs.**"
+admin_38 : "**» ᴀᴅᴅᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ.**"
+admin_39 : "**» ʀᴇᴍᴏᴠᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ.**"
+admin_40 : "**ᴜᴘᴠᴏᴛᴇᴅ.**"
 
+# Speed
+speed_1 : "» ᴏɴʟʏ ʏᴏᴜᴛᴜʙᴇ sᴛʀᴇᴀᴍ's sᴘᴇᴇᴅ ᴄᴀɴ ʙᴇ ᴄᴏɴᴛʀᴏʟʟᴇᴅ ᴄᴜʀʀᴇɴᴛʟʏ."
+speed_2 : "<b><u>{0} sᴘᴇᴇᴅ ᴄᴏɴᴛʀᴏʟ ᴘᴀɴᴇʟ</b></u>\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴘʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+speed_3 : "» ʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴘʟᴀʏɪɴɢ ᴏɴ ɴᴏʀᴍᴀʟ sᴘᴇᴇᴅ."
+speed_4 : "» ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nsᴏᴍᴇᴏɴᴇ ᴇʟsᴇ ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ sᴛʀᴇᴀᴍ."
+speed_5 : "ᴄʜᴀɴɢɪɴɢ sᴘᴇᴇᴅ..."
+speed_6 : "» ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ...\n\n<b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}"
+speed_7 : "» ғᴀɪʟᴇᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ."
+speed_8 : "» ᴄʜᴀɴɢᴇᴅ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴛᴏ {0}x\n\n<b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {1}"
+speed_9 : "๏ ɴᴏʀᴍᴀʟ ๏"
+speed_10 : "» ᴘʟᴇᴀsᴇ ʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ : /reload"
+speed_11 : "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs.\n\nʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ /reload"
+
+# Start
 start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
 start_2 : "ʜᴇʏ,\n  ᴛʜɪs ɪs {0}\n\nHızlı ve güçlü bir müzik oynatma botu, bazı harika özelliklere sahip.\n\nAsistan kullanıcı adı:- @{1}\nAsistan ID:- {2}"
 start_3 : "{0} sahibi {1} sohbetinize katıldı."
@@ -93,6 +113,7 @@ setting_13 : "Aktif grup çağrısında oynatma modunu değiştiremiyorum. Lütf
 setting_14 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot yürütülen komutlarını (/play, /pause, /shuffle, /stop vb.) hemen siler.\n\nBot, doğru çalışması için mesajları silme yönetici hakkına ihtiyaç duyacaktır."
 setting_15 : "Eş çözümleme başarısız oldu, botu kanalınıza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun.\n\nTekrar /channelplay ayarını deneyin.."
 setting_16 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot sohbetinize her 1-2 saatte bir bot komutları hakkında (nasıl kullanılır, hangi komutlar var ve daha birçok şey) rastgele önerilerde bulunacaktır."
+
 set_cb_1 : "Ses kalitesi paneli alınıyor..."
 set_cb_2 : "Video kalitesi paneli alınıyor..."
 set_cb_3 : "Yetkili kullanıcılar paneli alınıyor..."
@@ -106,7 +127,6 @@ set_cb_8 : "Geri alınıyor.."
 ustats_1 : "Kullanıcı istatistikleri bulunamadı."
 ustats_2 : "Şimdiye kadar **{0}** parça oynattınız, toplamda **{1}** kez.\n\nSizin tarafından en çok oynatılan ilk **{2}**:\n\n"
 
-
 gstats_1: "Küresel istatistikler alınıyor, bu biraz zaman alabilir..."
 gstats_2: "Küresel istatistik bulunamadı."
 gstats_3: "Küresel en iyi 10 {0} botu alınıyor, bu biraz zaman alabilir..."
@@ -119,6 +139,7 @@ gstats_9: "**Bot'un Küresel En İyi 10 İstatistiği**\n\nAşağıdaki düğmel
 gstats_10: "**{0} Küresel İstatistikleri**\n\nAşağıdaki düğmeleri seçin, hangi küresel istatistikleri görmek istediğinizi belirlemek için."
 gstats_11: "**{0} Genel İstatistikleri**\nAşağıdaki düğmeleri seçin, hangi küresel istatistikleri görmek istediğinizi belirlemek için.\n\nEn iyi parçaları, sohbetleri, kullanıcıları ve diğer birçok şeyi kontrol etmek için /gstats komutunu kullanın."
 
+#Play Callback 
 playcb_1: "Bu sizin için değil! Kendi aramanızı yapın."
 playcb_2: "Sonraki sonucu alınıyor..."
 
@@ -129,6 +150,7 @@ cplay_4: "Kanal alınamadı.\n\nBot'unuzu kanalınıza eklediğinizden ve yönet
 cplay_5: "Yalnızca kanallar desteklenir."
 cplay_6: "{0} kanalının **SAHİBİ** olmanız gerekiyor, bu gruba bağlanmak için.\n**Kanalın Sahibi:** @{1}\n\nAlternatif olarak, grubunuzu bu kanala bağlayabilir ve ardından `/channelplay linked` komutuyla bağlanmayı deneyebilirsiniz."
 
+# Play 
 play_1: "**🥀 İşleniyor...**"
 play_2: "🏷**Kanal Oynatma Modu**\n🔄 Sorgu işleniyor... Lütfen bekleyin!\n\n**Bağlantılı Kanal:** {0}"
 play_3: "Sorguyu işleme koyulamadı!"
@@ -148,8 +170,21 @@ play_16: "Parça detaylarını almak başarısız oldu, belki bu parça YouTube'
 play_17: "Bu tür Spotify sorgularını çalamıyorum!\n\nYalnızca Spotify parçalarını, albümleri, sanatçıları ve çalma listelerini çalabilirim."
 play_18: "**Aktif Sesli Sohbet Yok**\n\nZorunlu oynatma için, aktif bir sesli sohbet bulunmalıdır."
 
+#Playlist Buttons
+PL_B_1 : "๏ ᴘʟᴀʏ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_2 : "๏ ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_3 : "๏ ᴍᴏʀᴇ ๏"
+PL_B_4 : "๏ ᴘʟᴀʏ ᴍᴏᴅᴇ ๏"
+PL_B_5 : "๏ ᴅᴇʟ ᴀʟʟ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_6 : "๏ ᴅᴇʟ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_7 : "❗ʏᴇs ɪ ᴀᴍ sᴜʀᴇ."
+PL_B_8 : "๏ ᴘʟᴀʏ ᴛᴏᴘ 10 ๏"
+PL_B_9 : "๏ ᴘʟᴀʏ ɢʟᴏʙᴀʟ ᴛᴏᴘ 10 ๏"
+PL_B_10 : "๏ ᴘʟᴀʏ ɢʀᴏᴜᴘ ᴛᴏᴘ 10 ๏"
+PL_B_11 : "๏ ᴘʟᴀʏ ᴘᴇʀsᴏɴᴀʟ ᴛᴏᴘ 10 ๏"
+PL_B_12 : "๏ Pʟᴀʏ ɢʀᴏᴜᴘ's Pʟᴀʏʟɪsᴛ ๏"
 
-
+#Playlist
 playlist_1: "**Kullanım:** /play [Müzik Adı veya YouTube Linki veya Sesinize Yanıt Verin]\n\nBot'un sunucusundaki çalma listesini çalmak istiyorsanız! Aşağıdaki düğmeye basın."
 playlist_2: "Çalma listeniz alınıyor... Lütfen bekleyin!"
 playlist_3: "Bot'un sunucusunda çalma listeniz yok."
@@ -184,14 +219,11 @@ tracks_1: "**İşleniyor {0} Top 10 Çalma Listesi**\n\n**Talep Eden:** {1}\n\nT
 tracks_2: "**Hata**\n\nBot'un sunucularında **{0} Top 10 Çalma Listesi** bulunmuyor. Lütfen başka bir çalma listesi deneyin."
 
 # TOOLS
-
 #Lyrics
 lyrics_1: "**Kullanım:**\n\n/lyrics [Müzik Adı]"
 lyrics_2: "Şarkı sözleri aranıyor..."
 lyrics_3: "Şarkı sözlerini getirme başarısız oldu 🥲.\n\n**Aranan:** {0}"
 lyrics_4: "Aşağıdaki düğmeye tıklayın ve şarkı sözlerini almak için arama yapın, uzun spam türlerinden kaçının."
-
-
 
 #Ping
 ping_1 : "»{0} ᴘɪɴɢ ɪɴɢ..."
@@ -262,7 +294,6 @@ P_B_4 : "🎵 Çalma Listesini Çal"
 P_B_5 : "SUSTUR"
 P_B_6 : "SUSTURMAYI KALDIR"
 P_B_7 : "ÇALMA LISTESİNE EKLE"
-
 
 # Playlist
 PL_B_1 : "🚀 OYNAT ÇALMA LİSTESİ"
@@ -375,6 +406,7 @@ maint_3 : "Bakım modu devre dışı bırakıldı."
 log_1 : "**KULLANIM:**\n/logger [enable|disable]"
 log_2 : "Günlükleme etkinleştirildi."
 log_3 : "Günlükleme devre dışı bırakıldı."
+
 #videomode
 vidmode_1 : "**KULLANIM:**\n/videomode [download|m3u8]"
 vidmode_2 : "Video oynatma modu indirici olarak ayarlandı. Bot şimdi parçaları indirecek."
@@ -388,6 +420,7 @@ broad_4 : "Yardımcı {0} {1} sohbette yayın yaptı.\n"
 broad_5 : "**KULLANIM**:\n/broadcast [MESAJ] veya [Bir Mesaja Yanıtla]"
 broad_6 : "Lütfen yayına verecek bazı metinler sağlayın."
 broad_7 : "**{0} KULLANICISINA YAYINLANAN MESAJ.**"
+broad_8 : "**Yayın Başlıyor...**"
 
 #Heroku
 heroku_1 : "Lütfen **HEROKU API ANAHTARI** ve **UYGULAMA ADI** bilgilerinizin Heroku'da doğru şekilde yapılandırıldığından emin olun."
@@ -426,11 +459,11 @@ gban_1 : "Kendinizi gbanlayamazsınız mı? Korkak noob!"
 gban_2 : "Kendinizi gbanlamamı mı istiyorsunuz?"
 gban_3 : "Eski sevgilimi mi gbanlamamı istiyorsunuz?"
 gban_4 : "{0} zaten **GBANLANMIŞ** olarak bot'tan engellendi."
-gban_5 : "**GLOBAL BAN BOT VERİTABANINDA ÇALIŞIYOR - CHAMPU EKİBİ TARAFINDAN**\n\n**{0} ÜZERİNDE GABANLANIYOR**\n\n **BEKLENEN SÜRE** : {1}."
-gban_6 : " **GBANLANMIŞ BAŞARILI BİR ŞEKİLDE BOT VERİTABANINA\n\n **{0}** SOHBETLERDEN **{1}** ENGELLENDİ\n **GBANLANMIŞ OLAN: TheChampu**"
+gban_5 : "**GLOBAL BAN BOT VERİTABANINDA ÇALIŞIYOR - Alem EKİBİ TARAFINDAN**\n\n**{0} ÜZERİNDE GABANLANIYOR**\n\n **BEKLENEN SÜRE** : {1}."
+gban_6 : " **GBANLANMIŞ BAŞARILI BİR ŞEKİLDE BOT VERİTABANINA\n\n **{0}** SOHBETLERDEN **{1}** ENGELLENDİ\n **GBANLANMIŞ OLAN: AdanaliMuhendis**"
 gban_7 : "{0} **GBANLANMIŞ** DEĞİL, NASIL GERİ ALABİLİRİM?"
 gban_8 : "**{0} GBANINDAN ÇIKARILIYOR**\n\nBEKLENEN SÜRE : {1}."
-gban_9 : " **GBANINDAN BAŞARILI BİR ŞEKİLDE ÇIKARILDI BOT VERİTABANINA\n\n **{0}** SOHBETLERDE **{1}**\n **GBANINDAN ÇIKARILMIŞ: TheChampu**"
+gban_9 : " **GBANINDAN BAŞARILI BİR ŞEKİLDE ÇIKARILDI BOT VERİTABANINA\n\n **{0}** SOHBETLERDE **{1}**\n **GBANINDAN ÇIKARILMIŞ: AdanaliMuhendis**"
 gban_10 : "Kimse gbanlanmamış."
 gban_11 : "GBANLANMIŞ KULLANICILAR LİSTESİ ALINIYOR..."
 
