@@ -38,11 +38,11 @@ SPAM_THRESHOLD = 2
     filters.command(
         [
             "play",
-            "oynat"
+            "oynat",
             "vplay",
-            "voynat"
+            "voynat",
             "cplay",
-            "coynat"
+            "coynat",
             "cvplay",
             "playforce",
             "vplayforce",
@@ -733,7 +733,7 @@ async def slider_queries(client, CallbackQuery, _):
 
 __MODULE__ = "Plᴀʏ"
 __HELP__ = """
-<b>★ ᴘʟᴀʏ , ᴠᴘʟᴀʏ , ᴄᴘʟᴀʏ</b> - Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs
+<b>★ ᴘʟᴀʏ , "oynat", "voynat", ᴠᴘʟᴀʏ , ᴄᴘʟᴀʏ</b> - Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs
 <b>★ ᴘʟᴀʏғᴏʀᴄᴇ , ᴠᴘʟᴀʏғᴏʀᴄᴇ , ᴄᴘʟᴀʏғᴏʀᴄᴇ</b> - FᴏʀᴄᴇPʟᴀʏ Cᴏᴍᴍᴀɴᴅs
 
 <b>✦ c sᴛᴀɴᴅs ғᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.</b>

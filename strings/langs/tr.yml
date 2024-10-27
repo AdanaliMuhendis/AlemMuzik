@@ -250,8 +250,8 @@ queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık :** {1}\n**⏱ Süre 
 queue_5 : "Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # All Streaming Lines
-stream_1 : "**✮ Akış Başladı**\n\n**✯ Başlık :** [{0}]({1})\n**✬ Süre :** {2} dakika\n✭ Boyut :** {3}"
-stream_2 : "➲ **Akış Başladı |**\n\n**‣ Akış Türü :** Canlı akış [URL]\n**‣ Ekleyen :** {0}"
+stream_1 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b><a href={0}>{1}</a>\n<b>⌛️Süre :</b> {2} 𝒟𝒶𝓀𝒾𝓀𝒶\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {3}"
+stream_2 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b> Cαɳʅı Yαყıɳ [ᴜʀʟ]\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {0}"
 
 V_C_1 : "Katılımcı listesi getiriliyor...."
 V_C_2 : "**İsim: {0}**\n   ID: {1}\n    **Kullanıcı Adı:** {2}\n    **Video Paylaşımı:** {3}\n    **Ekran Paylaşımı:** {4}\n    **El Kaldırdı:** {5}\n    **Sessize Alındı:** {6}\n     **Konuşuyor:** {7}\n    **Grupta Değil:** {8}"
@@ -275,7 +275,7 @@ S_B_1 : "🗒 Komutlar"
 S_B_2 : "🔧 Ayarlar"
 S_B_3 : "📨 Destek"
 S_B_4 : "📨 Kanal"
-S_B_5 : "✚ Beni Grupınıza Ekleyin ✚"
+S_B_5 : "✚ 𝐀𝐋𝐄𝐌 𝐌𝐔𝐒𝐈𝐂 ⍣⃝♬ ✚"
 S_B_6 : "💡 Repo"
 S_B_7 : "👤 Sahip"
 S_B_8 : "🔎 Nasıl Kullanılır? Komut Menüsü"

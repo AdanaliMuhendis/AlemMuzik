@@ -89,12 +89,12 @@ class AlemMuzikBot(Client):
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "Yayını Başlatır"),
-                        BotCommand("stop", "Yayını Sonlandırır"),
-                        BotCommand("pause", "Yayını Duraklatır"),
-                        BotCommand("resume", "Yayını Devam Ettirir"),
+                        BotCommand("play", "oynat", "Yayını Başlatır"),
+                        BotCommand("stop", "son", "Yayını Sonlandırır"),
+                        BotCommand("pause", "dur", "Yayını Duraklatır"),
+                        BotCommand("resume", "devam", "Yayını Devam Ettirir"),
                         BotCommand("queue", "Parça Listesini Gösterir"),
-                        BotCommand("skip", "Sıradaki Parçaya atlar"),
+                        BotCommand("skip", "atla", "Sıradaki Parçaya atlar"),
                         BotCommand("volume", "Müzik Sesi"),
                         BotCommand("lyrics", "Şarkı Sözleri"),
                     ],
