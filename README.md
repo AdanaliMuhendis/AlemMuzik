@@ -1,5 +1,3 @@
-(https://t.me/AdanaliMuhendis)
-
 
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.me/AdanaliMuhendis)
 [![Instagram](https://img.shields.io/badge/-Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/AdanaliMuhendis)
@@ -8,7 +6,7 @@
 
 <h4>𝐓ʀʏ 𝐌ʏ 𝐓ᴇʟᴇɢʀᴀᴍ 𝐁ᴏᴛ's<h4>
  
-[![MUSIC](https://img.shields.io/badge/-AlemMuzikBot-E1306C?style=for-the-badge&logo=AlemMusicBot&logoColor=green)](https://t.me/AlemMuzikBot) (https://t.me/AlemMuzikBot)
+[![MUSIC](https://img.shields.io/badge/-AlemMuzikBot-E1306C?style=for-the-badge&logo=AlemMusicBot&logoColor=green)](https://t.me/AlemMuzikBot)
 
 
 <b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
