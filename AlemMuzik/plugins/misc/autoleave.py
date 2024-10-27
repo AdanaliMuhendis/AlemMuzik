@@ -73,8 +73,7 @@ async def auto_end():
                 if len(call_participants_id) <= 1:
                     ok = await app.send_message(
                         chat_id,
-                        "» Nᴏ ᴏɴᴇ ɪs ʟɪsᴛᴇɴɪɴɢ ᴛᴏ sᴏɴɢ ɪɴ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.\n"
-                        "ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴏᴛʜᴇʀᴡɪsᴇ ʙᴏᴛ ᴡɪʟʟ ᴇɴᴅ sᴏɴɢ ɪɴ 15 sᴇᴄᴏɴᴅs.",
+                        "» Sesli Sohbette Kimse Oladığı İçin Yayın Sonlanacaktır... \n15 Saniye İçerisinde Sesli Sohbete Giriş Yapınız...",
                     )
                     await asyncio.sleep(15)
 
@@ -88,7 +87,7 @@ async def auto_end():
                         await Alem.stop_stream(chat_id)
                         await app.send_message(
                             chat_id,
-                            "» Nᴏ ᴏɴᴇ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ, sᴏ ᴛʜᴇ sᴏɴɢ ɪs ᴇɴᴅɪɴɢ ᴅᴜᴇ ᴛᴏ ɪɴᴀᴄᴛɪᴠɪᴛʏ.",
+                            "» Sesli Sohbette Kimse Yok, Bu Yüzden Yayın Akışı Aktif Olmayacaktır...",
                         )
                         await clean(chat_id)
             except:

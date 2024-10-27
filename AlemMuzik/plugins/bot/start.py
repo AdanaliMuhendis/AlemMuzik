@@ -197,8 +197,8 @@ async def start_comm(client, message: Message, _):
             key = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="🎥 ᴡᴀᴛᴄʜ ", url=f"{link}"),
-                        InlineKeyboardButton(text="🔄 ᴄʟᴏsᴇ", callback_data="close"),
+                        InlineKeyboardButton(text="🎥 İzle° ", url=f"{link}"),
+                        InlineKeyboardButton(text="🔄  𝐊𝐀𝐏𝐀𝐓°", callback_data="close"),
                     ],
                 ]
             )

@@ -21,7 +21,7 @@ from ..logging import LOGGER
 
 class AlemMuzikBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ʙᴏᴛ...")
+        LOGGER(__name__).info(f"𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙸𝚈𝙾𝚁...")
         super().__init__(
             "AlemMuzik",
             api_id=config.API_ID,
@@ -41,7 +41,7 @@ class AlemMuzikBot(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
+                        text="๏ 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎 ๏",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
@@ -54,26 +54,26 @@ class AlemMuzikBot(Client):
                 await self.send_photo(
                     config.LOGGER_ID,
                     photo=config.START_IMG_URL,
-                    caption=f"╔════❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱════❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚════════════════❍⊱❁",
+                    caption=f"╔════❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ тєşєkkürlєr\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
-                LOGGER(__name__).error(f"Bot cannot write to the log group: {e}")
+                LOGGER(__name__).error(f"𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙱𝚘𝚝𝚞 𝙻𝚘𝚐 𝙺𝚊𝚗𝚊𝚕ı𝚗𝚊 𝙴𝚔𝚕𝚎𝚢𝚒𝚗: {e}")
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔═══❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱═══❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚══════════════❍⊱❁",
+                        f"╔═══❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱═══❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ тєşєkkürlєr \n║\n╚══════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
-                    LOGGER(__name__).error(f"Failed to send message in log group: {e}")
+                    LOGGER(__name__).error(f"𝙱𝚘𝚝 𝙷𝚊𝚝𝚊 𝚅𝚎𝚛𝚍𝚒...\n  𝚂𝚎𝚋𝚎𝚋𝚒: {e}")
             except Exception as e:
                 LOGGER(__name__).error(
-                    f"Unexpected error while sending to log group: {e}"
+                    f"𝙱𝚘𝚝 𝙷𝚊𝚝𝚊 𝚅𝚎𝚛𝚍𝚒...\n  𝚂𝚎𝚋𝚎𝚋𝚒: {e}"
                 )
         else:
             LOGGER(__name__).warning(
-                "LOGGER_ID is not set, skipping log group notifications."
+                "𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙱𝚘𝚝𝚞 𝙻𝚘𝚐 𝙺𝚊𝚗𝚊𝚕ı𝚗𝚊 𝙴𝚔𝚕𝚎𝚢𝚒𝚗...."
             )
 
         # Setting commands
@@ -81,60 +81,60 @@ class AlemMuzikBot(Client):
             try:
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
-                        BotCommand("help", "ɢᴇᴛ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ"),
-                        BotCommand("ping", "ᴄʜᴇᴄᴋ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ"),
+                        BotCommand("start", "Botu Başlat"),
+                        BotCommand("help", "Yardım Menüsü"),
+                        BotCommand("ping", "Bot Canlı Mı?"),
                     ],
                     scope=BotCommandScopeAllPrivateChats(),
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "Start playing requested song"),
-                        BotCommand("stop", "Stop the current song"),
-                        BotCommand("pause", "Pause the current song"),
-                        BotCommand("resume", "Resume the paused song"),
-                        BotCommand("queue", "Check the queue of songs"),
-                        BotCommand("skip", "Skip the current song"),
-                        BotCommand("volume", "Adjust the music volume"),
-                        BotCommand("lyrics", "Get lyrics of the song"),
+                        BotCommand("play", "Yayını Başlatır"),
+                        BotCommand("stop", "Yayını Sonlandırır"),
+                        BotCommand("pause", "Yayını Duraklatır"),
+                        BotCommand("resume", "Yayını Devam Ettirir"),
+                        BotCommand("queue", "Parça Listesini Gösterir"),
+                        BotCommand("skip", "Sıradaki Parçaya atlar"),
+                        BotCommand("volume", "Müzik Sesi"),
+                        BotCommand("lyrics", "Şarkı Sözleri"),
                     ],
                     scope=BotCommandScopeAllGroupChats(),
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "❥ ✨ᴛᴏ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ✨"),
-                        BotCommand("ping", "❥ 🍁ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴘɪɴɢ🍁"),
-                        BotCommand("help", "❥ 🥺ᴛᴏ ɢᴇᴛ ʜᴇʟᴘ🥺"),
-                        BotCommand("vctag", "❥ 😇ᴛᴀɢᴀʟʟ ғᴏʀ ᴠᴄ🙈"),
-                        BotCommand("stopvctag", "❥ 📍sᴛᴏᴘ ᴛᴀɢᴀʟʟ ғᴏʀ ᴠᴄ 💢"),
-                        BotCommand("tagall", "❥ 🔻ᴛᴀɢ ᴀʟʟ ᴍᴇᴍʙᴇʀs ʙʏ ᴛᴇxᴛ🔻"),
-                        BotCommand("cancel", "❥ 🔻ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴛᴀɢɢɪɴɢ🔻"),
-                        BotCommand("settings", "❥ 🔻ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴇᴛᴛɪɴɢs🔻"),
-                        BotCommand("reload", "❥ 🪐ᴛᴏ ʀᴇʟᴏᴀᴅ ᴛʜᴇ ʙᴏᴛ🪐"),
-                        BotCommand("play", "❥ ❣️ᴛᴏ ᴘʟᴀʏ ᴛʜᴇ sᴏɴɢ❣️"),
-                        BotCommand("vplay", "❥ ❣️ᴛᴏ ᴘʟᴀʏ ᴛʜᴇ ᴍᴜsɪᴄ ᴡɪᴛʜ ᴠɪᴅᴇᴏ❣️"),
-                        BotCommand("pause", "❥ 🥀ᴛᴏ ᴘᴀᴜsᴇ ᴛʜᴇ sᴏɴɢs🥀"),
-                        BotCommand("resume", "❥ 💖ᴛᴏ ʀᴇsᴜᴍᴇ ᴛʜᴇ sᴏɴɢ💖"),
-                        BotCommand("end", "❥ 🐚ᴛᴏ ᴇᴍᴘᴛʏ ᴛʜᴇ ϙᴜᴇᴜᴇ🐚"),
-                        BotCommand("queue", "❥ 🤨ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ϙᴜᴇᴜᴇ🤨"),
-                        BotCommand("playlist", "❥ 🕺ᴛᴏ ɢᴇᴛ ᴛʜᴇ ᴘʟᴀʏʟɪsᴛ🕺"),
-                        BotCommand("stop", "❥ ❤‍🔥ᴛᴏ sᴛᴏᴘ ᴛʜᴇ sᴏɴɢs❤‍🔥"),
-                        BotCommand("lyrics", "❥ 🕊️ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟʏʀɪᴄs🕊️"),
-                        BotCommand("song", "❥ 🔸ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ sᴏɴɢ🔸"),
-                        BotCommand("video", "❥ 🔸ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ᴠɪᴅᴇᴏ sᴏɴɢ🔸"),
+                        BotCommand("start", "❥ ✨Botu Başlat✨"),
+                        BotCommand("ping", "❥ 🍁Ping Kontrol Et🍁"),
+                        BotCommand("help", "❥ 🥺Yardım🥺"),
+                        BotCommand("vctag", "❥ 😇VC Tag At🙈"),
+                        BotCommand("stopvctag", "❥ 📍VC Tag Durdur💢"),
+                        BotCommand("tagall", "❥ 🔻Yazılarla Tag🔻"),
+                        BotCommand("cancel", "❥ 🔻Tag İptal🔻"),
+                        BotCommand("settings", "❥ 🔻Ayarlar🔻"),
+                        BotCommand("reload", "❥ 🪐Yenileme🪐"),
+                        BotCommand("play", "❥ ❣️Parça Oynatır❣️"),
+                        BotCommand("vplay", "❥ ❣️Video Oynatır❣️"),
+                        BotCommand("pause", "❥ 🥀Şarkıyı Duraklatır🥀"),
+                        BotCommand("resume", "❥ 💖Şarkıyı Devam Ettirir💖"),
+                        BotCommand("end", "❥ 🐚Yayın Sonlanır🐚"),
+                        BotCommand("queue", "❥ 🤨Listeyi Kontrol Et🤨"),
+                        BotCommand("playlist", "❥ 🕺Playlist Açar🕺"),
+                        BotCommand("stop", "❥ ❤‍🔥Şarkı Sonlanır❤‍🔥"),
+                        BotCommand("lyrics", "❥ 🕊️Şarkı Sözleri🕊️"),
+                        BotCommand("song", "❥ 🔸Şarkı İndirir🔸"),
+                        BotCommand("video", "❥ 🔸Video İndirir🔸"),
                         BotCommand("gali", "❥ 🔻ᴛᴏ ʀᴇᴘʟʏ ғᴏʀ ғᴜɴ🔻"),
                         BotCommand("shayri", "❥ 🔻ᴛᴏ ɢᴇᴛ ᴀ sʜᴀʏᴀʀɪ🔻"),
                         BotCommand("love", "❥ 🔻ᴛᴏ ɢᴇᴛ ᴀ ʟᴏᴠᴇ sʜᴀʏᴀʀɪ🔻"),
-                        BotCommand("sudolist", "❥ 🌱ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ sᴜᴅᴏʟɪsᴛ🌱"),
-                        BotCommand("owner", "❥ 💝ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ᴏᴡɴᴇʀ💝"),
+                        BotCommand("sudolist", "❥ 🌱Sudolist Kontrol Eder🌱"),
+                        BotCommand("owner", "❥ 💝Sahip💝"),
                         BotCommand("update", "❥ 🐲ᴛᴏ ᴜᴘᴅᴀᴛᴇ ʙᴏᴛ🐲"),
-                        BotCommand("gstats", "❥ 💘ᴛᴏ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ💘"),
-                        BotCommand("repo", "❥ 🍌ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ 𝚁𝙴𝙿𝙾🍌"),
+                        BotCommand("gstats", "❥ 💘Bot İstatistikleri💘"),
+                        BotCommand("repo", "❥ 🍌Repo'yu Gösterir🍌"),
                     ],
                     scope=BotCommandScopeAllChatAdministrators(),
                 )
             except Exception as e:
-                LOGGER(__name__).error(f"Failed to set bot commands: {e}")
+                LOGGER(__name__).error(f"𝙱𝚘𝚝 𝙷𝚊𝚝𝚊 𝚅𝚎𝚛𝚍𝚒...\n  𝚂𝚎𝚋𝚎𝚋𝚒: {e}")
 
         # Check if bot is an admin in the logger group
         if config.LOGGER_ID:
@@ -144,9 +144,9 @@ class AlemMuzikBot(Client):
                 )
                 if chat_member_info.status != ChatMemberStatus.ADMINISTRATOR:
                     LOGGER(__name__).error(
-                        "Please promote Bot as Admin in Logger Group"
+                        "𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙱𝚘𝚝𝚞𝚗 𝙲̧𝚊𝚕ı𝚜̧𝚖𝚊𝚜ı 𝙸̇𝚌̧𝚒𝚗 𝚈𝚎𝚝𝚔𝚒 𝚅𝚎𝚛𝚒𝚗..."
                     )
             except Exception as e:
                 LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")
 
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸 as {self.name}")

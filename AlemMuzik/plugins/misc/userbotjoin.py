@@ -19,7 +19,7 @@ async def join_group(client, message):
     chat_id = message.chat.id
     userbot = await get_assistant(message.chat.id)
     userbot_id = userbot.id
-    done = await message.reply("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ɪɴᴠɪᴛɪɴɢ ᴀssɪsᴛᴀɴᴛ**...")
+    done = await message.reply("**Lütfen Bekleyiniz Asistan Davet Ediliyor**...")
     await asyncio.sleep(1)
     # Get chat member object
     chat_member = await app.get_chat_member(chat_id, app.id)
@@ -31,7 +31,7 @@ async def join_group(client, message):
     ):
         try:
             await userbot.join_chat(message.chat.username)
-            await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ.**")
+            await done.edit_text("**✅ ASİSTAN KATILDI.**")
 
         except InviteRequestSent:
             try:
@@ -39,13 +39,13 @@ async def join_group(client, message):
             except Exception:
                 pass
         except Exception as e:
-            await done.edit_text("**ɪ ɴᴇᴇᴅ ᴀᴅᴍɪɴ ᴘᴏᴡᴇʀ ᴛᴏ ᴜɴʙᴀɴ ɪɴᴠɪᴛᴇ ᴍʏ ᴀssɪsᴛᴀɴᴛ!**")
+            await done.edit_text("**Asistanın Yasağını Kaldırınız Veya Yetki Veriniz...**")
 
     # Condition 2: Group username is present, bot is admin, and Userbot is not banned
     if message.chat.username and chat_member.status == ChatMemberStatus.ADMINISTRATOR:
         try:
             await userbot.join_chat(message.chat.username)
-            await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ.**")
+            await done.edit_text("**✅ ASİSTAN KATILDI.**")
         except InviteRequestSent:
             try:
                 await app.approve_chat_join_request(chat_id, userbot_id)
@@ -63,10 +63,10 @@ async def join_group(client, message):
         ]:
             try:
                 await app.unban_chat_member(chat_id, userbot.id)
-                await done.edit_text("**ᴀssɪsᴛᴀɴᴛ ɪs ᴜɴʙᴀɴɴɪɴɢ...**")
+                await done.edit_text("**Asistanın Yasağı Kaldırıldı...**")
                 await userbot.join_chat(message.chat.username)
                 await done.edit_text(
-                    "**ᴀssɪsᴛᴀɴᴛ ᴡᴀs ʙᴀɴɴᴇᴅ, ʙᴜᴛ ɴᴏᴡ ᴜɴʙᴀɴɴᴇᴅ, ᴀɴᴅ ᴊᴏɪɴᴇᴅ ᴄʜᴀᴛ ✅**"
+                    "**Asistan Banlı, Banı Açıldı ve Gruba Katıldı ✅**"
                 )
             except InviteRequestSent:
                 try:
@@ -75,7 +75,7 @@ async def join_group(client, message):
                     pass
             except Exception as e:
                 await done.edit_text(
-                    "**ғᴀɪʟᴇᴅ ᴛᴏ ᴊᴏɪɴ, ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ʙᴀɴ ᴘᴏᴡᴇʀ ᴀɴᴅ ɪɴᴠɪᴛᴇ ᴜsᴇʀ ᴘᴏᴡᴇʀ ᴏʀ ᴜɴʙᴀɴ ᴀssɪsᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ ʙʏ /userbotjoin**"
+                    "**Giriş Hatası, ᴘʟᴇᴀsᴇ ɢɪᴠᴇ ʙᴀɴ ᴘᴏᴡᴇʀ ᴀɴᴅ ɪɴᴠɪᴛᴇ ᴜsᴇʀ ᴘᴏᴡᴇʀ ᴏʀ ᴜɴʙᴀɴ ᴀssɪsᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ᴛʜᴇɴ ᴛʀʏ ᴀɢᴀɪɴ ʙʏ /userbotjoin**"
                 )
         return
 
@@ -84,7 +84,7 @@ async def join_group(client, message):
         not message.chat.username
         and not chat_member.status == ChatMemberStatus.ADMINISTRATOR
     ):
-        await done.edit_text("**ɪ ɴᴇᴇᴅ ᴀᴅᴍɪɴ ᴘᴏᴡᴇʀ ᴛᴏ ɪɴᴠɪᴛᴇ ᴍʏ ᴀssɪsᴛᴀɴᴛ.**")
+        await done.edit_text("**Asistana Yetki Veriniz...**")
 
     # Condition 5: Group username is not present/group is private, bot is admin
     if (
@@ -98,17 +98,17 @@ async def join_group(client, message):
                     ChatMemberStatus.BANNED,
                     ChatMemberStatus.RESTRICTED,
                 ]:
-                    await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ.**")
+                    await done.edit_text("**✅ Asistan Grupta.**")
                     return
             except Exception as e:
-                await done.edit_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ɪɴᴠɪᴛɪɴɢ ᴀssɪsᴛᴀɴᴛ**.")
-                await done.edit_text("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ɪɴᴠɪᴛɪɴɢ ᴀssɪsᴛᴀɴᴛ**...")
+                await done.edit_text("**Lütfen Bekleyiniz Asistan Davet Ediliyor**.")
+                await done.edit_text("**Lütfen Bekleyiniz Asistan Davet Ediliyor**...")
                 invite_link = await app.create_chat_invite_link(
                     chat_id, expire_date=None
                 )
                 await asyncio.sleep(2)
                 await userbot.join_chat(invite_link.invite_link)
-                await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ.**")
+                await done.edit_text("**✅ Asistanın Gruba Katılımı Tamamlandı.**")
         except InviteRequestSent:
             try:
                 await app.approve_chat_join_request(chat_id, userbot_id)
