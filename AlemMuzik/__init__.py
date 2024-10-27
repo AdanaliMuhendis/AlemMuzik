@@ -1,5 +1,5 @@
 from AlemMuzik.core.bot import AlemMuzikBot
-from AlemMuzik.core.dir import dirr
+from AlemMuzik.core.dir  dirr
 from AlemMuzik.core.git import git
 from AlemMuzik.core.userbot import Userbot
 from AlemMuzik.misc import dbb, heroku, sudo
