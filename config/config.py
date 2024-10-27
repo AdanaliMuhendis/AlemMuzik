@@ -29,14 +29,14 @@ DURATION_LIMIT_MIN = int(
 
 EXTRA_PLUGINS = getenv(
     "EXTRA_PLUGINS",
-    False,
+    True,
 )
 
 # Fill True if you want to load extra plugins
 # Fill here the external plugins repo where plugins that you want to load
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/TheChampu/Extra-Plugin",
+    "https://github.com/AdanaliMuhendis/campextra",
 )
 
 # Your folder name in your extra plugins repo where all plugins stored
