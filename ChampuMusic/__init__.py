@@ -6,27 +6,19 @@ from ChampuMusic.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
-# Bot Client
-app = ChampuBot()
-
-# Assistant Client
-userbot = Userbot()
-
-# Directories
 dirr()
 
-# Check Git Updates
 git()
 
-# Initialize Memory DB
 dbb()
 
-# Heroku APP
 heroku()
 
-# Load Sudo Users from DB
 sudo()
 
+app = ChampuBot()
+
+userbot = Userbot()
 
 from .platforms import *
 

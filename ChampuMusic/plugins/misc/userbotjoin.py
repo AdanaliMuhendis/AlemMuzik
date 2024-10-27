@@ -19,7 +19,7 @@ async def join_group(client, message):
     chat_id = message.chat.id
     userbot = await get_assistant(message.chat.id)
     userbot_id = userbot.id
-    done = await message.reply("**Lütfen Asistanı Davet Ediniz**...")
+    done = await message.reply("**ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ɪɴᴠɪᴛɪɴɢ ᴀssɪsᴛᴀɴᴛ**...")
     await asyncio.sleep(1)
     # Get chat member object
     chat_member = await app.get_chat_member(chat_id, app.id)
@@ -31,7 +31,7 @@ async def join_group(client, message):
     ):
         try:
             await userbot.join_chat(message.chat.username)
-            await done.edit_text("**✅ 𝓐𝓢𝓘̇𝓢𝓣𝓐𝓝 𝓚𝓐𝓣𝓘𝓛𝓓𝓘...**")
+            await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ.**")
 
         except InviteRequestSent:
             try:
@@ -45,7 +45,7 @@ async def join_group(client, message):
     if message.chat.username and chat_member.status == ChatMemberStatus.ADMINISTRATOR:
         try:
             await userbot.join_chat(message.chat.username)
-            await done.edit_text("**✅ 𝓐𝓢𝓘̇𝓢𝓣𝓐𝓝 𝓚𝓐𝓣𝓘𝓛𝓓𝓘...**")
+            await done.edit_text("**✅ ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴᴇᴅ.**")
         except InviteRequestSent:
             try:
                 await app.approve_chat_join_request(chat_id, userbot_id)
@@ -178,7 +178,7 @@ async def leave_all(client, message):
     try:
         userbot = await get_assistant(message.chat.id)
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1002221176435:
+            if dialog.chat.id == -1001733534088:
                 continue
             try:
                 await userbot.leave_chat(dialog.chat.id)

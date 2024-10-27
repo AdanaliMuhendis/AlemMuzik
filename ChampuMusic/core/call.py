@@ -65,7 +65,7 @@ async def _clear_(chat_id):
     await remove_active_video_chat(chat_id)
     await remove_active_chat(chat_id)
     AMBOT = await app.send_message(
-        chat_id, f"🎶 **𝚂̧𝚊𝚛𝚔ı 𝚋𝚒𝚝𝚝𝚒.** 𝙳𝚊𝚑𝚊 𝚏𝚊𝚣𝚕𝚊 𝚜̧𝚊𝚛𝚔ı 𝚍𝚒𝚗𝚕𝚎𝚖𝚎𝚔 𝚒𝚜𝚝𝚎𝚛 𝚖𝚒𝚜𝚒𝚗?"
+        chat_id, f"🎶 **ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ.** ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʜᴇᴀʀ ᴍᴏʀᴇ sᴏɴɢs?"
     )
 
 
@@ -418,7 +418,7 @@ class Call(PyTgCalls):
                 )
             except Exception as e:
                 raise AssistantErr(
-                    "**𝙰𝚔𝚝𝚒𝚏 𝙶𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚂𝚘𝚑𝚋𝚎𝚝 𝙱𝚞𝚕𝚞𝚗𝚊𝚖𝚊𝚍ı.**\n\n𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙶𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚂𝚘𝚑𝚋𝚎𝚝𝚒 𝙱𝚊𝚜̧𝚕𝚊𝚝ı𝚗ı𝚣."
+                    "**ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ғᴏᴜɴᴅ**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
                 )
         except Exception as e:
             if "phone.CreateGroupCall" in str(e):
@@ -433,16 +433,16 @@ class Call(PyTgCalls):
                     )
                 except Exception:
                     raise AssistantErr(
-                        f"**𝙰𝚔𝚝𝚒𝚏 𝙶𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚂𝚘𝚑𝚋𝚎𝚝 𝙱𝚞𝚕𝚞𝚗𝚊𝚖𝚊𝚍ı.**\n\n𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙶𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚂𝚘𝚑𝚋𝚎𝚝𝚒 𝙱𝚊𝚜̧𝚕𝚊𝚝ı𝚗ı𝚣."
+                        f"**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
                     )
 
         except AlreadyJoinedError:
             raise AssistantErr(
-                "**𝙰𝚂𝙸̇𝚂𝚃𝙰𝙽 𝚉𝙰𝚃𝙴𝙽 𝙶𝙾̈𝚁𝚄̈𝙽𝚃𝚄̈𝙻𝚄̈ 𝚂𝙾𝙷𝙱𝙴𝚃𝚃𝙴.**\n\n𝙰𝚕𝚎𝚖 𝙼𝚞̈𝚣𝚒𝚔 𝚋𝚘𝚝 𝚜𝚒𝚜𝚝𝚎𝚖𝚕𝚎𝚛𝚒 𝚊𝚜𝚒𝚜𝚝𝚊𝚗ı𝚗 𝚑𝚊𝚕𝚒𝚑𝚊𝚣ı𝚛𝚍𝚊 𝚐𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚜𝚘𝚑𝚋𝚎𝚝𝚝𝚎 𝚘𝚕𝚍𝚞𝚐̆𝚞𝚗𝚞 𝚝𝚎𝚜𝚙𝚒𝚝 𝚎𝚝𝚝𝚒, 𝚂𝚘𝚛𝚞𝚗 𝚍𝚎𝚟𝚊𝚖 𝚎𝚍𝚎𝚛𝚜𝚎 𝚐𝚘̈𝚛𝚞̈𝚗𝚝𝚞̈𝚕𝚞̈ 𝚜𝚘𝚑𝚋𝚎𝚝𝚒 𝚢𝚎𝚗𝚒𝚍𝚎𝚗 𝚋𝚊𝚜̧𝚕𝚊𝚝ı𝚙 𝚝𝚎𝚔𝚛𝚊𝚛 𝚍𝚎𝚗𝚎𝚢𝚒𝚗."
+                "**ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ**\n\nᴍᴜsɪᴄ ʙᴏᴛ sʏsᴛᴇᴍs ᴅᴇᴛᴇᴄᴛᴇᴅ ᴛʜᴀᴛ ᴀssɪᴛᴀɴᴛ ɪs ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ, ɪғ ᴛʜɪs ᴩʀᴏʙʟᴇᴍ ᴄᴏɴᴛɪɴᴜᴇs ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
             )
         except TelegramServerError:
             raise AssistantErr(
-                "**𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝚂𝚄𝙽𝚄𝙲𝚄𝚂𝚄 𝙷𝙰𝚃𝙰𝚂𝙸**\n\n𝙻𝚄̈𝚃𝙵𝙴𝙽 𝚅𝙸̇𝙳𝙴𝙾𝙲𝙷𝙰𝚃'𝙸̇ 𝙺𝙰𝙿𝙰𝚃𝙸𝙽 𝚅𝙴 𝚈𝙴𝙽𝙸̇𝙳𝙴𝙽 𝙱𝙰𝚂̧𝙻𝙰𝚃𝙸𝙽."
+                "**ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀ ᴇʀʀᴏʀ**\n\nᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏғғ ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɢᴀɪɴ."
             )
         await add_active_chat(chat_id)
         await music_on(chat_id)

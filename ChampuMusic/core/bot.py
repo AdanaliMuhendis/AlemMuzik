@@ -21,7 +21,7 @@ from ..logging import LOGGER
 
 class ChampuBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙸𝚈𝙾𝚁...")
+        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ʙᴏᴛ...")
         super().__init__(
             "ChampuMusic",
             api_id=config.API_ID,
@@ -41,7 +41,7 @@ class ChampuBot(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="๏ 𝙴𝚔𝚕𝚎 𝙱𝚎𝚗𝚒 ๏",
+                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
@@ -54,7 +54,7 @@ class ChampuBot(Client):
                 await self.send_photo(
                     config.LOGGER_ID,
                     photo=config.START_IMG_URL,
-                    caption=f"╔════❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱════❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖Keyifli Dinlemeler...😍\n║\n╚════════════════❍⊱❁",
+                    caption=f"╔════❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱════❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
@@ -62,7 +62,7 @@ class ChampuBot(Client):
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔═══❰𝐇𝐎𝐒̧𝐆𝐄𝐋𝐃𝐈̇𝐍𝐈̇𝐙❱═══❍⊱❁۪۪\n║\n║┣⪼🥀𝙰𝙻𝙴𝙼 𝙼𝚄̈𝚉𝙸̇𝙺 𝙱𝙰𝚂̧𝙻𝙰𝙳𝙸🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖Keyifli Dinlemeler...😍\n║\n╚══════════════❍⊱❁",
+                        f"╔═══❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱═══❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚══════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
@@ -89,12 +89,12 @@ class ChampuBot(Client):
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "oynat", "Start playing requested song"),
-                        BotCommand("stop", "son", "Stop the current song"),
-                        BotCommand("pause", "dur", "Pause the current song"),
-                        BotCommand("resume", "devam", "Resume the paused song"),
+                        BotCommand("play", "Start playing requested song"),
+                        BotCommand("stop", "Stop the current song"),
+                        BotCommand("pause", "Pause the current song"),
+                        BotCommand("resume", "Resume the paused song"),
                         BotCommand("queue", "Check the queue of songs"),
-                        BotCommand("skip", "atla", "Skip the current song"),
+                        BotCommand("skip", "Skip the current song"),
                         BotCommand("volume", "Adjust the music volume"),
                         BotCommand("lyrics", "Get lyrics of the song"),
                     ],
@@ -111,16 +111,16 @@ class ChampuBot(Client):
                         BotCommand("cancel", "❥ 🔻ᴄᴀɴᴄᴇʟ ᴛʜᴇ ᴛᴀɢɢɪɴɢ🔻"),
                         BotCommand("settings", "❥ 🔻ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴇᴛᴛɪɴɢs🔻"),
                         BotCommand("reload", "❥ 🪐ᴛᴏ ʀᴇʟᴏᴀᴅ ᴛʜᴇ ʙᴏᴛ🪐"),
-                        BotCommand("play", "oynat", "❥ ❣️ᴛᴏ ᴘʟᴀʏ ᴛʜᴇ sᴏɴɢ❣️"),
+                        BotCommand("play", "❥ ❣️ᴛᴏ ᴘʟᴀʏ ᴛʜᴇ sᴏɴɢ❣️"),
                         BotCommand("vplay", "❥ ❣️ᴛᴏ ᴘʟᴀʏ ᴛʜᴇ ᴍᴜsɪᴄ ᴡɪᴛʜ ᴠɪᴅᴇᴏ❣️"),
-                        BotCommand("pause", "dur", "❥ 🥀ᴛᴏ ᴘᴀᴜsᴇ ᴛʜᴇ sᴏɴɢs🥀"),
-                        BotCommand("resume", "devam", "❥ 💖ᴛᴏ ʀᴇsᴜᴍᴇ ᴛʜᴇ sᴏɴɢ💖"),
-                        BotCommand("end", "son", "❥ 🐚ᴛᴏ ᴇᴍᴘᴛʏ ᴛʜᴇ ϙᴜᴇᴜᴇ🐚"),
+                        BotCommand("pause", "❥ 🥀ᴛᴏ ᴘᴀᴜsᴇ ᴛʜᴇ sᴏɴɢs🥀"),
+                        BotCommand("resume", "❥ 💖ᴛᴏ ʀᴇsᴜᴍᴇ ᴛʜᴇ sᴏɴɢ💖"),
+                        BotCommand("end", "❥ 🐚ᴛᴏ ᴇᴍᴘᴛʏ ᴛʜᴇ ϙᴜᴇᴜᴇ🐚"),
                         BotCommand("queue", "❥ 🤨ᴛᴏ ᴄʜᴇᴄᴋ ᴛʜᴇ ϙᴜᴇᴜᴇ🤨"),
                         BotCommand("playlist", "❥ 🕺ᴛᴏ ɢᴇᴛ ᴛʜᴇ ᴘʟᴀʏʟɪsᴛ🕺"),
-                        BotCommand("stop", "dur", "❥ ❤‍🔥ᴛᴏ sᴛᴏᴘ ᴛʜᴇ sᴏɴɢs❤‍🔥"),
+                        BotCommand("stop", "❥ ❤‍🔥ᴛᴏ sᴛᴏᴘ ᴛʜᴇ sᴏɴɢs❤‍🔥"),
                         BotCommand("lyrics", "❥ 🕊️ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʟʏʀɪᴄs🕊️"),
-                        BotCommand("song", "bul", "music", "❥ 🔸ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ sᴏɴɢ🔸"),
+                        BotCommand("song", "❥ 🔸ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ sᴏɴɢ🔸"),
                         BotCommand("video", "❥ 🔸ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ᴠɪᴅᴇᴏ sᴏɴɢ🔸"),
                         BotCommand("gali", "❥ 🔻ᴛᴏ ʀᴇᴘʟʏ ғᴏʀ ғᴜɴ🔻"),
                         BotCommand("shayri", "❥ 🔻ᴛᴏ ɢᴇᴛ ᴀ sʜᴀʏᴀʀɪ🔻"),
@@ -144,7 +144,7 @@ class ChampuBot(Client):
                 )
                 if chat_member_info.status != ChatMemberStatus.ADMINISTRATOR:
                     LOGGER(__name__).error(
-                        "𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙱𝚘𝚝𝚞𝚗 𝙲̧𝚊𝚕ı𝚜̧𝚖𝚊𝚜ı 𝙸̇𝚌̧𝚒𝚗 𝚈𝚎𝚝𝚔𝚒 𝚅𝚎𝚛𝚒𝚗..."
+                        "Please promote Bot as Admin in Logger Group"
                     )
             except Exception as e:
                 LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")

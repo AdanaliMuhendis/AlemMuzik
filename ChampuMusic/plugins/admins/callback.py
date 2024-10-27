@@ -181,12 +181,12 @@ async def unban_assistant(_, callback: CallbackQuery):
     try:
         await app.unban_chat_member(chat_id, userbot.id)
         await callback.answer(
-            "𝐀𝐥𝐞𝐦 𝐌𝐮̈𝐳𝐢𝐤 𝐀𝐬𝐢𝐬𝐭𝐚𝐧ı𝐧 𝐘𝐚𝐬𝐚𝐠̆ı 𝐁𝐚𝐬̧𝐚𝐫ı𝐲𝐥𝐚 𝐊𝐚𝐥𝐝ı𝐫ı𝐥𝐝ı🥳\n\n➻ 𝐀𝐫𝐭ı𝐤 𝐒̧𝐚𝐫𝐤ı𝐥𝐚𝐫ı 𝐂̧𝐚𝐥𝐚𝐛𝐢𝐥𝐢𝐫𝐬𝐢𝐧𝐢𝐳.🔉\n\n𝐓𝐞𝐬̧𝐞𝐤𝐤𝐮̈𝐫 𝐞𝐝𝐞𝐫𝐢𝐦💝",
+            "𝗠𝘆 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗜𝗱 𝗨𝗻𝗯𝗮𝗻𝗻𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆🥳\n\n➻ 𝗡𝗼𝘄 𝗬𝗼𝘂 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗦𝗼𝗻𝗴𝘀🔉\n\n𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂💝",
             show_alert=True,
         )
     except Exception as e:
         await callback.answer(
-            f"𝐘𝐚𝐬𝐚𝐤𝐥𝐚𝐦𝐚 𝐘𝐞𝐭𝐤𝐢𝐦𝐢𝐦 𝐎𝐥𝐦𝐚𝐝ı𝐠̆ı 𝐈̇𝐜̧𝐢𝐧 𝐀𝐬𝐢𝐬𝐭𝐚𝐧ı𝐦ı𝐧 𝐘𝐚𝐬𝐚𝐠̆ı𝐧ı 𝐊𝐚𝐥𝐝ı𝐫𝐚𝐦𝐚𝐝ı𝐦. \n\n➻ 𝐀𝐬𝐢𝐬𝐭𝐚𝐧 𝐊𝐢𝐦𝐥𝐢𝐠̆𝐢𝐦𝐢𝐧 𝐘𝐚𝐬𝐚𝐠̆ı𝐧ı 𝐊𝐚𝐥𝐝ı𝐫𝐚𝐛𝐢𝐥𝐦𝐞𝐦 𝐈̇𝐜̧𝐢𝐧 𝐋𝐮̈𝐭𝐟𝐞𝐧 𝐁𝐚𝐧𝐚 𝐘𝐚𝐬𝐚𝐤𝐥𝐚𝐦𝐚 𝐆𝐮̈𝐜𝐮̈ 𝐒𝐚𝐠̆𝐥𝐚𝐲ı𝐧",
+            f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙄 𝘿𝙤𝙣'𝙩 𝙃𝙖𝙫𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧\n\n➻ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 𝙈𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 𝙎𝙤 𝙏𝙝𝙖𝙩 𝙄 𝙘𝙖𝙣 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙙",
             show_alert=True,
         )
 
@@ -250,7 +250,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 pass
             command = counter
-            mention = "𝐎𝐘𝐋𝐀𝐑"
+            mention = "ᴜᴘᴠᴏᴛᴇs"
         else:
             if (
                 CallbackQuery.from_user.id
@@ -283,7 +283,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         return await CallbackQuery.answer(
                             _["admin_19"], show_alert=True
                         )
-    if command == "pause" or command == "dur":
+    if command == "Pause":
         if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
@@ -292,17 +292,17 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="𝙳𝙴𝚅𝙰𝙼", callback_data=f"ADMIN Resume|{chat_id}"
+                    text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
                 ),
                 InlineKeyboardButton(
-                    text="𝚃𝙴𝙺𝚁𝙰𝚁 𝙾𝚈𝙽𝙰𝚃", callback_data=f"ADMIN Replay|{chat_id}"
+                    text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
                 ),
             ],
         ]
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention), reply_markup=InlineKeyboardMarkup(buttons)
         )
-    elif command == "resume" or command == "devam":
+    elif command == "Resume":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
@@ -311,15 +311,15 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons_resume = [
             [
                 InlineKeyboardButton(
-                    text="𝙰𝚃𝙻𝙰", callback_data=f"ADMIN Skip|{chat_id}"
+                    text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
                 ),
                 InlineKeyboardButton(
-                    text="𝚂𝙾𝙽", callback_data=f"ADMIN Stop|{chat_id}"
+                    text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="𝙳𝚄𝚁",
+                    text="ᴘᴀᴜsᴇ",
                     callback_data=f"ADMIN Pause|{chat_id}",
                 ),
             ],
@@ -329,7 +329,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=InlineKeyboardMarkup(buttons_resume),
         )
-    elif command == "son" or command == "End":
+    elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
         await Champu.st_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -351,7 +351,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await mute_off(chat_id)
         await Champu.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
-    elif command == "Loop" or command == "Tekrar":
+    elif command == "Loop":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
         await CallbackQuery.message.reply_text(_["admin_25"].format(mention, 3))
@@ -371,10 +371,10 @@ async def del_back_playlist(client, CallbackQuery, _):
         random.shuffle(check)
         check.insert(0, popped)
         await CallbackQuery.message.reply_text(_["admin_23"].format(mention))
-    elif command == "Skip" or command == "atla":
+    elif command == "Skip" or command == "Replay":
         check = db.get(chat_id)
         if command == "Skip":
-            txt = f"<b>➻ 𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚝𝚕𝚊𝚗𝚍ı<b> 🎄\n│ \n<b>└Tαɾαϝıɳԃαɳ :<b> {mention} 🥀"
+            txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
             popped = None
             try:
                 popped = check.pop(0)
@@ -382,7 +382,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
                 if not check:
                     await CallbackQuery.edit_message_text(
-                        f"<b>➻ 𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚝𝚕𝚊𝚗𝚍ı<b> 🎄\n│ \n<b>└Tαɾαϝıɳԃαɳ :<b> {mention} 🥀"
+                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_10"].format(
@@ -397,7 +397,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"<b>➻ 𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚝𝚕𝚊𝚗𝚍ı<b> 🎄\n│ \n<b>└Tαɾαϝıɳԃαɳ :<b> {mention} 🥀"
+                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -409,7 +409,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     return
         else:
-            txt = f"<b>➻ 𝚈𝚊𝚢ı𝚗 𝚃𝚎𝚔𝚛𝚊𝚛 𝙾𝚢𝚗𝚊𝚝ı𝚕𝚍ı<b> 🎄\n│ \n<b>└Tαɾαϝıɳԃαɳ :<b> {mention} 🥀"
+            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()
@@ -587,7 +587,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_played - duration_to_skip) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» 𝙸̇𝚣𝚒𝚗 𝚅𝚎𝚛𝚒𝚕𝚎𝚗 𝚂𝚞̈𝚛𝚎 𝙰𝚜̧ı𝚕𝚍ı𝚐̆ı 𝙸̇𝚌̧𝚒𝚗 𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚢𝚛ı𝚗𝚝ı𝚕𝚊𝚛ı 𝙶𝚎𝚝𝚒𝚛𝚒𝚕𝚎𝚖𝚎𝚍𝚒.\n\n𝚂̧𝚄 𝙰𝙽𝙳𝙰 𝙾𝚈𝙽𝙰𝚃𝙸𝙻𝙰𝙽: :** {bet}** 𝙳𝙰𝙺𝙸̇𝙺𝙰 𝙳𝙸𝚂̧𝙸𝙽𝙳𝙰 **{duration}** 𝙳𝙰𝙺𝙸̇𝙺𝙰.",
+                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
                     show_alert=True,
                 )
             to_seek = duration_played - duration_to_skip + 1
@@ -595,7 +595,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_seconds - (duration_played + duration_to_skip)) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» 𝙸̇𝚣𝚒𝚗 𝚅𝚎𝚛𝚒𝚕𝚎𝚗 𝚂𝚞̈𝚛𝚎 𝙰𝚜̧ı𝚕𝚍ı𝚐̆ı 𝙸̇𝚌̧𝚒𝚗 𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚢𝚛ı𝚗𝚝ı𝚕𝚊𝚛ı 𝙶𝚎𝚝𝚒𝚛𝚒𝚕𝚎𝚖𝚎𝚍𝚒.\n\n𝚂̧𝚄 𝙰𝙽𝙳𝙰 𝙾𝚈𝙽𝙰𝚃𝙸𝙻𝙰𝙽: :** {bet}** 𝙳𝙰𝙺𝙸̇𝙺𝙰 𝙳𝙸𝚂̧𝙸𝙽𝙳𝙰 **{duration}** 𝙳𝙰𝙺𝙸̇𝙺𝙰.",
+                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
                     show_alert=True,
                 )
             to_seek = duration_played + duration_to_skip + 1
@@ -720,17 +720,17 @@ __HELP__ = """
 
 <b>c sᴛᴀɴᴅs ғᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.</b>
 
-<b>✧ /pause</b> ᴏʀ <b>/dur</b> - Mevcut oynatma akışını duraklatır.
-<b>✧ /resume</b> ᴏʀ <b>/devam</b> - Duraklatılan akışı devam ettirir.
-<b>✧ /mute</b> ᴏʀ <b>/cmute</b> - Müziği sessize alır.
-<b>✧ /unmute</b> ᴏʀ <b>/cunmute</b> - Müziğin sesini açar.
-<b>✧ /skip</b> ᴏʀ <b>/atla</b> - Mevcut oynatma akışını atlar ve sıradaki parçayı oynatmaya başlar.
-<b>✧ /stop</b> ᴏʀ <b>/son</b> - Listeyi temizler ve mevcut oynatma akışını sonlandırır.
-<b>✧ /shuffle</b> ᴏʀ <b>/cshuffle</b> - Parça Listesini karıştırır.
-<b>✧ /seek</b> ᴏʀ <b>/cseek</b> - Parça süresini ileri atlar.
-<b>✧ /seekback</b> ᴏʀ <b>/cseekback</b> - Parça süresini geri alır.
+<b>✧ /pause</b> ᴏʀ <b>/cpause</b> - Pᴀᴜsᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+<b>✧ /resume</b> ᴏʀ <b>/cresume</b> - Rᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ ᴍᴜsɪᴄ.
+<b>✧ /mute</b> ᴏʀ <b>/cmute</b> - Mᴜᴛᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+<b>✧ /unmute</b> ᴏʀ <b>/cunmute</b> - Uɴᴍᴜᴛᴇ ᴛʜᴇ ᴍᴜᴛᴇᴅ ᴍᴜsɪᴄ.
+<b>✧ /skip</b> ᴏʀ <b>/cskip</b> - Sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+<b>✧ /stop</b> ᴏʀ <b>/cstop</b> - Sᴛᴏᴘ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+<b>✧ /shuffle</b> ᴏʀ <b>/cshuffle</b> - Rᴀɴᴅᴏᴍʟʏ sʜᴜғғʟᴇs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ.
+<b>✧ /seek</b> ᴏʀ <b>/cseek</b> - Fᴏʀᴡᴀʀᴅ Sᴇᴇᴋ ᴛʜᴇ ᴍᴜsɪᴄ ᴛᴏ ʏᴏᴜʀ ᴅᴜʀᴀᴛɪᴏɴ.
+<b>✧ /seekback</b> ᴏʀ <b>/cseekback</b> - Bᴀᴄᴋᴡᴀʀᴅ Sᴇᴇᴋ ᴛʜᴇ ᴍᴜsɪᴄ ᴛᴏ ʏᴏᴜʀ ᴅᴜʀᴀᴛɪᴏɴ.
 <b>✧ /reboot</b> - Rᴇʙᴏᴏᴛ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.
 
-<b>✧ /skip</b> ᴏʀ <b>/atla</b> [Nᴜᴍʙᴇʀ (ᴇxᴀᴍᴘʟᴇ: 𝟹)] - Belli bir sıradaki parçaya atlar. Örneğin: <b>/atla 𝟹</b> Parça listesindeki 3.parçaya geçecektir. 1. ve 2. parçalar iptal olacaktır.
+<b>✧ /skip</b> ᴏʀ <b>/cskip</b> [Nᴜᴍʙᴇʀ (ᴇxᴀᴍᴘʟᴇ: 𝟹)] - Sᴋɪᴘs ᴍᴜsɪᴄ ᴛᴏ ᴀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ǫᴜᴇᴜᴇᴅ ɴᴜᴍʙᴇʀ. Exᴀᴍᴘʟᴇ: <b>/skip 𝟹</b> ᴡɪʟʟ sᴋɪᴘ ᴍᴜsɪᴄ ᴛᴏ ᴛʜɪʀᴅ ǫᴜᴇᴜᴇᴅ ᴍᴜsɪᴄ ᴀɴᴅ ᴡɪʟʟ ɪɢɴᴏʀᴇ 𝟷 ᴀɴᴅ 𝟸 ᴍᴜsɪᴄ ɪɴ ǫᴜᴇᴜᴇ.
 
-<b>✧ /loop</b> ᴏʀ <b>/tekrar</b> [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ᴏʀ [Nᴜᴍʙᴇʀs ʙᴇᴛᴡᴇᴇɴ 𝟷-𝟷𝟶] - Verilen değer için döngüyü etkinleştirir. Örneğin 𝟷𝟶 tekrar yapar."""
+<b>✧ /loop</b> ᴏʀ <b>/cloop</b> [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ᴏʀ [Nᴜᴍʙᴇʀs ʙᴇᴛᴡᴇᴇɴ 𝟷-𝟷𝟶] - Wʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ, ʙᴏᴛ ʟᴏᴏᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴛᴏ 𝟷-𝟷𝟶 ᴛɪᴍᴇs ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. Dᴇғᴀᴜʟᴛ ᴛᴏ 𝟷𝟶 ᴛɪᴍᴇs."""

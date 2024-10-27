@@ -1,4 +1,3 @@
-
 import re
 from math import ceil
 from typing import Union
@@ -768,7 +767,7 @@ async def back_button_callback(client: Client, callback_query: CallbackQuery):
             InlineKeyboardButton(text="🎭ᴏᴡɴᴇʀ🎭", user_id=config.OWNER_ID[0]),
             InlineKeyboardButton(
                 text="🌱ɢɪᴛʜᴜʙ🌱",
-                url="https://github.com/AdanaliMuhendis",
+                url="https://github.com/TheChampu",
             ),
         ],
         [

@@ -64,7 +64,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/AdanaliMuhendis/camp",
+    "https://github.com/TheChampu/ChampuMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -98,7 +98,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", 5))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/AdanaliMuhendis/camp")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheChampu/ChampuMusic")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
