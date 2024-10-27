@@ -58,14 +58,14 @@ async def stop_music(cli, message: Message):
         language = await get_lang(message.chat.id)
         _ = get_string(language)
     except:
-        _ = get_string("en")
+        _ = get_string("tr")
 
     if message.sender_chat:
         upl = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="How to Fix this? ",
+                        text="Nasıl düzeltilir? ",
                         callback_data="AnonymousAdmin",
                     ),
                 ]

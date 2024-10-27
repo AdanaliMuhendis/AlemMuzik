@@ -17,12 +17,12 @@ async def resume_com(cli, message: Message, _, chat_id):
     await Alem.resume_stream(chat_id)
     buttons_resume = [
         [
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="Bitir", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="ᴘᴀᴜsᴇ",
+                text="Dur",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
         ],

@@ -102,7 +102,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 ᴄᴀɴᴄᴇʟ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ",
+                                text="🚦 İndirme Sonlanıyor...",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -121,7 +121,7 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{app.mention} ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**
+**{app.mention} Telegram Medya İndirici**
 
 **ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ:** {total_size}
 **ᴄᴏᴍᴘʟᴇᴛᴇᴅ:** {completed_size} 
@@ -147,7 +147,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ...\n ᴘʀᴏᴄᴇssɪɴɢ ғɪʟᴇ ɴᴏᴡ"
+                    "İdirme Tamamlandı...\n ᴘʀᴏᴄᴇssɪɴɢ ғɪʟᴇ ɴᴏᴡ"
                 )
                 downloader.pop(message.id)
             except:

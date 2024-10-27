@@ -283,7 +283,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         return await CallbackQuery.answer(
                             _["admin_19"], show_alert=True
                         )
-    if command == "Pause":
+    if command == "Pause" or command == "Dur":
         if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
@@ -302,7 +302,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention), reply_markup=InlineKeyboardMarkup(buttons)
         )
-    elif command == "Resume":
+    elif command == "Resume" or command == "Devam":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
@@ -329,7 +329,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=InlineKeyboardMarkup(buttons_resume),
         )
-    elif command == "Stop" or command == "End":
+    elif command == "Son" or command == "End" or command == "Bitir":
         await CallbackQuery.answer()
         await Alem.st_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -351,11 +351,11 @@ async def del_back_playlist(client, CallbackQuery, _):
         await mute_off(chat_id)
         await Alem.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
-    elif command == "Loop":
+    elif command == "Loop" or command == "Dongu" or command == "Tekrar":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
         await CallbackQuery.message.reply_text(_["admin_25"].format(mention, 3))
-    elif command == "Shuffle":
+    elif command == "Shuffle" or command == "Kar":
         check = db.get(chat_id)
         if not check:
             return await CallbackQuery.answer(_["admin_22"], show_alert=True)
@@ -371,7 +371,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         random.shuffle(check)
         check.insert(0, popped)
         await CallbackQuery.message.reply_text(_["admin_23"].format(mention))
-    elif command == "Skip" or command == "Replay":
+    elif command == "Skip" or command == "Atla" or command == "Lehaaa":
         check = db.get(chat_id)
         if command == "Skip":
             txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
@@ -650,7 +650,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -666,7 +666,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -682,7 +682,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     buttons = (
                         stream_markup_timer(
