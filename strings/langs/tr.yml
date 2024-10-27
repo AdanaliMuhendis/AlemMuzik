@@ -262,9 +262,9 @@ V_C_5 : "Bu sohbette aktif bir çağrı yok."
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "KAPAT"
-CLOSEMENU_BUTTON  : "KAPAT"
-BACK_BUTTON : "GERİ"
+CLOSE_BUTTON  : "𝐊𝐀𝐏𝐀𝐓°"
+CLOSEMENU_BUTTON  : "𝐊𝐀𝐏𝐀𝐓°"
+BACK_BUTTON : "𝐆𝐄𝐑𝐢°"
 UNBAN_BUTTON : "YASAKLAMAYI KALDIR"
 
 #Lyrics
@@ -276,7 +276,7 @@ S_B_2 : "🔧 Ayarlar"
 S_B_3 : "📨 Destek"
 S_B_4 : "📨 Kanal"
 S_B_5 : "✚ Beni Grupınıza Ekleyin ✚"
-S_B_6 : "💡 Git Repo"
+S_B_6 : "💡 Repo"
 S_B_7 : "👤 Sahip"
 S_B_8 : "🔎 Nasıl Kullanılır? Komut Menüsü"
 
