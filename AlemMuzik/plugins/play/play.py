@@ -42,7 +42,7 @@ SPAM_THRESHOLD = 2
             "vplay",
             "voynat",
             "cplay",
-            "coynat"
+            "coynat",
             "cvplay",
             "playforce",
             "vplayforce",
