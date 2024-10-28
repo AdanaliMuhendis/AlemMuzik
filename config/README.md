@@ -14,8 +14,7 @@ Config vars are basically the variables which configure or modify bot to functio
 4. `MONGO_DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
 5. `LOGGER_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
 6. `OWNER_ID` : Your Owner ID for managing your bot.
-7. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@ChampuStringBot](http://t.me/ChampuStringBot) in Telegram.
-
+7. `STRING_SESSION` : Pyrogram Session Needed, Generate string
 
 ## Non-Mandatory Vars
 
@@ -55,7 +54,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Spotify Vars
 
-- You can play tracks or playlists from spotify from Champu Music bot
+- You can play tracks or playlists from spotify from Alem Music bot
 - You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
 
 ### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/spotify)
@@ -77,7 +76,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Custom Repo Vars
 
-- If you plan to use Champu Music Bot with your own customized or modified code.
+- If you plan to use Alem Music Bot with your own customized or modified code.
 
 1. `UPSTREAM_REPO` : Your Upstream Repo URL or Forked Repo.
 2. `UPSTREAM_BRANCH` : Default Branch of your Upstream Repo URL or Forked Repo. 
@@ -88,7 +87,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 ## Images/Thumbnail Vars
 
-- You can change images which are used in Champu Music Bot.
+- You can change images which are used in Alem Music Bot.
 - You can generate telegaph links from [@TheKittyXD_Bot](http://t.me/TheKittyXD_Bot) and use it here.
 
 1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
@@ -109,7 +108,7 @@ Config vars are basically the variables which configure or modify bot to functio
 
 - You can use upto 5 Assistant Clients ( allowing your bot to atleast work in 2000-2500 chats at a time )
 
-1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@ChampuStringBot](http://t.me/ChampuStringBot) in Telegram.
-2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@ChampuStringBot](http://t.me/ChampuStringBot) in Telegram.
-3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@ChampuStringBot](http://t.me/ChampuStringBot) in Telegram.
-4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@ChampuStringBot](http://t.me/ChampuStringBot) in Telegram.
+1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string
+2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string
+3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string
+4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string
