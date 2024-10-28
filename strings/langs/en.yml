@@ -88,13 +88,13 @@ speed_10 : "» ᴘʟᴇᴀsᴇ ʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠ
 speed_11 : "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs.\n\nʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ /reload"
 
 # Start
-start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
+start_1 : "{0} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\nʟᴇᴛ's ᴠɪʙᴇ ᴛᴏɢᴇᴛʜᴇʀ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ ʙᴏᴛ! 🎶💃\n<b>✫ ᴜᴘᴛɪᴍᴇ :</b> {1}\n"
 start_2 : "<b>нєу</b> {0}❤️ <b>\n\n\n🎵✨ ғᴏʀɢᴇᴛ ᴛʜᴇ ᴏʀᴅɪɴᴀʀʏ—ʟᴇᴛ’s ᴅᴀɴᴄᴇ ᴛᴏ ᴛʜᴇ ʙᴇᴀᴛ ᴏғ ᴏᴜʀ ᴏᴡɴ ʀʜʏᴛʜᴍ!\n🎶 ᴄᴏᴍᴇ ᴊᴏɪɴ ᴍᴇ ᴏɴ ᴛʜᴇ ᴄᴜᴛᴇsᴛ, ᴍᴏsᴛ ᴍᴀɢɪᴄᴀʟ ᴍᴜsɪᴄ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ! 🌟💃\n🎤 ᴅɪᴠᴇ ɪɴᴛᴏ ᴀɴ ᴇɴᴅʟᴇss ᴡᴏʀʟᴅ ᴏғ ᴍᴜsɪᴄ, ᴅɪsᴄᴏᴠᴇʀ ɴᴇᴡ ʙᴇᴀᴛs, ᴀɴᴅ ᴠɪʙᴇ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴏʟᴇsᴛ ᴛᴜɴᴇs ᴇᴠᴇʀ! 🌈🎧 ᴡʜᴇᴛʜᴇʀ ʏᴏᴜ'ʀᴇ ɪɴ ᴛʜᴇ ᴍᴏᴏᴅ ғᴏʀ sᴏᴍᴇ ɢʀᴏᴏᴠʏ ʜɪᴛs, ᴄʜɪʟʟ ᴠɪʙᴇs, ᴏʀ ᴇᴘɪᴄ ᴘʟᴀʏʟɪsᴛs—ᴏᴜʀ ᴍᴜsɪᴄ ᴊᴏᴜʀɴᴇʏ ᴀᴡᴀɪᴛs!\n\n💌 ʀᴇᴀᴅʏ ᴛᴏ ʜɪᴛ ᴘʟᴀʏ ᴏɴ ᴀɴ ᴜɴғᴏʀɢᴇᴛᴛᴀʙʟᴇ ᴍᴜsɪᴄᴀʟ ᴀᴅᴠᴇɴᴛᴜʀᴇ? ʟᴇᴛ’s ᴍᴀᴋᴇ ᴇᴠᴇʀʏ ᴍᴏᴍᴇɴᴛ ᴀ ᴍᴇʟᴏᴅʏ. ᴛᴀᴘ ᴛʜᴇ ʟɪɴᴋ, ᴀɴᴅ ʟᴇᴛ's ɢʀᴏᴏᴠᴇ ᴛᴏɢᴇᴛʜᴇʀ! 🌍🎶"
-start_3 : "{0} sahibi {1} sohbetinize katıldı."
-start_4 : "{0} sudo kullanıcısı {1} sohbetinize katıldı."
-start_5 : "🦸 **SÜPERGRUP GEREKLİ** 🦸\n\nLütfen grubunuzu süpergrup'a dönüştürün ve ardından beni tekrar ekleyin.\n\n**Süpergrup nasıl yapılır?**\n🥱 Grubunuzun sohbet geçmişini bir kez görünür yapın."
-start_6 : "**KARA LİSTEDEKİ SOHBET**\n\nBu sohbet, botu kullanmak için kara listede. Sohbetinizi beyaz listeye almak için bir sudo kullanıcısına başvurun, sudo kullanıcıları [liste]({0})."
-start_7 : "{0} hayatta bebek.\n\n<b>✫ Çalışma Süresi :</b> {1}"
+start_3 : "ᴛʜᴇ ᴏᴡɴᴇʀ ᴏғ {0}, {1} ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴄʜᴀᴛ."
+start_4 : "ᴛʜᴇ sᴜᴅᴏ ᴜsᴇʀ ᴏғ {0}, {1} ᴊᴜsᴛ ᴊᴏɪɴᴇᴅ ʏᴏᴜʀ ᴄʜᴀᴛ."
+start_5 : "🦸 **sᴜᴘᴇʀɢʀᴏᴜᴘ ɴᴇᴇᴅᴇᴅ** 🦸\n\nᴘʟᴇᴀsᴇ ᴄᴏɴᴠᴇʀᴛ ʏᴏᴜʀ **ɢʀᴏᴜᴘ** ᴛᴏ **sᴜᴘᴇʀɢʀᴏᴜᴘ** ᴀɴᴅ ᴛʜᴇɴ ᴀᴅᴅ ᴍᴇ ʙᴀᴄᴋ.\n\n**ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ sᴜᴘᴇʀɢʀᴏᴜᴘ ?**\n🥱 ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ's ᴄʜᴀᴛ ʜɪsᴛᴏʀʏ **ᴠɪsɪʙʟᴇ** ᴏɴᴄᴇ."
+start_6 : "**ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ**\n\nᴛʜɪs ᴄʜᴀᴛ ɪs ʙʟᴀᴄᴋʟɪsᴛ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ. ʀᴇǫᴜᴇsᴛ ᴀ sᴜᴅᴏ ᴜsᴇʀ ᴛᴏ ᴡʜɪᴛᴇʟɪsᴛ ʏᴏᴜʀ ᴄʜᴀᴛ, sᴜᴅᴏ ᴜsᴇʀs [ʟɪsᴛ]({0}) ."
+start_7 : "{0} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.\n\n<b>✫ ᴜᴘᴛɪᴍᴇ :</b> {1}"
 
 # Yardım
 help_1 : "Daha fazla bilgi için aşağıdaki düğmelere tıklayın. Herhangi bir sorunla karşılaşıyorsanız, destek sohbetinde sorabilirsiniz.\n\nTüm komutlar şu şekilde kullanılabilir: /"
