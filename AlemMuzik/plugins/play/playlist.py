@@ -126,11 +126,8 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-<<<<<<< HEAD
-    link = await pastebin(msg)
-=======
-    link = await alembin(msg)
->>>>>>> e7460c201953156011f8319151fd3f7188f3b8b5
+    
+        await pastebin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
