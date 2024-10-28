@@ -18,7 +18,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     buttons_resume = [
         [
             InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="Bitir", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Bitir", callback_data=f"ADMIN End|{chat_id}"),
         ],
         [
             InlineKeyboardButton(

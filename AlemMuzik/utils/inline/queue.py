@@ -67,7 +67,7 @@ def aq_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(text="Dur", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="Son", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Son", callback_data=f"ADMIN End|{chat_id}"),
             InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
@@ -102,7 +102,7 @@ def queuemarkup(_, vidid, chat_id):
                 text="Dur",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
-            InlineKeyboardButton(text="Son", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Son", callback_data=f"ADMIN End|{chat_id}"),
             InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
