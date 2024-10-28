@@ -108,7 +108,7 @@ async def check_playlist(client, message: Message, _):
             return
     else:
         # If more than the spam window time has passed, reset the command count and update the message timestamp
-        user_command_count[user_id] = 1
+         user_command_count[user_id] = 1
         user_last_message_time[user_id] = current_time
 
     _playlist = await get_playlist_names(message.from_user.id)
@@ -124,8 +124,8 @@ async def check_playlist(client, message: Message, _):
         title = title.title()
         duration = _note["duration"]
         count += 1
-         msg += f"\n\n{count}- {title[:70]}\n"
-         msg += _["playlist_5"].format(duration)
+        msg += f"\n\n{count}- {title[:70]}\n"
+        msg += _["playlist_5"].format(duration)
     link = await alembin(msg)
     lines = msg.count("\n")
     if lines >= 17:
@@ -134,7 +134,7 @@ async def check_playlist(client, message: Message, _):
         car = msg
     carbon = await Carbon.generate(car, randint(100, 10000000000))
     await get.delete()
-    await message.reply_text(caption=_["playlist_15"].format(link))
+    await message.reply_photo(carbon, caption=_["playlist_15"].format(link))
 
 
 async def get_keyboard(_, user_id):
