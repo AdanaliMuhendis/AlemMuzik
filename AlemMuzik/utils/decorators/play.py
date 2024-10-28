@@ -84,7 +84,7 @@ def PlayWrapper(command):
                     return await message.reply_text(_["str_1"])
                 buttons = botplaylist_markup(_)
                 return await message.reply_text(
-                    caption=_["playlist_1"],
+                    text=_["playlist_1"],
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
         if message.command[0][0] == "c":

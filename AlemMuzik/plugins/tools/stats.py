@@ -49,7 +49,7 @@ STATS_COMMAND = get_command("STATS_COMMAND")
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
     await message.reply_text(
-        caption=_["gstats_11"].format(app.mention),
+        text=_["gstats_11"].format(app.mention),
         reply_markup=upl,
     )
 
@@ -223,7 +223,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_text(
-           caption=msg, reply_markup=upl
+           text=msg, reply_markup=upl
         )
 
 
@@ -280,7 +280,7 @@ async def overall_stats(client, CallbackQuery, _):
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_text(
-           caption=text, reply_markup=upl
+           text=text, reply_markup=upl
         )
 
 
@@ -366,7 +366,7 @@ async def overall_stats(client, CallbackQuery, _):
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
         await CallbackQuery.message.reply_text(
-            caption=text, reply_markup=upl
+            text=text, reply_markup=upl
         )
 
 
@@ -390,7 +390,7 @@ async def back_buttons(client, CallbackQuery, _):
             await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
         except MessageIdInvalid:
             await CallbackQuery.message.reply_text(
-                caption=_["gstats_9"],
+                text=_["gstats_9"],
                 reply_markup=upl,
             )
     if command == "GlobalStats":
@@ -406,7 +406,7 @@ async def back_buttons(client, CallbackQuery, _):
             await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
         except MessageIdInvalid:
             await CallbackQuery.message.reply_text(
-               caption=_["gstats_10"].format(app.mention),
+               text=_["gstats_10"].format(app.mention),
                 reply_markup=upl,
             )
     if command == "GETSTATS":
@@ -422,6 +422,6 @@ async def back_buttons(client, CallbackQuery, _):
             await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
         except MessageIdInvalid:
             await CallbackQuery.message.reply_text(
-               caption=_["gstats_11"].format(app.mention),
+               text=_["gstats_11"].format(app.mention),
                 reply_markup=upl,
             )

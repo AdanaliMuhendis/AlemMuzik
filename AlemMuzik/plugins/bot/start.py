@@ -68,7 +68,7 @@ async def start_comm(client, message: Message, _):
             )
             if config.START_IMG_URL:
                 return await message.reply_text(
-                   caption=_["help_1"],
+                   text=_["help_1"],
                     reply_markup=keyboard,
                 )
             else:
@@ -140,7 +140,7 @@ async def start_comm(client, message: Message, _):
                 return
             thumbnail = await YouTube.thumbnail(videoid, True)
             await m.delete()
-            await message.reply_text(caption=msg)
+            await message.reply_text(text=msg)
             return
         if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
@@ -234,8 +234,8 @@ async def start_comm(client, message: Message, _):
 
         except AttributeError:
             chat_photo = "assets/nodp.png"
-        await message.reply_caption(
-            caption=_["start_2"].format(message.from_user.mention, app.mention),
+        await message.reply_text(
+            text=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(config.LOG):
@@ -269,12 +269,12 @@ async def testbot(client, message: Message, _):
         # Send the response with the group photo or fallback to START_IMG_URL
         if chat_photo:
             await message.reply_text(
-                caption=_["start_7"].format(client.mention, get_readable_time(uptime)),
+                text=_["start_7"].format(client.mention, get_readable_time(uptime)),
                 reply_markup=InlineKeyboardMarkup(out),
             )
         else:
             await message.reply_text(
-                caption=_["start_7"].format(client.mention, get_readable_time(uptime)),
+                text=_["start_7"].format(client.mention, get_readable_time(uptime)),
                 reply_markup=InlineKeyboardMarkup(out),
             )
 
@@ -318,7 +318,7 @@ async def welcome(client, message: Message):
                 userbot = await get_assistant(chat_id)
                 out = start_pannel(_)
                 await message.reply_text(
-                    caption=_["start_2"],
+                    text=_["start_2"],
                     reply_markup=InlineKeyboardMarkup(out),
                 )
 

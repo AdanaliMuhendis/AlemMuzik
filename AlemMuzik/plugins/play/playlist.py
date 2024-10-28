@@ -428,7 +428,7 @@ async def add_playlist(client, message: Message, _):
             if _check:
                 try:
                     await add.delete()
-                    return await message.reply_text(caption=_["playlist_8"])
+                    return await message.reply_text(text=_["playlist_8"])
                 except KeyError:
                     pass
 
@@ -467,7 +467,7 @@ async def add_playlist(client, message: Message, _):
                 )
                 await add.delete()
                 await message.reply_text(
-                    caption="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
+                    text="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
                     reply_markup=keyboard,
                 )
             except Exception as e:
@@ -500,7 +500,7 @@ async def add_playlist(client, message: Message, _):
             _check = await get_playlist(user_id, videoid)
             if _check:
                 try:
-                    return await message.reply_text(caption=_["playlist_8"])
+                    return await message.reply_text(text=_["playlist_8"])
                 except KeyError:
                     pass
 
@@ -538,7 +538,7 @@ async def add_playlist(client, message: Message, _):
             )
             await m.delete()
             await message.reply_text(
-                caption="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
+                text="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
                 reply_markup=keyboard,
             )
 

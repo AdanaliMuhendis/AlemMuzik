@@ -15,7 +15,7 @@ from AlemMuzik.utils.inline import support_group_markup
 @language
 async def ping_com(client, message: Message, _):
     response = await message.reply_text(
-        caption=_["ping_1"].format(app.mention),
+        text=_["ping_1"].format(app.mention),
     )
     start = datetime.now()
     pytgping = await Alem.ping()

@@ -459,7 +459,7 @@ async def play_commnd(
             )
             await mystic.delete()
             await message.reply_text(
-                caption=cap,
+                text=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return await play_logs(message, streamtype=f"Playlist : {plist_type}")
@@ -476,7 +476,7 @@ async def play_commnd(
                 )
                 await mystic.delete()
                 await message.reply_text(
-                    caption=_["play_11"].format(
+                    text=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
                     ),
@@ -493,7 +493,7 @@ async def play_commnd(
                 )
                 await mystic.delete()
                 await message.reply_text(
-                    caption=cap,
+                    text=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
                 return await play_logs(message, streamtype=f"URL Searched Inline")

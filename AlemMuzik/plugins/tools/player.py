@@ -50,4 +50,4 @@ async def pause_admin(cli, message: Message, _, chat_id):
         ),
     )
 
-    await message.reply_text(caption=caption, reply_markup=reply_markup)
+    await message.reply_text(text=caption, reply_markup=reply_markup)
