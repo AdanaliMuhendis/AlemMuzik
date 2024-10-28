@@ -7,7 +7,7 @@ from pyrogram.errors import InviteRequestSent
 from AlemMuzik import app
 from AlemMuzik.misc import SUDOERS
 from AlemMuzik.utils.database import get_assistant
-from AlemMuzik.utils.Alem_ban import admin_filter
+from AlemMuzik.utils.alem_ban import admin_filter
 
 links = {}
 
