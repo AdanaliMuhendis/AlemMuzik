@@ -102,9 +102,9 @@ GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/AdanaliMuhendis/camp")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "19609edb1b9f4ed7be0c8c1342039362")
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed")
 SPOTIFY_CLIENT_SECRET = getenv(
-    "SPOTIFY_CLIENT_SECRET", "409e31d3ddd64af08cfcc3b0f064fcbe"
+    "SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19"
 )
 
 
