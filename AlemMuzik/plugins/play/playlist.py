@@ -109,7 +109,7 @@ async def check_playlist(client, message: Message, _):
     else:
         # If more than the spam window time has passed, reset the command count and update the message timestamp
          user_command_count[user_id] = 1
-        user_last_message_time[user_id] = current_time
+         user_last_message_time[user_id] = current_time
 
     _playlist = await get_playlist_names(message.from_user.id)
     if _playlist:
