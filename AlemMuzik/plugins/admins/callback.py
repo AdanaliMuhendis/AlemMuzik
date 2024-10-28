@@ -292,10 +292,10 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                    text="Devam", callback_data=f"ADMIN Resume|{chat_id}"
                 ),
                 InlineKeyboardButton(
-                    text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
+                    text="Tekrar", callback_data=f"ADMIN Loop|{chat_id}"
                 ),
             ],
         ]

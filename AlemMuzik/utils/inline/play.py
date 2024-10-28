@@ -337,7 +337,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text="Tekrar", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar", callback_data=f"ADMIN Loop|{chat_id}"
             ),
             InlineKeyboardButton(text="Son", callback_data=f"ADMIN End|{chat_id}"),
         ],
@@ -399,7 +399,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="▷ Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="Tekrar ↺", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar ↺", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -575,7 +575,7 @@ def queue_markup(_, videoid, chat_id):
                 text="▷ Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="Tekrar ↺", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar ↺", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -600,7 +600,7 @@ def stream_markup2(_, chat_id):
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Loop|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN End|{chat_id}"),
         ],
@@ -770,7 +770,7 @@ def panel_markup_5(_, videoid, chat_id):
                 text="Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="Tekrar", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -878,7 +878,7 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
                 text="▷ Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="Tekrar ↺", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar ↺", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
@@ -903,7 +903,7 @@ def panel_markup_clone(_, vidid, chat_id):
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Loop|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN End|{chat_id}"),
         ],
