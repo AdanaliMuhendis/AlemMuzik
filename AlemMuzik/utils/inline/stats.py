@@ -1,6 +1,6 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ChampuMusic import app
+from AlemMuzik import app
 
 
 def back_stats_markup(_):

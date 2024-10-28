@@ -5,10 +5,10 @@ from pyrogram import idle
 
 import config
 from config import BANNED_USERS
-from ChampuMusic import HELPABLE, LOGGER, app, userbot
-from ChampuMusic.core.call import Champu
-from ChampuMusic.plugins import ALL_MODULES
-from ChampuMusic.utils.database import get_banned_users, get_gbanned
+from AlemMuzik import HELPABLE, LOGGER, app, userbot
+from AlemMuzik.core.call import Alem
+from AlemMuzik.plugins import ALL_MODULES
+from AlemMuzik.utils.database import get_banned_users, get_gbanned
 
 
 async def init():
@@ -19,12 +19,12 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("ChampuMusic").error(
+        LOGGER("AlemMuzik").error(
             "ᴀssɪsᴛᴀɴᴛ ᴄʟɪᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇs ɴᴏᴛ ᴅᴇғɪɴᴇᴅ, ᴇxɪᴛɪɴɢ..."
         )
         return
     if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
-        LOGGER("ChampuMusic").warning(
+        LOGGER("AlemMuzik").warning(
             "ɴᴏ sᴘᴏᴛɪғʏ ᴠᴀʀs ᴅᴇғɪɴᴇᴅ. ʏᴏᴜʀ ʙᴏᴛ ᴡᴏɴ'ᴛ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴘʟᴀʏ sᴘᴏᴛɪғʏ ǫᴜᴇʀɪᴇs..."
         )
 
@@ -46,14 +46,14 @@ async def init():
         if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("ChampuMusic.plugins").info("sᴜᴄᴄᴇssғᴜʟʟʏ ɪᴍᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs...")
+    LOGGER("AlemMuzik.plugins").info("sᴜᴄᴄᴇssғᴜʟʟʏ ɪᴍᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs...")
 
-    await Champu.start()
-    await Champu.decorators()
-    LOGGER("ChampuMusic").info("\x43\x68\x61\x6D\x70\x75\x20\x42\x6F\x74\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x74\x61\x72\x74\x65\x64\x2E\x0A\x0A\x40\x54\x68\x65\x43\x68\x61\x6D\x70\x75\x20")
+    await Alem.start()
+    await Alem.decorators()
+    LOGGER("AlemMuzik").info("\x43\x68\x61\x6D\x70\x75\x20\x42\x6F\x74\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x74\x61\x72\x74\x65\x64\x2E\x0A\x0A\x40\x54\x68\x65\x43\x68\x61\x6D\x70\x75\x20")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("ChampuMusic").info("sᴛᴏᴘᴘɪɴɢ ᴄʜᴀᴍᴘᴜᴍᴜsɪᴄ! ɢᴏᴏᴅʙʏᴇ")
+    LOGGER("AlemMuzik").info("sᴛᴏᴘᴘɪɴɢ ᴄʜᴀᴍᴘᴜᴍᴜsɪᴄ! ɢᴏᴏᴅʙʏᴇ")

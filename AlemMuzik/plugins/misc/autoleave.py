@@ -3,10 +3,10 @@ import asyncio
 from pyrogram.enums import ChatType
 
 import config
-from ChampuMusic import app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.core.call import _st_ as clean
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.core.call import _st_ as clean
+from AlemMuzik.utils.database import (
     get_active_chats,
     get_assistant,
     get_client,
@@ -18,7 +18,7 @@ from ChampuMusic.utils.database import (
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT == str(True):
         while not await asyncio.sleep(config.AUTO_LEAVE_ASSISTANT_TIME):
-            from ChampuMusic.core.userbot import assistants
+            from AlemMuzik.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -85,7 +85,7 @@ async def auto_end():
 
                     if len(call_participants_id) <= 1:
                         await ok.delete()
-                        await Champu.stop_stream(chat_id)
+                        await Alem.stop_stream(chat_id)
                         await app.send_message(
                             chat_id,
                             "» Nᴏ ᴏɴᴇ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ, sᴏ ᴛʜᴇ sᴏɴɢ ɪs ᴇɴᴅɪɴɢ ᴅᴜᴇ ᴛᴏ ɪɴᴀᴄᴛɪᴠɪᴛʏ.",

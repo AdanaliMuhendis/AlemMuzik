@@ -13,11 +13,11 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import YouTube, app
-from ChampuMusic.core.userbot import assistants
-from ChampuMusic.misc import SUDOERS, pymongodb
-from ChampuMusic.plugins import ALL_MODULES
-from ChampuMusic.utils.database import (
+from AlemMuzik import YouTube, app
+from AlemMuzik.core.userbot import assistants
+from AlemMuzik.misc import SUDOERS, pymongodb
+from AlemMuzik.plugins import ALL_MODULES
+from AlemMuzik.utils.database import (
     get_global_tops,
     get_particulars,
     get_queries,
@@ -27,8 +27,8 @@ from ChampuMusic.utils.database import (
     get_top_chats,
     get_topp_users,
 )
-from ChampuMusic.utils.decorators.language import language, languageCB
-from ChampuMusic.utils.inline.stats import (
+from AlemMuzik.utils.decorators.language import language, languageCB
+from AlemMuzik.utils.inline.stats import (
     back_stats_buttons,
     back_stats_markup,
     get_stats_markup,

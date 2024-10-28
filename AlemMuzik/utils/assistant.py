@@ -1,4 +1,4 @@
-from ChampuMusic.utils.database import get_client
+from AlemMuzik.utils.database import get_client
 
 
 async def get_assistant_details():

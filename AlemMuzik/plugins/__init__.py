@@ -8,7 +8,7 @@ import sys
 from os.path import abspath, dirname, isfile, join
 
 from config import EXTRA_PLUGINS, EXTRA_PLUGINS_FOLDER, EXTRA_PLUGINS_REPO
-from ChampuMusic import LOGGER
+from AlemMuzik import LOGGER
 
 logger = LOGGER(__name__)
 
@@ -88,7 +88,7 @@ def __list_all_modules():
         modules = [
             (
                 (
-                    (f.replace(main_repo_plugins_dir, "ChampuMusic.plugins")).replace(
+                    (f.replace(main_repo_plugins_dir, "AlemMuzik.plugins")).replace(
                         EXTERNAL_REPO_PATH, EXTRA_PLUGINS_FOLDER
                     )
                 ).replace(os.sep, ".")

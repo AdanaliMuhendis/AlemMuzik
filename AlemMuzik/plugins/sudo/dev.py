@@ -11,9 +11,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import OWNER_ID
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.cleanmode import protect_message
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.cleanmode import protect_message
 
 
 async def aexec(code, client, message):

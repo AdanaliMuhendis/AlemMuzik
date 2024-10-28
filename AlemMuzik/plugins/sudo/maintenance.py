@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,

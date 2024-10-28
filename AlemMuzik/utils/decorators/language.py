@@ -1,6 +1,6 @@
 from strings import get_string
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import get_lang, is_commanddelete_on, is_maintenance
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import get_lang, is_commanddelete_on, is_maintenance
 
 
 def language(mystic):

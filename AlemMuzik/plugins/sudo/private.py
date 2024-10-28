@@ -3,15 +3,15 @@ from pyrogram.types import Message
 
 import config
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import (
     add_private_chat,
     get_private_served_chats,
     is_served_private_chat,
     remove_private_chat,
 )
-from ChampuMusic.utils.decorators.language import language
+from AlemMuzik.utils.decorators.language import language
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")

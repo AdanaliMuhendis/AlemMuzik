@@ -10,8 +10,8 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, CLEANMODE_DELETE_MINS, OWNER_ID
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.utils.database import (
     add_nonadmin_chat,
     cleanmode_off,
     cleanmode_on,
@@ -32,9 +32,9 @@ from ChampuMusic.utils.database import (
     set_playmode,
     set_playtype,
 )
-from ChampuMusic.utils.decorators.admins import ActualAdminCB
-from ChampuMusic.utils.decorators.language import language, languageCB
-from ChampuMusic.utils.inline.settings import (
+from AlemMuzik.utils.decorators.admins import ActualAdminCB
+from AlemMuzik.utils.decorators.language import language, languageCB
+from AlemMuzik.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
     cleanmode_settings_markup,
@@ -42,7 +42,7 @@ from ChampuMusic.utils.inline.settings import (
     setting_markup,
     video_quality_markup,
 )
-from ChampuMusic.utils.inline.start import private_panel
+from AlemMuzik.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")

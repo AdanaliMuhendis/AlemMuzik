@@ -9,12 +9,12 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, adminlist, lyrical
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.misc import db
-from ChampuMusic.utils.database import get_authuser_names, get_cmode
-from ChampuMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from ChampuMusic.utils.formatters import alpha_to_int
+from AlemMuzik import app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.misc import db
+from AlemMuzik.utils.database import get_authuser_names, get_cmode
+from AlemMuzik.utils.decorators import ActualAdminCB, AdminActual, language
+from AlemMuzik.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -51,7 +51,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Champu.stop_stream(message.chat.id)
+        await Alem.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -62,7 +62,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Champu.stop_stream(chat_id)
+            await Alem.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text("sᴜᴄᴇssғᴜʟʟʏ ʀᴇsᴛᴀʀᴛᴇᴅ. \nTʀʏ ᴘʟᴀʏɪɴɢ ɴᴏᴡ..")

@@ -14,11 +14,11 @@ from youtubesearchpython.__future__ import VideosSearch
 import config
 from config import BANNED_USERS, START_IMG_URL
 from strings import get_string
-from ChampuMusic import HELPABLE, Telegram, YouTube, app
-from ChampuMusic.misc import SUDOERS, _boot_
-from ChampuMusic.plugins.play.playlist import del_plist_msg
-from ChampuMusic.plugins.sudo.sudoers import sudoers_list
-from ChampuMusic.utils.database import (
+from AlemMuzik import HELPABLE, Telegram, YouTube, app
+from AlemMuzik.misc import SUDOERS, _boot_
+from AlemMuzik.plugins.play.playlist import del_plist_msg
+from AlemMuzik.plugins.sudo.sudoers import sudoers_list
+from AlemMuzik.utils.database import (
     add_served_chat,
     add_served_user,
     get_assistant,
@@ -28,10 +28,10 @@ from ChampuMusic.utils.database import (
     is_on_off,
     is_served_private_chat,
 )
-from ChampuMusic.utils.decorators.language import LanguageStart
-from ChampuMusic.utils.formatters import get_readable_time
-from ChampuMusic.utils.functions import MARKDOWN, WELCOMEHELP
-from ChampuMusic.utils.inline import alive_panel, music_start_panel, start_pannel
+from AlemMuzik.utils.decorators.language import LanguageStart
+from AlemMuzik.utils.formatters import get_readable_time
+from AlemMuzik.utils.functions import MARKDOWN, WELCOMEHELP
+from AlemMuzik.utils.inline import alive_panel, music_start_panel, start_pannel
 
 from .help import paginate_modules
 

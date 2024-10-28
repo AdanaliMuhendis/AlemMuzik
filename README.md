@@ -4,7 +4,7 @@
 [![Youtube](https://img.shields.io/badge/-YouTube-F50909?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@AdanaliMuhendis)
 
 
-<h4>𝐓ʀʏ 𝐌ʏ 𝐓ᴇʟᴇɢʀᴀᴍ 𝐁ᴏᴛ's<h4>
+<h4>𝐌ʏ 𝐓ᴇʟᴇɢʀᴀᴍ 𝐁ᴏᴛ<h4>
  
 [![MUSIC](https://img.shields.io/badge/-AlemMuzikBot-E1306C?style=for-the-badge&logo=AlemMusicBot&logoColor=green)](https://t.me/AlemMuzikBot)
 

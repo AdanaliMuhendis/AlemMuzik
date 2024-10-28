@@ -15,15 +15,15 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import HAPP, SUDOERS, XCB
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.misc import HAPP, SUDOERS, XCB
+from AlemMuzik.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ChampuMusic.utils.decorators.language import language
-from ChampuMusic.utils.pastebin import Champubin
+from AlemMuzik.utils.decorators.language import language
+from AlemMuzik.utils.pastebin import Alembin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -42,7 +42,7 @@ async def is_heroku():
 
 
 async def paste_neko(code: str):
-    return await Champubin(code)
+    return await Alembin(code)
 
 
 @app.on_message(
@@ -56,7 +56,7 @@ async def log_(client, message, _):
             if HAPP is None:
                 return await message.reply_text(_["heroku_1"])
             data = HAPP.get_log()
-            link = await Champubin(data)
+            link = await Alembin(data)
             return await message.reply_text(link)
         else:
             if os.path.exists(config.LOG_FILE_NAME):
@@ -131,7 +131,7 @@ async def vardel_(client, message, _):
             return await message.reply_text(_["heroku_4"])
         else:
             await message.reply_text(_["heroku_7"].format(check_var))
-            os.system(f"kill -9 {os.getpid()} && python3 -m ChampuMusic")
+            os.system(f"kill -9 {os.getpid()} && python3 -m AlemMuzik")
 
 
 @app.on_message(filters.command(SETVAR_COMMAND) & SUDOERS)
@@ -160,7 +160,7 @@ async def set_var(client, message, _):
             await message.reply_text(_["heroku_9"].format(to_set))
         else:
             await message.reply_text(_["heroku_10"].format(to_set))
-        os.system(f"kill -9 {os.getpid()} && python3 -m ChampuMusic")
+        os.system(f"kill -9 {os.getpid()} && python3 -m AlemMuzik")
 
 
 @app.on_message(filters.command(USAGE_COMMAND) & SUDOERS)
@@ -254,7 +254,7 @@ async def update_(client, message, _):
     _final_updates_ = f"{_update_response_} {updates}"
 
     if len(_final_updates_) > 4096:
-        url = await Champubin(updates)
+        url = await Alembin(updates)
         nrs = await response.edit(
             f"**ᴀ ɴᴇᴡ ᴜᴩᴅᴀᴛᴇ ɪs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ʙᴏᴛ !**\n\n➣ ᴩᴜsʜɪɴɢ ᴜᴩᴅᴀᴛᴇs ɴᴏᴡ\n\n__**ᴜᴩᴅᴀᴛᴇs :**__\n\n[ᴄʜᴇᴄᴋ ᴜᴩᴅᴀᴛᴇs]({url})",
             disable_web_page_preview=True,
@@ -303,7 +303,7 @@ async def update_(client, message, _):
             )
     else:
         os.system("pip3 install --no-cache-dir -U -r requirements.txt")
-        os.system(f"kill -9 {os.getpid()} && python3 -m ChampuMusic")
+        os.system(f"kill -9 {os.getpid()} && python3 -m AlemMuzik")
         exit()
 
 
@@ -331,15 +331,15 @@ async def restart_(_, message):
     await response.edit_text(
         "» ʀᴇsᴛᴀʀᴛ ᴘʀᴏᴄᴇss sᴛᴀʀᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ sᴛᴀʀᴛs..."
     )
-    os.system(f"kill -9 {os.getpid()} && python3 -m ChampuMusic")
+    os.system(f"kill -9 {os.getpid()} && python3 -m AlemMuzik")
 
 
 import requests
 from pyrogram import filters
 
 import config
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
 
 # Heroku API base URL
 HEROKU_API_URL = "https://api.heroku.com/apps"

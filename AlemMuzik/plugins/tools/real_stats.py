@@ -5,10 +5,10 @@ from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from ChampuMusic import app
-from ChampuMusic.core.mongo import mongodb
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils import get_readable_time
+from AlemMuzik import app
+from AlemMuzik.core.mongo import mongodb
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils import get_readable_time
 
 chatsdb = mongodb.chats
 usersdb = mongodb.tgusersdb

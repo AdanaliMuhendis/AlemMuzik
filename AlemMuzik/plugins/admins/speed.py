@@ -2,13 +2,13 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
-from ChampuMusic import app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.misc import SUDOERS, db
-from ChampuMusic.utils import AdminRightsCheck
-from ChampuMusic.utils.database import is_active_chat, is_nonadmin_chat
-from ChampuMusic.utils.decorators.language import languageCB
-from ChampuMusic.utils.inline import close_markup, speed_markup
+from AlemMuzik import app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.misc import SUDOERS, db
+from AlemMuzik.utils import AdminRightsCheck
+from AlemMuzik.utils.database import is_active_chat, is_nonadmin_chat
+from AlemMuzik.utils.decorators.language import languageCB
+from AlemMuzik.utils.inline import close_markup, speed_markup
 
 checker = []
 
@@ -85,7 +85,7 @@ async def del_back_playlist(client, callback_query, _):
         text=_["speed_6"].format(callback_query.from_user.mention),
     )
     try:
-        await Champu.speedup_stream(
+        await Alem.speedup_stream(
             chat_id,
             file_path,
             speed,

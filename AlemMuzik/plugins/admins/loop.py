@@ -3,9 +3,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.utils.database.memorydatabase import get_loop, set_loop
-from ChampuMusic.utils.decorators import AdminRightsCheck
+from AlemMuzik import app
+from AlemMuzik.utils.database.memorydatabase import get_loop, set_loop
+from AlemMuzik.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")

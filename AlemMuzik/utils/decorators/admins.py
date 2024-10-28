@@ -3,9 +3,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,

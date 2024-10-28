@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import YouTube, app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.misc import db
-from ChampuMusic.utils import AdminRightsCheck, seconds_to_min
+from AlemMuzik import YouTube, app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.misc import db
+from AlemMuzik.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
@@ -50,7 +50,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Champu.seek_stream(
+        await Alem.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),

@@ -4,14 +4,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import YouTube, app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.misc import db
-from ChampuMusic.utils.database import get_loop
-from ChampuMusic.utils.decorators import AdminRightsCheck
-from ChampuMusic.utils.inline.play import stream_markup, telegram_markup
-from ChampuMusic.utils.stream.autoclear import auto_clean
-from ChampuMusic.utils.thumbnails import get_thumb
+from AlemMuzik import YouTube, app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.misc import db
+from AlemMuzik.utils.database import get_loop
+from AlemMuzik.utils.decorators import AdminRightsCheck
+from AlemMuzik.utils.inline.play import stream_markup, telegram_markup
+from AlemMuzik.utils.stream.autoclear import auto_clean
+from AlemMuzik.utils.thumbnails import get_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -49,7 +49,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         disable_web_page_preview=True,
                                     )
-                                    await Champu.stop_stream(chat_id)
+                                    await Alem.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -74,7 +74,7 @@ async def skip(cli, message: Message, _, chat_id):
                     disable_web_page_preview=True,
                 )
                 try:
-                    return await Champu.stop_stream(chat_id)
+                    return await Alem.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -83,7 +83,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name),
                     disable_web_page_preview=True,
                 )
-                return await Champu.stop_stream(chat_id)
+                return await Alem.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -99,7 +99,7 @@ async def skip(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_11"].format(title))
         try:
-            await Champu.skip_stream(chat_id, link, video=status)
+            await Alem.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
@@ -126,7 +126,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_7"])
         try:
-            await Champu.skip_stream(chat_id, file_path, video=status)
+            await Alem.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_7"])
         button = stream_markup(_, videoid, chat_id)
@@ -146,7 +146,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Champu.skip_stream(chat_id, videoid, video=status)
+            await Alem.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
@@ -159,7 +159,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Champu.skip_stream(chat_id, queued, video=status)
+            await Alem.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         if videoid == "telegram":

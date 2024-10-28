@@ -4,11 +4,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, PING_IMG_URL
-from ChampuMusic import app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.utils import bot_sys_stats
-from ChampuMusic.utils.decorators.language import language
-from ChampuMusic.utils.inline import support_group_markup
+from AlemMuzik import app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.utils import bot_sys_stats
+from AlemMuzik.utils.decorators.language import language
+from AlemMuzik.utils.inline import support_group_markup
 
 
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
@@ -19,7 +19,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"].format(app.mention),
     )
     start = datetime.now()
-    pytgping = await Champu.ping()
+    pytgping = await Alem.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(

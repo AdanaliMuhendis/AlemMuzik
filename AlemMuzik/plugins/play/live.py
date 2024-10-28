@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from ChampuMusic import YouTube, app
-from ChampuMusic.utils.channelplay import get_channeplayCB
-from ChampuMusic.utils.decorators.language import languageCB
-from ChampuMusic.utils.stream.stream import stream
+from AlemMuzik import YouTube, app
+from AlemMuzik.utils.channelplay import get_channeplayCB
+from AlemMuzik.utils.decorators.language import languageCB
+from AlemMuzik.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)

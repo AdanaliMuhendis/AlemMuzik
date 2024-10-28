@@ -6,20 +6,20 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from config import LOGGER_ID, OWNER_ID
-from ChampuMusic import Carbon, YouTube, app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.misc import db
-from ChampuMusic.utils.database import (
+from AlemMuzik import Carbon, YouTube, app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.misc import db
+from AlemMuzik.utils.database import (
     add_active_video_chat,
     is_active_chat,
     is_video_allowed,
 )
-from ChampuMusic.utils.exceptions import AssistantErr
-from ChampuMusic.utils.inline.play import queue_markup, stream_markup, telegram_markup
-from ChampuMusic.utils.inline.playlist import close_markup
-from ChampuMusic.utils.pastebin import Champubin
-from ChampuMusic.utils.stream.queue import put_queue, put_queue_index
-from ChampuMusic.utils.thumbnails import gen_qthumb, get_thumb
+from AlemMuzik.utils.exceptions import AssistantErr
+from AlemMuzik.utils.inline.play import queue_markup, stream_markup, telegram_markup
+from AlemMuzik.utils.inline.playlist import close_markup
+from AlemMuzik.utils.pastebin import Alembin
+from AlemMuzik.utils.stream.queue import put_queue, put_queue_index
+from AlemMuzik.utils.thumbnails import gen_qthumb, get_thumb
 
 
 async def stream(
@@ -41,7 +41,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Champu.force_stop_stream(chat_id)
+        await Alem.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -97,7 +97,7 @@ async def stream(
                         f"**ʜᴇʏ [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID[0]}) ᴍᴀʏ ʙᴇ ᴍʏ ᴄᴏᴏᴋɪᴇs ʜᴀs ʙᴇᴇɴ ᴅᴇᴀᴅ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ᴏɴᴇ ᴛɪᴍᴇ ʙʏ ᴘʟᴀʏ ᴀɴʏ sᴏɴɢs**",
                     )
 
-                await Champu.join_call(
+                await Alem.join_call(
                     chat_id, original_chat_id, file_path, video=status, image=thumbnail
                 )
                 await put_queue(
@@ -130,7 +130,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Champubin(msg)
+            link = await Alembin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -192,7 +192,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(
+            await Alem.join_call(
                 chat_id, original_chat_id, file_path, video=status, image=thumbnail
             )
             await put_queue(
@@ -249,7 +249,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(chat_id, original_chat_id, file_path, video=None)
+            await Alem.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -299,7 +299,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Alem.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -353,7 +353,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Champu.join_call(
+            await Alem.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -409,7 +409,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(
+            await Alem.join_call(
                 chat_id,
                 original_chat_id,
                 link,

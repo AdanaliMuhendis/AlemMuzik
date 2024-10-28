@@ -25,9 +25,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from ChampuMusic import LOGGER, YouTube, app
-from ChampuMusic.misc import db
-from ChampuMusic.utils.database import (
+from AlemMuzik import LOGGER, YouTube, app
+from AlemMuzik.misc import db
+from AlemMuzik.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -42,11 +42,11 @@ from ChampuMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from ChampuMusic.utils.exceptions import AssistantErr
-from ChampuMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from ChampuMusic.utils.inline.play import stream_markup, telegram_markup
-from ChampuMusic.utils.stream.autoclear import auto_clean
-from ChampuMusic.utils.thumbnails import get_thumb
+from AlemMuzik.utils.exceptions import AssistantErr
+from AlemMuzik.utils.formatters import check_duration, seconds_to_min, speed_converter
+from AlemMuzik.utils.inline.play import stream_markup, telegram_markup
+from AlemMuzik.utils.stream.autoclear import auto_clean
+from AlemMuzik.utils.thumbnails import get_thumb
 
 autoend = {}
 counter = {}
@@ -72,7 +72,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="ChampuString1",
+            name="AlemString1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -82,7 +82,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="ChampuString2",
+            name="AlemString2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -92,7 +92,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="ChampuString3",
+            name="AlemString3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -102,7 +102,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="ChampuString4",
+            name="AlemString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -112,7 +112,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="ChampuString5",
+            name="AlemString5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -801,4 +801,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-Champu = Call()
+Alem = Call()

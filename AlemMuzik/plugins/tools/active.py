@@ -2,10 +2,10 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from unidecode import unidecode
 
-from ChampuMusic import app
-from ChampuMusic.core.call import _st_ as clean
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.core.call import _st_ as clean
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import (
     get_active_chats,
     get_active_video_chats,
     get_assistant,

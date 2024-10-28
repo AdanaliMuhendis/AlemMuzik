@@ -4,10 +4,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database.memorydatabase import get_video_limit
-from ChampuMusic.utils.formatters import convert_bytes
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database.memorydatabase import get_video_limit
+from AlemMuzik.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

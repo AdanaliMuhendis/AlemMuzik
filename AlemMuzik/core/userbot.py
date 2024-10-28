@@ -22,35 +22,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="ChampuAss1",
+            name="AlemAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=False,
         )
         self.two = Client(
-            name="ChampuAss2",
+            name="AlemAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="ChampuAss3",
+            name="AlemAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="ChampuAss4",
+            name="AlemAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="ChampuAss5",
+            name="AlemAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -64,9 +64,9 @@ class Userbot(Client):
             await self.one.start()
             try:
                 await self.one.join_chat("TheShivanshu")
-                await self.one.join_chat("TheChampuClub")
-                await self.one.join_chat("akaChampu")
-                await self.one.join_chat("TheChampu")
+                await self.one.join_chat("TheAlemClub")
+                await self.one.join_chat("akaAlem")
+                await self.one.join_chat("TheAlem")
 
             except:
                 pass
@@ -94,9 +94,9 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("TheShivanshu")
-                await self.two.join_chat("TheChampuClub")
-                await self.two.join_chat("akaChampu")
-                await self.two.join_chat("TheChampu")
+                await self.two.join_chat("TheAlemClub")
+                await self.two.join_chat("akaAlem")
+                await self.two.join_chat("TheAlem")
             except:
                 pass
             assistants.append(2)
@@ -118,9 +118,9 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("TheShivanshu")
-                await self.three.join_chat("TheChampuClub")
-                await self.three.join_chat("akaChampu")
-                await self.three.join_chat("TheChampu")
+                await self.three.join_chat("TheAlemClub")
+                await self.three.join_chat("akaAlem")
+                await self.three.join_chat("TheAlem")
             except:
                 pass
             assistants.append(3)
@@ -143,9 +143,9 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("TheShivanshu")
-                await self.four.join_chat("TheChampuClub")
-                await self.four.join_chat("akaChampu")
-                await self.four.join_chat("TheChampu")
+                await self.four.join_chat("TheAlemClub")
+                await self.four.join_chat("akaAlem")
+                await self.four.join_chat("TheAlem")
             except:
                 pass
             assistants.append(4)
@@ -168,9 +168,9 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("TheShivanshu")
-                await self.five.join_chat("TheChampuClub")
-                await self.five.join_chat("akaChampu")
-                await self.five.join_chat("TheChampu")
+                await self.five.join_chat("TheAlemClub")
+                await self.five.join_chat("akaAlem")
+                await self.five.join_chat("TheAlem")
             except:
                 pass
             assistants.append(5)

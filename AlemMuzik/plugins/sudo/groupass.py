@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, LOGGER_ID
-from ChampuMusic import app
-from ChampuMusic.core.userbot import assistants
-from ChampuMusic.utils.assistant import get_assistant_details
-from ChampuMusic.utils.assistant import is_avl_assistant as assistant
-from ChampuMusic.utils.database import get_assistant, save_assistant, set_assistant
-from ChampuMusic.utils.decorators import AdminActual
+from AlemMuzik import app
+from AlemMuzik.core.userbot import assistants
+from AlemMuzik.utils.assistant import get_assistant_details
+from AlemMuzik.utils.assistant import is_avl_assistant as assistant
+from AlemMuzik.utils.database import get_assistant, save_assistant, set_assistant
+from AlemMuzik.utils.decorators import AdminActual
 
 
 @app.on_message(filters.command("changeassistant") & ~BANNED_USERS)

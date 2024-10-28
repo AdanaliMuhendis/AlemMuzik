@@ -13,8 +13,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from ChampuMusic import Carbon, app
-from ChampuMusic.utils.database import (
+from AlemMuzik import Carbon, app
+from AlemMuzik.utils.database import (
     delete_playlist,
     get_assistant,
     get_playlist,
@@ -22,15 +22,15 @@ from ChampuMusic.utils.database import (
     save_playlist,
 )
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from ChampuMusic import Carbon, app
-from ChampuMusic.utils.decorators.language import language, languageCB
-from ChampuMusic.utils.inline.playlist import (
+from AlemMuzik import Carbon, app
+from AlemMuzik.utils.decorators.language import language, languageCB
+from AlemMuzik.utils.inline.playlist import (
     botplaylist_markup,
     get_playlist_markup,
     warning_markup,
 )
-from ChampuMusic.utils.pastebin import Champubin
-from ChampuMusic.utils.stream.stream import stream
+from AlemMuzik.utils.pastebin import Alembin
+from AlemMuzik.utils.stream.stream import stream
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -38,7 +38,7 @@ user_command_count = {}
 # Define the threshold for command spamming (e.g., 20 commands within 60 seconds)
 SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
-from ChampuMusic.core.mongo import mongodb
+from AlemMuzik.core.mongo import mongodb
 
 playlistdb = mongodb.playlist
 playlist = []
@@ -137,7 +137,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Champubin(msg)
+    link = await Alembin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -488,7 +488,7 @@ async def add_playlist(client, message: Message, _):
         except Exception as e:
             return await message.reply_text(str(e))
     else:
-        from ChampuMusic import YouTube
+        from AlemMuzik import YouTube
 
         # Add a specific song by name
         query = " ".join(message.command[1:])
@@ -608,7 +608,7 @@ async def del_plist(client, CallbackQuery, _):
 @app.on_callback_query(filters.regex("recover_playlist") & ~BANNED_USERS)
 @languageCB
 async def add_playlist(client, CallbackQuery, _):
-    from ChampuMusic import YouTube
+    from AlemMuzik import YouTube
 
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
@@ -671,18 +671,18 @@ async def add_playlist(client, CallbackQuery, _):
     )
 
 
-@app.on_callback_query(filters.regex("Champu_playlist") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("Alem_playlist") & ~BANNED_USERS)
 @languageCB
 async def add_playlists(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
     user_id = CallbackQuery.from_user.id
-    from ChampuMusic import YouTube
+    from AlemMuzik import YouTube
 
     _check = await get_playlist(user_id, videoid)
     if _check:
         try:
-            from ChampuMusic import YouTube
+            from AlemMuzik import YouTube
 
             return await CallbackQuery.answer(_["playlist_8"], show_alert=True)
         except:

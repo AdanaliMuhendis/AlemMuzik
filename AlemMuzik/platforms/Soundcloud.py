@@ -4,7 +4,7 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from ChampuMusic.utils.formatters import seconds_to_min
+from AlemMuzik.utils.formatters import seconds_to_min
 
 
 class SoundAPI:

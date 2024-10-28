@@ -36,7 +36,7 @@ EXTRA_PLUGINS = getenv(
 # Fill here the external plugins repo where plugins that you want to load
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/TheChampu/Extra-Plugin",
+    "https://github.com/AdanaliMuhendis/campextra",
 )
 
 # Your folder name in your extra plugins repo where all plugins stored
@@ -64,7 +64,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TheChampu/ChampuMusic",
+    "https://github.com/AdanaliMuhendis/AlemMuzik",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -74,10 +74,10 @@ GIT_TOKEN = getenv(
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/AlemMuzikBot"
-)  # Example:- https://t.me/akaChampu
+)  # Example:- https://t.me/Alemciyiz
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", "https://t.me/AlemSupport"
-)  # Example:- https://t.me/TheChampuClub
+)  # Example:- https://t.me/AlemSupport
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", True)
 
@@ -98,7 +98,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", 5))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/TheChampu/ChampuMusic")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/AdanaliMuhendis/AlemMuzik")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -131,7 +131,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 2145386496)) # R
 SET_CMDS = getenv("SET_CMDS", False)
 
 
-# You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @ChampuStringBot
+# You'll need a Pyrogram String Session for these vars. Generate String
 STRING1 = getenv("STRING_SESSION", "BAFcxgMABJ7P-cBmvcySpNKubXJMbN7c0_mGegzdMUhMNXU3yC3YyCVXBpv3tycU5EUYOAL3UX471bM-WEFf7CmkZRkfzBqmipmU8rMObizm7TSrnl-TDSSvWzJ2viO0ZzTvPs6YK0DrvXsYAtJUARW74o1XVkyoofb_-iVpUqozx586N_IRM6Bqf0R2OSfFV4vfYf0oC3EKLjp-ybm9HVp1D7NBt70kxl-cr_Vvs2p4-ahZ9pDxIW85j9HTQzHCuFHYIbb3baDxCNiVeIBdxpj4wJYhAsRSSA9tiydXB-5sfb4Pasxvq-IYESxAKBrCpYSNeHVxhul6MgA8zwR8lQL3rymCCAAAAAHWmVPOAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)

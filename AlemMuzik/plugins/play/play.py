@@ -10,23 +10,23 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS, LOGGER_ID, OWNER_ID, lyrical
-from ChampuMusic import LOGGER, Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.utils import seconds_to_min, time_to_seconds
-from ChampuMusic.utils.channelplay import get_channeplayCB
-from ChampuMusic.utils.database import add_served_chat, get_assistant, is_video_allowed
-from ChampuMusic.utils.decorators.language import languageCB
-from ChampuMusic.utils.decorators.play import PlayWrapper
-from ChampuMusic.utils.formatters import formats
-from ChampuMusic.utils.inline.play import (
+from AlemMuzik import LOGGER, Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.utils import seconds_to_min, time_to_seconds
+from AlemMuzik.utils.channelplay import get_channeplayCB
+from AlemMuzik.utils.database import add_served_chat, get_assistant, is_video_allowed
+from AlemMuzik.utils.decorators.language import languageCB
+from AlemMuzik.utils.decorators.play import PlayWrapper
+from AlemMuzik.utils.formatters import formats
+from AlemMuzik.utils.inline.play import (
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ChampuMusic.utils.inline.playlist import botplaylist_markup
-from ChampuMusic.utils.logger import play_logs
-from ChampuMusic.utils.stream.stream import stream
+from AlemMuzik.utils.inline.playlist import botplaylist_markup
+from AlemMuzik.utils.logger import play_logs
+from AlemMuzik.utils.stream.stream import stream
 
 user_last_message_time = {}
 user_command_count = {}
@@ -345,7 +345,7 @@ async def play_commnd(
                     "ᴏᴏᴘs ɪ ᴅᴏɴ'ᴛ Tʜɪɴᴋ ᴛʜᴀᴛ ɪᴛ ɪs ᴀ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴜʀʟ"
                 )
             try:
-                await Champu.stream_call(url)
+                await Alem.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
@@ -580,7 +580,7 @@ async def anonymous_check(client, CallbackQuery):
         return
 
 
-@app.on_callback_query(filters.regex("ChampuPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("AlemPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()

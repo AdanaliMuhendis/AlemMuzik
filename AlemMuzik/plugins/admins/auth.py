@@ -3,15 +3,15 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from ChampuMusic.utils.decorators import AdminActual, language
-from ChampuMusic.utils.formatters import int_to_alpha
+from AlemMuzik.utils.decorators import AdminActual, language
+from AlemMuzik.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")

@@ -12,10 +12,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
 from config import SUPPORT_GROUP 
 from strings import get_string
-from ChampuMusic import YouTube, app
-from ChampuMusic.core.call import _st_ as clean
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import (
+from AlemMuzik import YouTube, app
+from AlemMuzik.core.call import _st_ as clean
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -26,7 +26,7 @@ from ChampuMusic.utils.database import (
     is_maintenance,
     is_served_private_chat,
 )
-from ChampuMusic.utils.inline import botplaylist_markup
+from AlemMuzik.utils.inline import botplaylist_markup
 
 links = {}
 

@@ -8,10 +8,10 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import ChatPrivileges, Message
 
-from ChampuMusic import app
-from ChampuMusic.core.call import Champu
-from ChampuMusic.utils.database import *
-from ChampuMusic.utils.database import set_loop
+from AlemMuzik import app
+from AlemMuzik.core.call import Alem
+from AlemMuzik.utils.database import *
+from AlemMuzik.utils.database import set_loop
 
 other_filters = filters.group & ~filters.via_bot & ~filters.forwarded
 other_filters2 = filters.private & ~filters.via_bot & ~filters.forwarded
@@ -26,7 +26,7 @@ async def brah(_, msg):
     chat_id = msg.chat.id
     try:
         await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
-        await Champu.st_stream(chat_id)
+        await Alem.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:
         return await msg.reply(f"**Error {e}**")
@@ -116,7 +116,7 @@ async def start_group_call(c: Client, m: Message):
                 ),
             )
             await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
-            await Champu.st_stream(chat_id)
+            await Alem.st_stream(chat_id)
             await set_loop(chat_id, 0)
         except:
             await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ⚡")
@@ -184,7 +184,7 @@ async def stop_group_call(c: Client, m: Message):
                     ),
                 )
                 await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟᴏꜱᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
-                await Champu.st_stream(chat_id)
+                await Alem.st_stream(chat_id)
                 await set_loop(chat_id, 0)
             except:
                 await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ")

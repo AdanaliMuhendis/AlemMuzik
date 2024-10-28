@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 import config
 from config import SUPPORT_GROUP
-from ChampuMusic import app
+from AlemMuzik import app
 
 
 def start_pannel(_):

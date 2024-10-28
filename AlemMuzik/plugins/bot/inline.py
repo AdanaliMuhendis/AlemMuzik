@@ -6,8 +6,8 @@ from pyrogram.types import (
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS
-from ChampuMusic import app
-from ChampuMusic.utils.inlinequery import answer
+from AlemMuzik import app
+from AlemMuzik.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)

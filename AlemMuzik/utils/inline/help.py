@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import SUPPORT_GROUP
-from ChampuMusic import app
+from AlemMuzik import app
 
 
 def support_group_markup(_):

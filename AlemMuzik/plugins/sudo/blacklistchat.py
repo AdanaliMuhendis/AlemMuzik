@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from ChampuMusic.utils.decorators.language import language
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from AlemMuzik.utils.decorators.language import language
 
 # Commands
 

@@ -9,9 +9,9 @@ from pyrogram.raw import types
 import config
 from config import OWNER_ID, adminlist, chatstats, clean, userstats
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.utils.cleanmode import protected_messages
-from ChampuMusic.utils.database import (
+from AlemMuzik import app
+from AlemMuzik.utils.cleanmode import protected_messages
+from AlemMuzik.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_particular_top,
@@ -24,8 +24,8 @@ from ChampuMusic.utils.database import (
     update_particular_top,
     update_user_top,
 )
-from ChampuMusic.utils.decorators.language import language
-from ChampuMusic.utils.formatters import alpha_to_int
+from AlemMuzik.utils.decorators.language import language
+from AlemMuzik.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -165,7 +165,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from ChampuMusic.core.userbot import assistants
+        from AlemMuzik.core.userbot import assistants
 
         for num in assistants:
             sent = 0

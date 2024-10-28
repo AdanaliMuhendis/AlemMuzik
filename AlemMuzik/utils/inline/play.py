@@ -2,7 +2,7 @@ import math
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ChampuMusic.utils.formatters import time_to_seconds
+from AlemMuzik.utils.formatters import time_to_seconds
 
 
 def to_small_caps(text):
@@ -74,7 +74,7 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"champu_playlist {videoid}"
+                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
                 text="ᴄᴏɴᴛʀᴏʟs ♻",
@@ -153,7 +153,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"champu_playlist {videoid}"
+                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
                 text="ᴄᴏɴᴛʀᴏʟs ♻",
@@ -228,11 +228,11 @@ def playlist_markupp(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"CHAMPUPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"AlemPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"CHAMPUPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"AlemPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -313,8 +313,8 @@ import math
 
 from pyrogram.types import InlineKeyboardButton
 
-from ChampuMusic import app
-from ChampuMusic.utils.formatters import time_to_seconds
+from AlemMuzik import app
+from AlemMuzik.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -423,7 +423,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"champu_playlist {videoid}"
+                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
                 text="ᴄᴏɴᴛʀᴏʟs ♻",
@@ -454,11 +454,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"CHAMPUPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"AlemPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"CHAMPUPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"AlemPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -645,7 +645,7 @@ def stream_markup_timer2(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"champu_playlist {videoid}"
+                text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
                 text="ᴄᴏɴᴛʀᴏʟs ♻",
@@ -917,7 +917,7 @@ def panel_markup_clone(_, vidid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✚ ᴘʟᴀʏʟɪsᴛ ✚", callback_data=f"champu_playlist {vidid}"
+                text="✚ ᴘʟᴀʏʟɪsᴛ ✚", callback_data=f"Alem_playlist {vidid}"
             ),
         ],
     ]

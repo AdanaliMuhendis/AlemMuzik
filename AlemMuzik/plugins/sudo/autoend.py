@@ -1,9 +1,9 @@
 from pyrogram import filters
 
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import autoend_off, autoend_on
+from AlemMuzik import app
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import autoend_off, autoend_on
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")

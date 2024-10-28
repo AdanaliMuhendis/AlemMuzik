@@ -2,7 +2,7 @@ import time
 
 import psutil
 
-from ChampuMusic.misc import _boot_
+from AlemMuzik.misc import _boot_
 
 from .formatters import get_readable_time
 

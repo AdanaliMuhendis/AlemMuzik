@@ -1,6 +1,6 @@
 from config import LOG, LOGGER_ID
-from ChampuMusic import app
-from ChampuMusic.utils.database import is_on_off
+from AlemMuzik import app
+from AlemMuzik.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):

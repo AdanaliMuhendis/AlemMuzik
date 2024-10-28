@@ -7,12 +7,12 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ChampuMusic import app
-from ChampuMusic.misc import db
-from ChampuMusic.utils import Champubin, get_channeplayCB, seconds_to_min
-from ChampuMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from ChampuMusic.utils.decorators.language import language, languageCB
-from ChampuMusic.utils.inline import queue_back_markup, queue_markup
+from AlemMuzik import app
+from AlemMuzik.misc import db
+from AlemMuzik.utils import Alembin, get_channeplayCB, seconds_to_min
+from AlemMuzik.utils.database import get_cmode, is_active_chat, is_music_playing
+from AlemMuzik.utils.decorators.language import language, languageCB
+from AlemMuzik.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -198,7 +198,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
         if "ǫᴜᴇᴜᴇᴅ" in msg:
             msg = msg.replace("ǫᴜᴇᴜᴇᴅ", "Queued")
 
-        link = await Champubin(msg)
+        link = await Alembin(msg)
         await CallbackQuery.edit_message_text(
             _["queue_3"].format(link), reply_markup=buttons
         )
@@ -217,7 +217,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             if "ǫᴜᴇᴜᴇᴅ" in msg:
                 msg = msg.replace("ǫᴜᴇᴜᴇᴅ", "Queued")
 
-            link = await Champubin(msg)
+            link = await Alembin(msg)
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(
                 _["queue_3"].format(link), reply_markup=buttons

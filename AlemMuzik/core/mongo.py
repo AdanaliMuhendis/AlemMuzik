@@ -14,7 +14,7 @@ if config.MONGO_DB_URI is None:
         "ɴᴏ ᴍᴏɴɢᴏ  ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ.. sᴏ ɪ ᴡɪʟʟ ᴜsᴇ ᴍʏ ᴏᴡɴᴇʀ's ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ"
     )
     temp_client = Client(
-        "ChampuMusic",
+        "AlemMuzik",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Champu
-    pymongodb = _mongo_sync_.Champu
+    mongodb = _mongo_async_.Alem
+    pymongodb = _mongo_sync_.Alem

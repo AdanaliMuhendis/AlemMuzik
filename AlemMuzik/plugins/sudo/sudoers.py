@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from ChampuMusic import app
+from AlemMuzik import app
 from pyrogram.types import InputMediaVideo
-from ChampuMusic.misc import SUDOERS
-from ChampuMusic.utils.database import add_sudo, remove_sudo
-from ChampuMusic.utils.decorators.language import language
-from ChampuMusic.utils.functions import extract_user
-from ChampuMusic.utils.inline import close_markup
+from AlemMuzik.misc import SUDOERS
+from AlemMuzik.utils.database import add_sudo, remove_sudo
+from AlemMuzik.utils.decorators.language import language
+from AlemMuzik.utils.functions import extract_user
+from AlemMuzik.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 

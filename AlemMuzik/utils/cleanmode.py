@@ -1,5 +1,5 @@
 from config import LOGGER_ID
-from ChampuMusic import app
+from AlemMuzik import app
 
 protected_messages = {}
 

@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from ChampuMusic.core.mongo import pymongodb
+from AlemMuzik.core.mongo import pymongodb
 
 from .logging import LOGGER
 
