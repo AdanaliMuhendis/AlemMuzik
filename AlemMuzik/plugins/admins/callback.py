@@ -542,7 +542,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 img = await get_thumb(videoid)
                 run = await CallbackQuery.message.reply_tex(
                     text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
+                        config.SUPPORT_CHANNEL,
                         title[:23],
                         duration,
                         user,
