@@ -23,7 +23,7 @@ from AlemMuzik.utils.database import (
     remove_active_video_chat,
 )
 from AlemMuzik.utils.decorators.language import language
-from AlemMuzik.utils.alembin import Alembin
+from AlemMuzik.utils.pastebin import alembin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")

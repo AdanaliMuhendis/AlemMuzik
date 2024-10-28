@@ -17,7 +17,7 @@ from AlemMuzik.utils.database import (
 from AlemMuzik.utils.exceptions import AssistantErr
 from AlemMuzik.utils.inline.play import queue_markup, stream_markup, telegram_markup
 from AlemMuzik.utils.inline.playlist import close_markup
-from AlemMuzik.utils.alembin import Alembin
+from AlemMuzik.utils.pastebin import alembin
 from AlemMuzik.utils.stream.queue import put_queue, put_queue_index
 from AlemMuzik.utils.thumbnails import gen_qthumb, get_thumb
 
