@@ -13,8 +13,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from YukkiMusic import Carbon, app
-from YukkiMusic.utils.database import (
+from ChampuMusic import Carbon, app
+from ChampuMusic.utils.database import (
     delete_playlist,
     get_assistant,
     get_playlist,
