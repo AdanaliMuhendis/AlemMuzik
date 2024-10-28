@@ -236,7 +236,7 @@ async def start_comm(client, message: Message, _):
             chat_photo = "assets/nodp.png"
         await message.reply_photo(
             photo=chat_photo,
-            caption=_["start_2"].format(message.from_user.mention, app.mention),
+            text=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(config.LOG):
