@@ -9,7 +9,7 @@ from config import BANNED_USERS
 from strings import get_command
 from AlemMuzik import app
 from AlemMuzik.misc import db
-from AlemMuzik.utils import Alembin, get_channeplayCB, seconds_to_min
+from AlemMuzik.utils import alembin, get_channeplayCB, seconds_to_min
 from AlemMuzik.utils.database import get_cmode, is_active_chat, is_music_playing
 from AlemMuzik.utils.decorators.language import language, languageCB
 from AlemMuzik.utils.inline import queue_back_markup, queue_markup
