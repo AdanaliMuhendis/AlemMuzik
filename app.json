@@ -16,17 +16,17 @@
     "env": {
       "API_ID": {
         "description": "ɢᴇᴛ ᴀᴘɪ ɪᴅ ғʀᴏᴍ https://my.telegram.org",
-        "value": "",
+        "value": "22857219",
         "required": true
       },
       "API_HASH": {
         "description": "ɢᴇᴛ ᴀᴘɪ ʜᴀsʜ ғʀᴏᴍ https://my.telegram.org",
-        "value": "",
+        "value": "fc4240745f2feebfa7ef4de6fc14acf0",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "ɢᴇᴛ ʙᴏᴛ's ᴛᴏᴋᴇɴ ғʀᴏᴍ ʙᴏᴛғᴀᴛʜᴇʀ",
-        "value": "",
+        "value": "7208678422:AAELl3Vu2c5hMM_0iCELrVm46tAaPAzQ8Wg",
         "required": true
       },
       "EXTRA_PLUGINS": {
@@ -36,17 +36,17 @@
       },
       "MONGO_DB_URI": {
         "description": "ɢᴇᴛ ᴀ ᴍᴏɴɢᴏᴅʙ ᴜʀʟ ғʀᴏᴍ https://cloud.mongodb.com.",
-        "value": "",
+        "value": "mongodb+srv://rohat6432:Lolo1907@cluster0.welyfih.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "OWNER_ID": {
         "description": "ᴛʜᴇ ᴜsᴇʀ ɪᴅ ᴏғ ᴜsᴇʀ ᴡʜᴏᴍ ʏᴏᴜ ᴡᴏᴜʟᴅ ʟɪᴋᴇ ᴛᴏ ᴀᴅᴅ ᴀs ᴏᴡɴᴇʀ..",
-        "value": "6399386263",
+        "value": "5988763828",
         "required": true
       },
       "STRING_SESSION": {
         "description": "ᴀ ᴘʏʀᴏɢʀᴀᴍ ᴠ𝟸 sᴛʀɪɴɢ sᴇssɪᴏɴ",
-        "value": "",
+        "value": "BAFcxgMABJ7P-cBmvcySpNKubXJMbN7c0_mGegzdMUhMNXU3yC3YyCVXBpv3tycU5EUYOAL3UX471bM-WEFf7CmkZRkfzBqmipmU8rMObizm7TSrnl-TDSSvWzJ2viO0ZzTvPs6YK0DrvXsYAtJUARW74o1XVkyoofb_-iVpUqozx586N_IRM6Bqf0R2OSfFV4vfYf0oC3EKLjp-ybm9HVp1D7NBt70kxl-cr_Vvs2p4-ahZ9pDxIW85j9HTQzHCuFHYIbb3baDxCNiVeIBdxpj4wJYhAsRSSA9tiydXB-5sfb4Pasxvq-IYESxAKBrCpYSNeHVxhul6MgA8zwR8lQL3rymCCAAAAAHWmVPOAA",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -61,7 +61,7 @@
       },
       "LOGGER_ID": {
         "description": "ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ɪᴅ, ᴀᴅᴅ ʏᴏᴜʀ ʙᴏᴛ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ᴡɪᴛʜ ғᴜʟʟ ʀɪɢʜᴛs!.",
-        "value": "",
+        "value": "-1001923310875",
         "required": true
       },
       "UPSTREAM_REPO": {
