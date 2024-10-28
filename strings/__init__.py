@@ -4,10 +4,10 @@ from typing import List
 
 import yaml
 
-languages = {tr}
-commands = {tr}
+languages = {}
+commands = {}
 
-languages_present = {tr}
+languages_present = {}
 
 
 def get_command(value: str) -> List:
