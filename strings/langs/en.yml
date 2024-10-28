@@ -89,7 +89,7 @@ speed_11 : "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ 
 
 # Start
 start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
-start_2 : "ʜᴇʏ,\n  ᴛʜɪs ɪs {0}\n\nHızlı ve güçlü bir müzik oynatma botu, bazı harika özelliklere sahip.\n\nAsistan kullanıcı adı:- @{1}\nAsistan ID:- {2}"
+start_2 : "<b>нєу</b> {0}❤️ <b>\n\n\n🎵✨ ғᴏʀɢᴇᴛ ᴛʜᴇ ᴏʀᴅɪɴᴀʀʏ—ʟᴇᴛ’s ᴅᴀɴᴄᴇ ᴛᴏ ᴛʜᴇ ʙᴇᴀᴛ ᴏғ ᴏᴜʀ ᴏᴡɴ ʀʜʏᴛʜᴍ!\n🎶 ᴄᴏᴍᴇ ᴊᴏɪɴ ᴍᴇ ᴏɴ ᴛʜᴇ ᴄᴜᴛᴇsᴛ, ᴍᴏsᴛ ᴍᴀɢɪᴄᴀʟ ᴍᴜsɪᴄ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ! 🌟💃\n🎤 ᴅɪᴠᴇ ɪɴᴛᴏ ᴀɴ ᴇɴᴅʟᴇss ᴡᴏʀʟᴅ ᴏғ ᴍᴜsɪᴄ, ᴅɪsᴄᴏᴠᴇʀ ɴᴇᴡ ʙᴇᴀᴛs, ᴀɴᴅ ᴠɪʙᴇ ᴡɪᴛʜ ᴛʜᴇ ᴄᴏᴏʟᴇsᴛ ᴛᴜɴᴇs ᴇᴠᴇʀ! 🌈🎧 ᴡʜᴇᴛʜᴇʀ ʏᴏᴜ'ʀᴇ ɪɴ ᴛʜᴇ ᴍᴏᴏᴅ ғᴏʀ sᴏᴍᴇ ɢʀᴏᴏᴠʏ ʜɪᴛs, ᴄʜɪʟʟ ᴠɪʙᴇs, ᴏʀ ᴇᴘɪᴄ ᴘʟᴀʏʟɪsᴛs—ᴏᴜʀ ᴍᴜsɪᴄ ᴊᴏᴜʀɴᴇʏ ᴀᴡᴀɪᴛs!\n\n💌 ʀᴇᴀᴅʏ ᴛᴏ ʜɪᴛ ᴘʟᴀʏ ᴏɴ ᴀɴ ᴜɴғᴏʀɢᴇᴛᴛᴀʙʟᴇ ᴍᴜsɪᴄᴀʟ ᴀᴅᴠᴇɴᴛᴜʀᴇ? ʟᴇᴛ’s ᴍᴀᴋᴇ ᴇᴠᴇʀʏ ᴍᴏᴍᴇɴᴛ ᴀ ᴍᴇʟᴏᴅʏ. ᴛᴀᴘ ᴛʜᴇ ʟɪɴᴋ, ᴀɴᴅ ʟᴇᴛ's ɢʀᴏᴏᴠᴇ ᴛᴏɢᴇᴛʜᴇʀ! 🌍🎶"
 start_3 : "{0} sahibi {1} sohbetinize katıldı."
 start_4 : "{0} sudo kullanıcısı {1} sohbetinize katıldı."
 start_5 : "🦸 **SÜPERGRUP GEREKLİ** 🦸\n\nLütfen grubunuzu süpergrup'a dönüştürün ve ardından beni tekrar ekleyin.\n\n**Süpergrup nasıl yapılır?**\n🥱 Grubunuzun sohbet geçmişini bir kez görünür yapın."
