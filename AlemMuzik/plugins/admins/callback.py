@@ -650,7 +650,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -666,7 +666,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -682,7 +682,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     buttons = (
                         stream_markup_timer(
