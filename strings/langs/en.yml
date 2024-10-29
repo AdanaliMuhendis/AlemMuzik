@@ -246,7 +246,7 @@ song_11 : "Yükleme başladı\n\nLütfen bekleyin..."
 queue_1 : "» Lütfen bekleyin..."
 queue_2 : "Sıra listesi boş. Hiçbir parça bulunamadı."
 queue_3 : "<u>**Sıralı Parçalar:</u>**  [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık :** {1}\n**⏱ Süre :** {2}\n **🥀Ekleyen :** {3} ❄️"
+queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🔘Başlık :** {1}\n**⏱ Süre :** {2}\n **☔️Ekleyen :** {3} ❄️"
 queue_5 : "Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # All Streaming Lines
