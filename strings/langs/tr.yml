@@ -246,11 +246,11 @@ song_11 : "Yükleme başladı\n\nLütfen bekleyin..."
 queue_1 : "» Lütfen bekleyin..."
 queue_2 : "Sıra listesi boş. Hiçbir parça bulunamadı."
 queue_3 : "<u>**Sıralı Parçalar:</u>**  [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık :** {1}\n**⏱ Süre :** {2}\n **🥀Ekleyen :** {3} ❄️"
+queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**☔️Başlık :** {1}\n**⏱ Süre :** {2}\n **☔️Ekleyen :** {3} ❄️"
 queue_5 : "Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # All Streaming Lines
-stream_1 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b><a [{0}]({1})</a>\n<b>⌛️Süre :</b> {2} 𝒟𝒶𝓀𝒾𝓀𝒶\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {3}"
+stream_1 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b><a href={0}>{1}</a>\n<b>⌛️Süre :</b> {2} 𝒟𝒶𝓀𝒾𝓀𝒶\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {3}"
 stream_2 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b> Cαɳʅı Yαყıɳ [ᴜʀʟ]\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {0}"
 
 V_C_1 : "Katılımcı listesi getiriliyor...."
