@@ -213,8 +213,7 @@ async def play_commnd(
                     print(e)
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_11"].format(
+                text = _["play_11"].format(
                     details["title"],
                     details["duration_min"],
                 )
@@ -230,8 +229,7 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_11"].format(details["title"], details["duration_min"])
+                text = _["play_11"].format(details["title"], details["duration_min"])
             elif "playlist" in url:
                 try:
                     details, plist_id = await Spotify.playlist(url)
@@ -268,8 +266,7 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_11"].format(details["title"], details["duration_min"])
+                text = _["play_11"].format(details["title"], details["duration_min"])
             elif "playlist" in url:
                 spotify = True
                 try:
@@ -297,8 +294,7 @@ async def play_commnd(
             except Exception:
                 return await mystic.edit_text(_["play_3"])
             streamtype = "youtube"
-            img = details["thumb"]
-            cap = _["play_11"].format(details["title"], details["duration_min"])
+            text = _["play_11"].format(details["title"], details["duration_min"])
         elif await SoundCloud.valid(url):
             try:
                 details, track_path = await SoundCloud.download(url)
@@ -684,7 +680,7 @@ async def slider_queries(client, CallbackQuery, _):
             await CallbackQuery.answer(_["playcb_2"])
         except:
             pass
-        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
+        title, duration_min, vidid = await YouTube.slider(query, query_type)
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=None,
@@ -705,7 +701,7 @@ async def slider_queries(client, CallbackQuery, _):
             await CallbackQuery.answer(_["playcb_2"])
         except:
             pass
-        title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
+        title, duration_min, vidid = await YouTube.slider(query, query_type)
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=None,
