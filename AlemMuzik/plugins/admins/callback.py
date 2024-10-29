@@ -441,7 +441,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await CallbackQuery.message.reply_text(_["call_7"])
             button = stream_markup2(_, chat_id)
-            img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                     title[:23],
@@ -475,7 +474,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 return await mystic.edit_text(_["call_7"])
             button = stream_markup(_, videoid, chat_id)
-            img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                     title[:23],
@@ -537,7 +535,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 db[chat_id][0]["markup"] = "tg"
             else:
                 button = stream_markup(_, videoid, chat_id)
-                img = await get_thumb(videoid)
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
                         title[:23],
