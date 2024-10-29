@@ -98,7 +98,7 @@ async def stream(
                     )
 
                 await Alem.join_call(
-                    chat_id, original_chat_id, file_path, video=status, image=thumbnail
+                    chat_id, original_chat_id, file_path, video=status, image=None
                 )
                 await put_queue(
                     chat_id,
@@ -358,7 +358,7 @@ async def stream(
                 original_chat_id,
                 file_path,
                 video=status,
-                image=thumbnail if thumbnail else None,
+                image=None,
             )
             await put_queue(
                 chat_id,

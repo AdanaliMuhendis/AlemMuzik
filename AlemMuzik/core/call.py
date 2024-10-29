@@ -504,7 +504,7 @@ class Call(PyTgCalls):
                     )
                 else:
                     try:
-                        image = await YouTube.thumbnail(videoid, True)
+                        image = await YouTube.thumbnail(videoid, False)
                     except:
                         image = None
                     if image and config.PRIVATE_BOT_MODE == str(True):
@@ -562,7 +562,7 @@ class Call(PyTgCalls):
                     )
                 else:
                     try:
-                        image = await YouTube.thumbnail(videoid, True)
+                        image = await YouTube.thumbnail(videoid, False)
                     except:
                         image = None
                     if image and config.PRIVATE_BOT_MODE == str(True):
@@ -633,7 +633,7 @@ class Call(PyTgCalls):
                     image = None
                 else:
                     try:
-                        image = await YouTube.thumbnail(videoid, True)
+                        image = await YouTube.thumbnail(videoid, False)
                     except:
                         image = None
                 if video:

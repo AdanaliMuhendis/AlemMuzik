@@ -108,7 +108,7 @@ async def gstats_global(client, message: Message, _):
     try:
         await app.send_photo(
             message.chat.id,
-            photo=thumbnail,
+            photo=None,
             caption=final,
             reply_markup=upl,
         )

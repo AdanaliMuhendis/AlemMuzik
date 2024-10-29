@@ -139,7 +139,7 @@ async def start_comm(client, message: Message, _):
             except Exception as e:
                 print(e)
                 return
-            thumbnail = await YouTube.thumbnail(videoid, True)
+            thumbnail = await YouTube.thumbnail(videoid, False)
             await m.delete()
             await message.reply_photo(photo=thumbnail, caption=msg)
             return
