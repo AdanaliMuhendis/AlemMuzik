@@ -70,7 +70,7 @@ async def play_commnd(
         user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
         if user_command_count[user_id] > SPAM_THRESHOLD:
             hu = await message.reply_text(
-                f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ, ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄᴏɴᴅs.**"
+                f"**{message.from_user.mention} Lütfen Spama Sebep Olma, 5 sn sonra tekrar deneyiniz.**"
             )
             await asyncio.sleep(3)
             await hu.delete()
@@ -207,18 +207,7 @@ async def play_commnd(
                     plist_id = url.split("=")[1]
                 img = config.PLAYLIST_IMG_URL
                 cap = _["play_10"]
-            elif "https://youtu.be" in url:
-                videoid = url.split("/")[-1].split("?")[0]
-                details, track_id = await YouTube.track(
-                    f"https://www.youtube.com/watch?v={videoid}"
-                )
-                streamtype = "youtube"
-                img = details["thumb"]
-                cap = _["play_11"].format(
-                    details["title"],
-                    details["duration_min"],
-                )
-            else:
+             else:
                 try:
                     details, track_id = await YouTube.track(url)
                 except Exception as e:
