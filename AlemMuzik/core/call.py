@@ -598,7 +598,7 @@ class Call(PyTgCalls):
                 )
                 db[chat_id][0]["mystic"] = run
                 db[chat_id][0]["markup"] = "stream"
-             elif "index_" in queued:
+            elif "index_" in queued:
                 stream = (
                     MediaStream(
                         videoid,
