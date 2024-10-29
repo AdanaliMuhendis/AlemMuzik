@@ -105,9 +105,10 @@ async def skip(cli, message: Message, _, chat_id):
         button = telegram_markup(_, chat_id)
         run = await message.reply_text(
             text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -131,9 +132,10 @@ async def skip(cli, message: Message, _, chat_id):
         button = stream_markup(_, videoid, chat_id)
         run = await message.reply_text(
             text=_["stream_1"].format(
-                title[:23],
-                duration_min,
-                user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
             ),
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -164,9 +166,10 @@ async def skip(cli, message: Message, _, chat_id):
             button = telegram_markup(_, chat_id)
             run = await message.reply_text(
                 text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -176,9 +179,10 @@ async def skip(cli, message: Message, _, chat_id):
             button = telegram_markup(_, chat_id)
             run = await message.reply_text(
                 text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -188,9 +192,9 @@ async def skip(cli, message: Message, _, chat_id):
             button = stream_markup(_, videoid, chat_id)
             run = await message.reply_text(
                 text=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     title[:23],
                     check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
                     user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),

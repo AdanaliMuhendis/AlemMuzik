@@ -117,9 +117,10 @@ async def stream(
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -209,9 +210,10 @@ async def stream(
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -260,9 +262,10 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -313,9 +316,10 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -375,9 +379,10 @@ async def stream(
             run = await app.send_message(
                 original_chat_id,
                 text=_["stream_1"].format(
-                        title[:23],
-                        check[0]["dur"],
-                        user,
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
