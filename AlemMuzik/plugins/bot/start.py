@@ -141,7 +141,7 @@ async def start_comm(client, message: Message, _):
                 return
             thumbnail = await YouTube.thumbnail(videoid, False)
             await m.delete()
-            await message.reply_photo(photo=thumbnail, caption=msg)
+            await message.reply_text(text=msg)
             return
         if name[0:3] == "sud":
             await sudoers_list(client=client, message=message, _=_)
