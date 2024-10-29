@@ -589,7 +589,8 @@ class Call(PyTgCalls):
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                            config.SUPPORT_GROUP, title[:23], check[0]["dur"], user
+                        title[:23], check[0]["dur"], 
+                        user,
                         ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -616,7 +617,7 @@ class Call(PyTgCalls):
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_2"].format(
-                            config.SUPPORT_GROUP, title[:23], check[0]["dur"], user
+                        title[:23], check[0]["dur"], user,
                         ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
