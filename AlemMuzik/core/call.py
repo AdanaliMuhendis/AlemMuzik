@@ -532,7 +532,6 @@ class Call(PyTgCalls):
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -590,7 +589,6 @@ class Call(PyTgCalls):
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -665,7 +663,6 @@ class Call(PyTgCalls):
                         original_chat_id,
                         text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -679,7 +676,6 @@ class Call(PyTgCalls):
                         original_chat_id,
                         text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -695,7 +691,6 @@ class Call(PyTgCalls):
                             original_chat_id,
                             text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),

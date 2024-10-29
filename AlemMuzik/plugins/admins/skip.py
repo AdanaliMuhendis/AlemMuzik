@@ -106,7 +106,6 @@ async def skip(cli, message: Message, _, chat_id):
         run = await message.reply_text(
             text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -134,7 +133,6 @@ async def skip(cli, message: Message, _, chat_id):
             text=_["stream_1"].format(
                 title[:23],
                 duration_min,
-                config.SUPPORT_GROUP,
                 user,
             ),
             reply_markup=InlineKeyboardMarkup(button),
@@ -149,7 +147,10 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
         run = await message.reply_text(
-            text=_["stream_2"].format(user),
+            text=_["stream_2"].format(
+                title[:23],
+                check[0]["dur"],
+                ),
             reply_markup=InlineKeyboardMarkup(button),
         )
         db[chat_id][0]["mystic"] = run
@@ -164,7 +165,6 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_text(
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -177,7 +177,6 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_text(
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -190,7 +189,6 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_text(
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),

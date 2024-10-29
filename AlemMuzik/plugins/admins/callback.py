@@ -444,7 +444,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -478,7 +477,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -495,7 +493,10 @@ async def del_back_playlist(client, CallbackQuery, _):
                 return await CallbackQuery.message.reply_text(_["call_7"])
             button = stream_markup2(_, chat_id)
             run = await CallbackQuery.message.reply_text(
-                text=_["stream_2"].format(user),
+                text=_["stream_2"].format(
+                title[:23],
+                check[0]["dur"],
+                ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -520,7 +521,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -533,7 +533,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -546,7 +545,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),

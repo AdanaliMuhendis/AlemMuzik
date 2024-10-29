@@ -118,7 +118,6 @@ async def stream(
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -211,7 +210,6 @@ async def stream(
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -263,7 +261,6 @@ async def stream(
                 original_chat_id,
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -317,7 +314,6 @@ async def stream(
                 original_chat_id,
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -380,7 +376,6 @@ async def stream(
                 original_chat_id,
                 text=_["stream_1"].format(
                         title[:23],
-                        config.SUPPORT_GROUP,
                         check[0]["dur"],
                         user,
                     ),
@@ -430,7 +425,10 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                text=_["stream_2"].format(user_name),
+                text=_["stream_2"].format(
+                title[:23],
+                check[0]["dur"],
+                ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
