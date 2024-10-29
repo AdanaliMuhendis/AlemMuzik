@@ -533,7 +533,6 @@ class Call(PyTgCalls):
                     photo=img,
                     caption=_["stream_1"].format(
                         title[:27],
-                        f"https://t.me/{app.username}?start=info_{videoid}",
                         check[0]["dur"],
                         user,
                     ),
@@ -592,7 +591,6 @@ class Call(PyTgCalls):
                     photo=img,
                     caption=_["stream_1"].format(
                         title[:27],
-                        f"https://t.me/{app.username}?start=info_{videoid}",
                         check[0]["dur"],
                         user,
                     ),
@@ -699,7 +697,6 @@ class Call(PyTgCalls):
                             photo=img,
                             caption=_["stream_1"].format(
                                 title[:27],
-                                f"https://t.me/{app.username}?start=info_{videoid}",
                                 check[0]["dur"],
                                 user,
                             ),
