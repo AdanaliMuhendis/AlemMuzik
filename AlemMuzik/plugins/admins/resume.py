@@ -8,7 +8,7 @@ from AlemMuzik.utils.database import is_music_playing, music_on
 from AlemMuzik.utils.decorators import AdminRightsCheck
 
 
-@app.on_message(filters.command(["resume", "cresume"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["resume", "cresume", "devam"]) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):

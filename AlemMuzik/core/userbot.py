@@ -190,7 +190,7 @@ class Userbot(Client):
             )
 
     async def stop(self):
-        LOGGER(__name__).info(f"sᴛᴏᴘᴘɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"Yαყıɳ Bιƚƚι🌪...")
         try:
             if config.STRING1:
                 await self.one.stop()

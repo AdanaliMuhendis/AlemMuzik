@@ -6,7 +6,7 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://yash:shivanshudeo@yk.6bvcjqp.mongodb.net/?retryWrites=true&w=majority&appName=yk"
+TEMP_MONGODB = "mongodb+srv://rohat6432:Lolo1907@cluster0.welyfih.mongodb.net/?retryWrites=true&w=majority"
 
 
 if config.MONGO_DB_URI is None:
@@ -14,7 +14,7 @@ if config.MONGO_DB_URI is None:
         "ɴᴏ ᴍᴏɴɢᴏ  ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ.. sᴏ ɪ ᴡɪʟʟ ᴜsᴇ ᴍʏ ᴏᴡɴᴇʀ's ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ"
     )
     temp_client = Client(
-        "AlemMuzik",
+        "Anon",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
@@ -30,5 +30,5 @@ if config.MONGO_DB_URI is None:
 else:
     _mongo_async_ = _mongo_client_(config.MONGO_DB_URI)
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
-    mongodb = _mongo_async_.Alem
-    pymongodb = _mongo_sync_.Alem
+    mongodb = _mongo_async_.Anon
+    pymongodb = _mongo_sync_.Anon

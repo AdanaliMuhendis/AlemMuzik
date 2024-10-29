@@ -53,7 +53,7 @@ class AlemBot(Client):
             try:
                 await self.send_message(
                     config.LOGGER_ID,
-                    text=f"╔════❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱════❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚════════════════❍⊱❁",
+                    text=f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
@@ -61,7 +61,7 @@ class AlemBot(Client):
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔═══❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱═══❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚══════════════❍⊱❁",
+                        f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
@@ -88,14 +88,14 @@ class AlemBot(Client):
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "Start playing requested song"),
-                        BotCommand("stop", "Stop the current song"),
-                        BotCommand("pause", "Pause the current song"),
-                        BotCommand("resume", "Resume the paused song"),
-                        BotCommand("queue", "Check the queue of songs"),
-                        BotCommand("skip", "Skip the current song"),
+                        BotCommand("play", "oynat", "Start playing requested song"),
+                        BotCommand("end", "son", "bitir", "stop",   "Stop the current song"),
+                        BotCommand("pause", "dur", "Pause the current song"),
+                        BotCommand("resume", "devam", "Resume the paused song"),
+                        BotCommand("queue", "liste", "Check the queue of songs"),
+                        BotCommand("skip", "atla", "lehaaa",  "Skip the current song"),
                         BotCommand("volume", "Adjust the music volume"),
-                        BotCommand("lyrics", "Get lyrics of the song"),
+                        BotCommand("lyrics", "soz", "Get lyrics of the song"),
                     ],
                     scope=BotCommandScopeAllGroupChats(),
                 )
