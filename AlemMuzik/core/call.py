@@ -623,6 +623,7 @@ class Call(PyTgCalls):
                     check[0]["dur"],
                     f"https://t.me/{app.username}?start=info_{videoid}",
                     user,
+                    )
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
