@@ -426,14 +426,14 @@ async def del_back_playlist(client, CallbackQuery, _):
             db[chat_id][0]["speed_path"] = None
             db[chat_id][0]["speed"] = 1.0
         if "live_" in queued:
-            n, link = await YouTube.video(videoid, True)
+            n, link = await YouTube.video(videoid, False)
             if n == 0:
                 return await CallbackQuery.message.reply_text(
                     text=_["admin_7"].format(title),
                     reply_markup=close_markup(_),
                 )
             try:
-                image = await YouTube.thumbnail(videoid, True)
+                image = await YouTube.thumbnail(videoid, False)
             except:
                 image = None
             try:
@@ -444,7 +444,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     title[:23],
                     duration,
                     user,
@@ -479,7 +478,6 @@ async def del_back_playlist(client, CallbackQuery, _):
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
                 text=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     title[:23],
                     duration,
                     user,
@@ -542,7 +540,6 @@ async def del_back_playlist(client, CallbackQuery, _):
                 img = await get_thumb(videoid)
                 run = await CallbackQuery.message.reply_text(
                     text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
                         title[:23],
                         duration,
                         user,
