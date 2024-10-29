@@ -152,9 +152,10 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
             )
 
             # Send photo with the left message and keyboard
-            await app.send_text(
+            await app.send_photo(
                 chat_id,
-                text=left_message,
+                photo=random.choice(photo),
+                caption=left_message,
                 reply_markup=keyboard,
             )
             # Perform actions like stopping streams or loops
@@ -192,9 +193,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
                 f"**Name:** @{userbot.username}\n\n"
                 f"**Invite Assistant By: /userbotjoin**"
             )
-            await app.send_text(
+            await app.send_photo(
                 chat_id,
-                text=left_message,
+                photo=random.choice(photo),
+                caption=left_message,
                 reply_markup=keyboard,
             )
 
@@ -208,9 +210,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
             f"**Name:** @{userbot.username}\n\n"
             f"**Invite Assistant By: /userbotjoin**"
         )
-        await app.send_text(
+        await app.send_photo(
             chat_id,
-            text=left_message,
+            photo=random.choice(photo),
+            caption=left_message,
             reply_markup=keyboard,
         )
         await Alem.st_stream(chat_id)
