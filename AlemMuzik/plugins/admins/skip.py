@@ -107,7 +107,6 @@ async def skip(cli, message: Message, _, chat_id):
         run = await message.reply_text(
             text=_["stream_1"].format(
                 user,
-                f"https://t.me/{app.username}?start=info_{videoid}",
             ),
             reply_markup=InlineKeyboardMarkup(button),
         )
@@ -133,7 +132,6 @@ async def skip(cli, message: Message, _, chat_id):
         run = await message.reply_text(
             text=_["stream_1"].format(
                 title[:27],
-                f"https://t.me/{app.username}?start=info_{videoid}",
                 duration_min,
                 user,
             ),
@@ -185,7 +183,6 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_text(
                 text=_["stream_1"].format(
                     title[:27],
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     duration_min,
                     user,
                 ),

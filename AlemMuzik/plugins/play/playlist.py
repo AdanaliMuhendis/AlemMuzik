@@ -434,7 +434,6 @@ async def add_playlist(client, message: Message, _):
             # Extract video ID from the YouTube lin
             videoid = query.split("/")[-1].split("?")[0]
             user_id = message.from_user.id
-            thumbnail = f"https://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
             _check = await get_playlist(user_id, videoid)
             if _check:
                 try:
@@ -457,7 +456,6 @@ async def add_playlist(client, message: Message, _):
                 yt = YouTube(f"https://youtu.be/{videoid}")
                 title = yt.title
                 duration = yt.length
-                thumbnail = f"https://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
                 plist = {
                     "videoid": videoid,
                     "title": title,
@@ -497,10 +495,6 @@ async def add_playlist(client, message: Message, _):
             results = YoutubeSearch(query, max_results=1).to_dict()
             link = f"https://youtube.com{results[0]['url_suffix']}"
             title = results[0]["title"][:40]
-            thumbnail = results[0]["thumbnails"][0]
-            thumb_name = f"{title}.jpg"
-            thumb = requests.get(thumbnail, allow_redirects=True)
-            open(thumb_name, "wb").write(thumb.content)
             duration = results[0]["duration"]
             videoid = results[0]["id"]
             # Add these lines to define views and channel_name
