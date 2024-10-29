@@ -134,13 +134,12 @@ class YouTubeAPI:
         for result in (await results.next())["result"]:
             title = result["title"]
             duration_min = result["duration"]
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
             vidid = result["id"]
             if str(duration_min) == "None":
                 duration_sec = 0
             else:
                 duration_sec = int(time_to_seconds(duration_min))
-        return title, duration_min, duration_sec, thumbnail, vidid
+        return title, duration_min, duration_sec, vidid
 
     async def title(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
@@ -161,17 +160,6 @@ class YouTubeAPI:
         for result in (await results.next())["result"]:
             duration = result["duration"]
         return duration
-
-    async def thumbnail(self, link: str, videoid: Union[bool, str] = None):
-        if videoid:
-            link = self.base + link
-        if "&" in link:
-            link = link.split("&")[0]
-        results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-        return thumbnail
-
     async def video(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
             link = self.base + link
@@ -226,13 +214,11 @@ class YouTubeAPI:
             duration_min = result["duration"]
             vidid = result["id"]
             yturl = result["link"]
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
         track_details = {
             "title": title,
             "link": yturl,
             "vidid": vidid,
             "duration_min": duration_min,
-            "thumb": thumbnail,
         }
         return track_details, vidid
 
@@ -292,8 +278,7 @@ class YouTubeAPI:
         title = result[query_type]["title"]
         duration_min = result[query_type]["duration"]
         vidid = result[query_type]["id"]
-        thumbnail = result[query_type]["thumbnails"][0]["url"].split("?")[0]
-        return title, duration_min, thumbnail, vidid
+        return title, duration_min, vidid
 
     async def download(
         self,
