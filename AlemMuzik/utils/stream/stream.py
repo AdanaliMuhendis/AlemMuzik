@@ -433,6 +433,7 @@ async def stream(
                 text=_["stream_2"].format(
                 title[:23],
                 check[0]["dur"],
+                user,
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
