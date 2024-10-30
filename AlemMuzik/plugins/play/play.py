@@ -38,9 +38,6 @@ SPAM_THRESHOLD = 2
     filters.command(
         [
             "play",
-            "oynat",
-            "voynat",
-            "coynat",
             "vplay",
             "cplay",
             "cvplay",
@@ -70,7 +67,7 @@ async def play_commnd(
         user_command_count[user_id] = user_command_count.get(user_id, 0) + 1
         if user_command_count[user_id] > SPAM_THRESHOLD:
             hu = await message.reply_text(
-                f"**{message.from_user.mention} Lütfen Spama Sebep Olma, 5 sn sonra tekrar deneyiniz.**"
+                f"**{message.from_user.mention} ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ, ᴛʀʏ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 5 sᴇᴄᴏɴᴅs.**"
             )
             await asyncio.sleep(3)
             await hu.delete()
@@ -207,13 +204,26 @@ async def play_commnd(
                     plist_id = url.split("=")[1]
                 img = config.PLAYLIST_IMG_URL
                 cap = _["play_10"]
+            elif "https://youtu.be" in url:
+                videoid = url.split("/")[-1].split("?")[0]
+                details, track_id = await YouTube.track(
+                    f"https://www.youtube.com/watch?v={videoid}"
+                )
+                streamtype = "youtube"
+                img = details["thumb"]
+                cap = _["play_11"].format(
+                    details["title"],
+                    details["duration_min"],
+                )
+            else:
                 try:
                     details, track_id = await YouTube.track(url)
                 except Exception as e:
                     print(e)
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                text = _["play_11"].format(
+                img = details["thumb"]
+                cap = _["play_11"].format(
                     details["title"],
                     details["duration_min"],
                 )
@@ -229,7 +239,8 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                text = _["play_11"].format(details["title"], details["duration_min"])
+                img = details["thumb"]
+                cap = _["play_11"].format(details["title"], details["duration_min"])
             elif "playlist" in url:
                 try:
                     details, plist_id = await Spotify.playlist(url)
@@ -266,7 +277,8 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
-                text = _["play_11"].format(details["title"], details["duration_min"])
+                img = details["thumb"]
+                cap = _["play_11"].format(details["title"], details["duration_min"])
             elif "playlist" in url:
                 spotify = True
                 try:
@@ -294,7 +306,8 @@ async def play_commnd(
             except Exception:
                 return await mystic.edit_text(_["play_3"])
             streamtype = "youtube"
-            text = _["play_11"].format(details["title"], details["duration_min"])
+            img = details["thumb"]
+            cap = _["play_11"].format(details["title"], details["duration_min"])
         elif await SoundCloud.valid(url):
             try:
                 details, track_path = await SoundCloud.download(url)
@@ -332,7 +345,7 @@ async def play_commnd(
                     "ᴏᴏᴘs ɪ ᴅᴏɴ'ᴛ Tʜɪɴᴋ ᴛʜᴀᴛ ɪᴛ ɪs ᴀ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴜʀʟ"
                 )
             try:
-                await Alem.stream_call(url)
+                await Champu.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
@@ -442,8 +455,9 @@ async def play_commnd(
                 "f" if fplay else "d",
             )
             await mystic.delete()
-            await message.reply_text(
-                text=cap,
+            await message.reply_photo(
+                photo=img,
+                caption=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return await play_logs(message, streamtype=f"Playlist : {plist_type}")
@@ -459,8 +473,9 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_text(
-                    text=_["play_11"].format(
+                await message.reply_photo(
+                    photo=details["thumb"],
+                    caption=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
                     ),
@@ -476,8 +491,9 @@ async def play_commnd(
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_text(
-                    text=cap,
+                await message.reply_photo(
+                    photo=img,
+                    caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
                 return await play_logs(message, streamtype=f"URL Searched Inline")
@@ -564,7 +580,7 @@ async def anonymous_check(client, CallbackQuery):
         return
 
 
-@app.on_callback_query(filters.regex("AlemPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ChampuPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
@@ -683,7 +699,7 @@ async def slider_queries(client, CallbackQuery, _):
         title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
-            media=None,
+            media=thumbnail,
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
@@ -704,7 +720,7 @@ async def slider_queries(client, CallbackQuery, _):
         title, duration_min, thumbnail, vidid = await YouTube.slider(query, query_type)
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
-            media=None,
+            media=thumbnail,
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
