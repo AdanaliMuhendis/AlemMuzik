@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS, adminlist
 from strings import get_command
 from AlemMuzik import app
-from AlemMuziktils.database import (
+from AlemMuzik.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
