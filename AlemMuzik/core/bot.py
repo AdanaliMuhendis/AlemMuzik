@@ -19,7 +19,7 @@ import config
 from ..logging import LOGGER
 
 
-class alemBot(Client):
+class AlemBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ʙᴏᴛ...")
         super().__init__(

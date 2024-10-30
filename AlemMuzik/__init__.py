@@ -1,4 +1,4 @@
-from AlemMuzik.core.bot import alemBot
+from AlemMuzik.core.bot import AlemBot
 from AlemMuzik.core.dir import dirr
 from AlemMuzik.core.git import git
 from AlemMuzik.core.userbot import Userbot
@@ -16,7 +16,7 @@ heroku()
 
 sudo()
 
-app = alemBot()
+app = AlemBot()
 
 userbot = Userbot()
 
