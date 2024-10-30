@@ -106,10 +106,9 @@ async def gstats_global(client, message: Message, _):
     final = f"ᴛᴏᴘ ᴍᴏsᴛ ᴘʟᴀʏᴇᴅ ᴛʀᴀᴄᴋ's ᴏɴ ʙᴏᴛ {app.mention}\n\n**ᴛɪᴛʟᴇ:** {title}\n\nᴘʟᴀʏᴇᴅ** {co} **ᴛɪᴍᴇs"
     upl = get_stats_markup(_, True if message.from_user.id in SUDOERS else False)
     try:
-        await app.send_photo(
+        await app.send_message(
             message.chat.id,
-            photo=thumbnail,
-            caption=final,
+            text=final,
             reply_markup=upl,
         )
     except FloodWait as e:

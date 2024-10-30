@@ -203,10 +203,9 @@ async def start_comm(client, message: Message, _):
                 ]
             )
             await m.delete()
-            await app.send_photo(
+            await app.send_message(
                 message.chat.id,
-                photo=thumbnail,
-                caption=searched_text,
+                text=searched_text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=key,
             )

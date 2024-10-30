@@ -14,9 +14,8 @@ from AlemMuzik.utils.inline import support_group_markup
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
 @language
 async def ping_com(client, message: Message, _):
-    response = await message.reply_photo(
-        photo=PING_IMG_URL,
-        caption=_["ping_1"].format(app.mention),
+    response = await message.reply_text(
+        text=_["ping_1"].format(app.mention),
     )
     start = datetime.now()
     pytgping = await Alem.ping()

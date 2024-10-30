@@ -83,9 +83,9 @@ async def song_commad_private(client, message: Message, _):
 
         await mystic.delete()
 
-        return await message.reply_photo(
+        return await message.reply_text(
             thumbnail,
-            caption=_["song_4"].format(title),
+            text=_["song_4"].format(title),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -127,9 +127,9 @@ async def song_commad_private(client, message: Message, _):
 
     await mystic.delete()
 
-    return await message.reply_photo(
+    return await message.reply_text(
         thumbnail,
-        caption=_["song_4"].format(title),
+        text=_["song_4"].format(title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
