@@ -8,9 +8,19 @@ from typing import Dict, List, Union
 import requests
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
+
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
+from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
+from AlemMuzik import Carbon, app
+from AlemMuzik.utils.database import (
+    delete_playlist,
+    get_assistant,
+    get_playlist,
+    get_playlist_names,
+    save_playlist,
+)
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from AlemMuzik import Carbon, app
 from AlemMuzik.utils.decorators.language import language, languageCB
@@ -135,7 +145,7 @@ async def check_playlist(client, message: Message, _):
         car = msg
     carbon = await Carbon.generate(car, randint(100, 10000000000))
     await get.delete()
-    await message.reply_text(carbon, text=_["playlist_15"].format(link))
+    await message.reply_text(text=_["playlist_15"].format(link))
 
 
 async def get_keyboard(_, user_id):
@@ -424,12 +434,11 @@ async def add_playlist(client, message: Message, _):
             # Extract video ID from the YouTube lin
             videoid = query.split("/")[-1].split("?")[0]
             user_id = message.from_user.id
-            thumbnail = f"https://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
             _check = await get_playlist(user_id, videoid)
             if _check:
                 try:
                     await add.delete()
-                    return await message.reply_text(thumbnail, text=_["playlist_8"])
+                    return await message.reply_text(text=_["playlist_8"])
                 except KeyError:
                     pass
 
@@ -447,7 +456,6 @@ async def add_playlist(client, message: Message, _):
                 yt = YouTube(f"https://youtu.be/{videoid}")
                 title = yt.title
                 duration = yt.length
-                thumbnail = f"https://img.youtube.com/vi/{videoid}/maxresdefault.jpg"
                 plist = {
                     "videoid": videoid,
                     "title": title,
@@ -468,7 +476,6 @@ async def add_playlist(client, message: Message, _):
                 )
                 await add.delete()
                 await message.reply_text(
-                    thumbnail,
                     text="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
                     reply_markup=keyboard,
                 )
@@ -488,10 +495,6 @@ async def add_playlist(client, message: Message, _):
             results = YoutubeSearch(query, max_results=1).to_dict()
             link = f"https://youtube.com{results[0]['url_suffix']}"
             title = results[0]["title"][:40]
-            thumbnail = results[0]["thumbnails"][0]
-            thumb_name = f"{title}.jpg"
-            thumb = requests.get(thumbnail, allow_redirects=True)
-            open(thumb_name, "wb").write(thumb.content)
             duration = results[0]["duration"]
             videoid = results[0]["id"]
             # Add these lines to define views and channel_name
@@ -502,7 +505,7 @@ async def add_playlist(client, message: Message, _):
             _check = await get_playlist(user_id, videoid)
             if _check:
                 try:
-                    return await message.reply_text(thumbnail, text=_["playlist_8"])
+                    return await message.reply_text(text=_["playlist_8"])
                 except KeyError:
                     pass
 
@@ -540,7 +543,6 @@ async def add_playlist(client, message: Message, _):
             )
             await m.delete()
             await message.reply_text(
-                thumbnail,
                 text="**➻ ᴀᴅᴅᴇᴅ sᴏɴɢ ɪɴ ʏᴏᴜʀ ʙᴏᴛ ᴘʟᴀʏʟɪsᴛ✅**\n\n**➥ ᴄʜᴇᴄᴋ ʙʏ » /playlist**\n\n**➥ ᴅᴇʟᴇᴛᴇ ʙʏ » /delplaylist**\n\n**➥ ᴀɴᴅ ᴘʟᴀʏ ʙʏ » /play (ɢʀᴏᴜᴘs ᴏɴʟʏ)**",
                 reply_markup=keyboard,
             )
