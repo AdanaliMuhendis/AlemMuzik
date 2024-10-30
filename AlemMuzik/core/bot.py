@@ -21,7 +21,7 @@ from ..logging import LOGGER
 
 class AlemBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ʙᴏᴛ...")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...")
         super().__init__(
             "AlemMuzik",
             api_id=config.API_ID,
@@ -41,7 +41,7 @@ class AlemBot(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
+                        text="𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎°",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
