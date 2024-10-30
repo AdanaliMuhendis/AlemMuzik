@@ -443,12 +443,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             button = stream_markup2(_, chat_id)
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
-                text=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
-                    title[:23],
-                    duration,
-                    user,
-                ),
+                text=_["stream_1"].format(title, link, duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -478,12 +473,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             button = stream_markup(_, videoid, chat_id)
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_text(
-                text=_["stream_1"].format(
-                    f"https://t.me/{app.username}?start=info_{videoid}",
-                    title[:23],
-                    duration,
-                    user,
-                ),
+                text=_["stream_1"].format(title, link, duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -520,9 +510,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if videoid == "telegram":
                 button = stream_markup2(_, chat_id)
                 run = await CallbackQuery.message.reply_text(
-                    text=_["stream_1"].format(
-                        config.SUPPORT_GROUP, title[:23], duration, user
-                    ),
+                    text=_["stream_1"].format(title, link, duration_min, user_name),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -530,9 +518,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             elif videoid == "soundcloud":
                 button = stream_markup2(_, chat_id)
                 run = await CallbackQuery.message.reply_text(
-                    text=_["stream_1"].format(
-                        config.SUPPORT_GROUP, title[:23], duration, user
-                    ),
+                    text=_["stream_1"].format(title, link, duration_min, user_name),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -541,12 +527,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 button = stream_markup(_, videoid, chat_id)
                 img = await get_thumb(videoid)
                 run = await CallbackQuery.message.reply_text(
-                    text=_["stream_1"].format(
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        title[:23],
-                        duration,
-                        user,
-                    ),
+                    text=_["stream_1"].format(title, link, duration_min, user_name),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
