@@ -284,7 +284,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "video" if video else "audio"",
+                "video" if video else "audio",
             )
             position = len(db.get(chat_id)) - 1
             await app.send_message(
