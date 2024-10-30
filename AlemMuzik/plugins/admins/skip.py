@@ -105,10 +105,7 @@ async def skip(cli, message: Message, _, chat_id):
         button = telegram_markup(_, chat_id)
         img = await get_thumb(videoid)
         run = await message.reply_text(
-            text=_["stream_1"].format(
-                user,
-                f"https://t.me/{app.username}?start=info_{videoid}",
-            ),
+            text=_["stream_1"].format(user),
             reply_markup=InlineKeyboardMarkup(button),
         )
         db[chat_id][0]["mystic"] = run
@@ -133,7 +130,6 @@ async def skip(cli, message: Message, _, chat_id):
         run = await message.reply_text(
             text=_["stream_1"].format(
                 title[:27],
-                f"https://t.me/{app.username}?start=info_{videoid}",
                 duration_min,
                 user,
             ),
@@ -185,7 +181,6 @@ async def skip(cli, message: Message, _, chat_id):
             run = await message.reply_text(
                 text=_["stream_1"].format(
                     title[:27],
-                    f"https://t.me/{app.username}?start=info_{videoid}",
                     duration_min,
                     user,
                 ),
