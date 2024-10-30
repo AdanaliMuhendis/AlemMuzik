@@ -48,8 +48,8 @@ async def init():
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
     LOGGER("AlemMuzik.plugins").info("sᴜᴄᴄᴇssғᴜʟʟʏ ɪᴍᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs...")
 
-    await alem.start()
-    await alem.decorators()
+    await Alem.start()
+    await Alem.decorators()
     LOGGER("AlemMuzik").info("\x43\x68\x61\x6D\x70\x75\x20\x42\x6F\x74\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x74\x61\x72\x74\x65\x64\x2E\x0A\x0A\x40\x54\x68\x65\x43\x68\x61\x6D\x70\x75\x20")
     await idle()
 
