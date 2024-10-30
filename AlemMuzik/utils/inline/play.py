@@ -761,25 +761,25 @@ def panel_markup_5(_, videoid, chat_id):
             ),
         ],
         [
-            InlineKeyboardButton(text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="Dur", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="Son", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                text="Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar", callback_data=f"ADMIN Replay|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʙᴀᴄᴋ ๏",
+                text="๏ Geri ๏",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ɴᴇxᴛ ๏",
+                text="๏ İleri ๏",
                 callback_data=f"Pages Forw|1|{videoid}|{chat_id}",
             ),
         ],
@@ -792,7 +792,7 @@ def panel_markup_3(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -811,17 +811,17 @@ def panel_markup_3(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴜᴛᴇ ๏",
+                text="๏ Sessiz ๏",
                 callback_data=f"ADMIN Mute|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ᴜɴᴍᴜᴛᴇ ๏",
+                text="๏ Sesli ๏",
                 callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʙᴀᴄᴋ ๏",
+                text="๏ Geri ๏",
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
         ],
@@ -858,32 +858,32 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"{played} •{bar}• {dur}",
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             )
         ],
         [
             InlineKeyboardButton(
-                text="II ᴘᴀᴜsᴇ",
+                text="II Dur",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="▢ sᴛᴏᴘ ▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▢ Son ▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="▷ ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
-            ),
-            InlineKeyboardButton(
-                text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Atla ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʜᴏᴍᴇ ๏",
+                text="▷ Devam", callback_data=f"ADMIN Resume|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="Tekrar ↺", callback_data=f"ADMIN Replay|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="๏ Ana Menü ๏",
                 callback_data=f"MainMarkup {vidid}|{chat_id}",
             ),
         ],
@@ -897,7 +897,7 @@ def panel_markup_clone(_, vidid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -909,10 +909,10 @@ def panel_markup_clone(_, vidid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="📥 ᴠɪᴅᴇᴏ", callback_data=f"downloadvideo {vidid}"
+                text="🎬Video⬇️", callback_data=f"downloadvideo {videoid}"
             ),
             InlineKeyboardButton(
-                text="📥 ᴀᴜᴅɪᴏ", callback_data=f"downloadaudio {vidid}"
+                text="🎶Ses⬇️", callback_data=f"downloadaudio {videoid}"
             ),
         ],
         [
