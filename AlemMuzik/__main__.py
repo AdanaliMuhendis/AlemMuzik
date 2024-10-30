@@ -6,7 +6,7 @@ from pyrogram import idle
 import config
 from config import BANNED_USERS
 from AlemMuzik import HELPABLE, LOGGER, app, userbot
-from AlemMuzik.core.call import alem
+from AlemMuzik.core.call import Alem
 from AlemMuzik.plugins import ALL_MODULES
 from AlemMuzik.utils.database import get_banned_users, get_gbanned
 
