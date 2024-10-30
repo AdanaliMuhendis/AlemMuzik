@@ -72,7 +72,7 @@ async def stream(
                     user_name,
                     vidid,
                     user_id,
-                    "audio" if audio else "video",
+                    "video" if video else "audio",
                 )
                 position = len(db.get(chat_id)) - 1
                 count += 1
@@ -109,7 +109,7 @@ async def stream(
                     user_name,
                     vidid,
                     user_id,
-                    "audio" if audio else "video",
+                    "video" if video else "audio",
                     forceplay=forceplay,
                 )
                 img = await get_thumb(vidid)
@@ -174,7 +174,7 @@ async def stream(
                 user_name,
                 vidid,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio",
             )
             position = len(db.get(chat_id)) - 1
             qimg = await gen_qthumb(vidid)
@@ -201,7 +201,7 @@ async def stream(
                 user_name,
                 vidid,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio",
                 forceplay=forceplay,
             )
             img = await get_thumb(vidid)
@@ -235,7 +235,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "audio",
+                "video",
             )
             position = len(db.get(chat_id)) - 1
             await app.send_message(
@@ -255,7 +255,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "audio",
+                "video",
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
@@ -284,7 +284,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio"",
             )
             position = len(db.get(chat_id)) - 1
             await app.send_message(
@@ -304,7 +304,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio",
                 forceplay=forceplay,
             )
             if video:
@@ -334,7 +334,7 @@ async def stream(
                 user_name,
                 vidid,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio",
             )
             position = len(db.get(chat_id)) - 1
             await app.send_message(
@@ -363,7 +363,7 @@ async def stream(
                 user_name,
                 vidid,
                 user_id,
-                "audio" if audio else "video",
+                "video" if video else "audio",
                 forceplay=forceplay,
             )
             img = await get_thumb(vidid)
@@ -393,7 +393,7 @@ async def stream(
                 duration_min,
                 user_name,
                 link,
-                "audio" if audio else "video",
+                "video" if video else "audio",
             )
             position = len(db.get(chat_id)) - 1
             await mystic.edit_text(
@@ -416,7 +416,7 @@ async def stream(
                 duration_min,
                 user_name,
                 link,
-                "audio" if audio else "video",
+                "video" if video else "audio",
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
