@@ -65,7 +65,7 @@ async def _clear_(chat_id):
     await remove_active_video_chat(chat_id)
     await remove_active_chat(chat_id)
     AMBOT = await app.send_message(
-        chat_id, f"🎶 **ꜱᴏɴɢ ʜᴀꜱ ᴇɴᴅᴇᴅ.** ᴅᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʜᴇᴀʀ ᴍᴏʀᴇ sᴏɴɢs?"
+        chat_id, f"🎶 Yαყıɳ Bιƚƚι🌪... Devam etmek istiyor musun?"
     )
 
 
@@ -418,7 +418,7 @@ class Call(PyTgCalls):
                 )
             except Exception as e:
                 raise AssistantErr(
-                    "**ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ғᴏᴜɴᴅ**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                    "**Aktif Sesli Sohbet Bulunamadı**\n\nLütfen Görüntülü Sohbeti Başlatınız."
                 )
         except Exception as e:
             if "phone.CreateGroupCall" in str(e):
@@ -433,16 +433,16 @@ class Call(PyTgCalls):
                     )
                 except Exception:
                     raise AssistantErr(
-                        f"**» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ғᴏᴜɴᴅ.**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                        f"**» Aktif Sesli Sohbet Bulunamadı**\n\nLütfen Görüntülü Sohbeti Başlatınız."
                     )
 
         except AlreadyJoinedError:
             raise AssistantErr(
-                "**ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ɪɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ**\n\nᴍᴜsɪᴄ ʙᴏᴛ sʏsᴛᴇᴍs ᴅᴇᴛᴇᴄᴛᴇᴅ ᴛʜᴀᴛ ᴀssɪᴛᴀɴᴛ ɪs ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ, ɪғ ᴛʜɪs ᴩʀᴏʙʟᴇᴍ ᴄᴏɴᴛɪɴᴜᴇs ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ."
+                "**Asistan Sesli Sohbette Görünüyor**\n\nAlem Müzik Bot Sistemleri Hata Tespit Etti. Sistem Hatası Yaşanmaması İçin Sesli Sohbeti Kapatıp Tekrar Açınız..."
             )
         except TelegramServerError:
             raise AssistantErr(
-                "**ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀ ᴇʀʀᴏʀ**\n\nᴩʟᴇᴀsᴇ ᴛᴜʀɴ ᴏғғ ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴀɢᴀɪɴ."
+                "**Telegram Sunucu Hatası!**\n\nLütfen Sesli Sohbeti Yeniden Başlatınız..."
             )
         await add_active_chat(chat_id)
         await music_on(chat_id)
@@ -528,14 +528,13 @@ class Call(PyTgCalls):
                     )
                 img = await get_thumb(videoid)
                 button = telegram_markup(_, chat_id)
-                run = await app.send_photo(
+                run = await app.send_message(
                     original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
-                        title[:27],
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        check[0]["dur"],
-                        user,
+                    text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
                     ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
@@ -587,15 +586,12 @@ class Call(PyTgCalls):
                 img = await get_thumb(videoid)
                 button = stream_markup(_, videoid, chat_id)
                 await mystic.delete()
-                run = await app.send_photo(
+                run = await app.send_message(
                     original_chat_id,
-                    photo=img,
-                    caption=_["stream_1"].format(
-                        title[:27],
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        check[0]["dur"],
+                    text=_["stream_1"].format(
+                        title[:23], check[0]["dur"], 
                         user,
-                    ),
+                        ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -618,10 +614,11 @@ class Call(PyTgCalls):
                         text=_["call_7"],
                     )
                 button = telegram_markup(_, chat_id)
-                run = await app.send_photo(
+                run = await app.send_message(
                     original_chat_id,
-                    photo=config.STREAM_IMG_URL,
-                    caption=_["stream_2"].format(user),
+                    text=_["stream_2"].format(
+                        title[:23], check[0]["dur"], user,
+                        ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -664,28 +661,28 @@ class Call(PyTgCalls):
                     )
                 if videoid == "telegram":
                     button = telegram_markup(_, chat_id)
-                    run = await app.send_photo(
+                    run = await app.send_message(
                         original_chat_id,
-                        photo=(
-                            config.TELEGRAM_AUDIO_URL
-                            if str(streamtype) == "audio"
-                            else config.TELEGRAM_VIDEO_URL
-                        ),
-                        caption=_["stream_1"].format(
-                            title, config.SUPPORT_GROUP, check[0]["dur"], user
-                        ),
+                        text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
                     db[chat_id][0]["mystic"] = run
                     db[chat_id][0]["markup"] = "tg"
                 elif videoid == "soundcloud":
                     button = telegram_markup(_, chat_id)
-                    run = await app.send_photo(
+                    run = await app.send_message(
                         original_chat_id,
-                        photo=config.SOUNCLOUD_IMG_URL,
-                        caption=_["stream_1"].format(
-                            title, config.SUPPORT_GROUP, check[0]["dur"], user
-                        ),
+                        text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
                     db[chat_id][0]["mystic"] = run
@@ -694,15 +691,14 @@ class Call(PyTgCalls):
                     img = await get_thumb(videoid)
                     button = stream_markup(_, videoid, chat_id)
                     try:
-                        run = await app.send_photo(
+                        run = await app.send_message(
                             original_chat_id,
-                            photo=img,
-                            caption=_["stream_1"].format(
-                                title[:27],
-                                f"https://t.me/{app.username}?start=info_{videoid}",
-                                check[0]["dur"],
-                                user,
-                            ),
+                            text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                             reply_markup=InlineKeyboardMarkup(button),
                         )
                     except FloodWait as e:
