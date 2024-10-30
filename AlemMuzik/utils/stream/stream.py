@@ -116,7 +116,7 @@ async def stream(
                 button = stream_markup(_, vidid, chat_id)
                 run = await app.send_message(
                     original_chat_id,
-                    text=_["stream_1"].format(title, link, duration_min, user_name),
+                    text=_["stream_1"].format(title, duration_min, user_name),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -204,7 +204,7 @@ async def stream(
             try:
                 run = await app.send_message(
                     original_chat_id,
-                    text=_["stream_1"].format(title, link, duration_min, user_name),
+                    text=_["stream_1"].format(title, duration_min, user_name),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -251,7 +251,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                text=_["stream_1"].format(title, link, duration_min, user_name),
+                text=_["stream_1"].format(title, duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -300,7 +300,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                text=_["stream_1"].format(title, link, duration_min, user_name),
+                text=_["stream_1"].format(title, duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -358,12 +358,7 @@ async def stream(
             button = telegram_markup(_, chat_id)
             run = await app.send_message(
                 original_chat_id,
-                text=_["stream_1"].format(
-                    title[:27],
-                    f"https://t.me/{app.username}?start=info_{vidid}",
-                    duration_min,
-                    user_name,
-                ),
+                text=_["stream_1"].format(title, duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
