@@ -476,7 +476,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -501,7 +501,7 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -539,7 +539,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Next",
+                text="İleri",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
@@ -557,30 +557,30 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="II ᴘᴀᴜsᴇ",
+                text="II Dur",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
-            InlineKeyboardButton(text="▢ sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="▢ Son", callback_data=f"ADMIN Stop|{chat_id}"),
             InlineKeyboardButton(
-                text="sᴋɪᴘ ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="Atla ‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="▷ ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                text="▷ Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ʀᴇᴘʟᴀʏ ↺", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Tekrar ↺", callback_data=f"ADMIN Replay|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴏʀᴇ ๏",
+                text="๏ DAHA ๏",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
@@ -594,7 +594,7 @@ def stream_markup2(_, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url=f"https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -640,7 +640,7 @@ def stream_markup_timer2(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"{played} •{bar}• {dur}",
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             )
         ],
         [
@@ -648,21 +648,21 @@ def stream_markup_timer2(_, chat_id, played, dur):
                 text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
+                text="Kᴏɴᴛʀᴏʟs ♻",
                 callback_data=f"Pages Back|3|{videoid}|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="📥 ᴠɪᴅᴇᴏ", callback_data=f"downloadvideo {videoid}"
+                text="🎬Video⬇️", callback_data=f"downloadvideo {videoid}"
             ),
             InlineKeyboardButton(
-                text="📥 ᴀᴜᴅɪᴏ", callback_data=f"downloadaudio {videoid}"
+                text="🎶Ses⬇️", callback_data=f"downloadaudio {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
+                text="๏ 🔚♾️🔜 ๏",
                 callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
             ),
         ],
@@ -676,15 +676,15 @@ def panel_markup_1(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🎧 sᴜғғʟᴇ",
+                text="🎧 Kar",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
-            InlineKeyboardButton(text="ʟᴏᴏᴘ ↺", callback_data=f"ADMIN Loop|{chat_id}"),
+            InlineKeyboardButton(text="Loop ↺", callback_data=f"ADMIN Loop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
@@ -698,11 +698,11 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʜᴏᴍᴇ ๏",
+                text="๏ Ana Menü ๏",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ɴᴇxᴛ ๏",
+                text="๏ İleri ๏",
                 callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
             ),
         ],
@@ -715,7 +715,7 @@ def panel_markup_2(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
@@ -734,17 +734,17 @@ def panel_markup_2(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴍᴜᴛᴇ ๏",
+                text="๏ Sessiz ๏",
                 callback_data=f"ADMIN Mute|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="๏ ᴜɴᴍᴜᴛᴇ ๏",
+                text="๏ Sesli ๏",
                 callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ʙᴀᴄᴋ ๏",
+                text="๏ Geri ๏",
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
         ],
@@ -757,7 +757,7 @@ def panel_markup_5(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
+                url="https://t.me/SohbetAlemi",
             ),
         ],
         [
