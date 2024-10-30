@@ -37,7 +37,7 @@ async def stop_music(cli, message: Message):
     if await is_maintenance() is False:
         if message.from_user.id not in SUDOERS:
             return await message.reply_text(
-                "Bot is under maintenance. Please wait for some time..."
+                "Alem Müzik Botu Bakım Modunda. Lütfen Bir Süre Bekleyiniz..."
             )
     if not len(message.command) < 2:
         if extra_plugins_enabled:
@@ -45,9 +45,9 @@ async def stop_music(cli, message: Message):
                 filter = " ".join(message.command[1:])
                 deleted = await delete_filter(message.chat.id, filter)
                 if deleted:
-                    return await message.reply_text(f"**ᴅᴇʟᴇᴛᴇᴅ ғɪʟᴛᴇʀ {filter}.**")
+                    return await message.reply_text(f"**Filter Silindi... {filter}**")
                 else:
-                    return await message.reply_text("**ɴᴏ sᴜᴄʜ ғɪʟᴛᴇʀ.**")
+                    return await message.reply_text("**Filter Bulunamadı...**")
 
     if await is_commanddelete_on(message.chat.id):
         try:
@@ -65,7 +65,7 @@ async def stop_music(cli, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="How to Fix this? ",
+                        text="🔎 Nαʂıʅ Kυʅʅαɳıʅıɾ?",
                         callback_data="AnonymousAdmin",
                     ),
                 ]
@@ -144,7 +144,7 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
                 [
                     [
                         InlineKeyboardButton(
-                            "✨𝐔𝐧𝐛𝐚𝐧 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭✨",
+                            "✨Ban Aç✨",
                             callback_data="unban_userbot",
                         )
                     ]
@@ -223,7 +223,7 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
 async def brah(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+        await msg.reply("**Sesli Sohbet Başladı...🥳**")
         await Alem.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:
@@ -237,7 +237,7 @@ async def brah(_, msg):
 async def brah2(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("**😕ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ💔**")
+        await msg.reply("**Sesli Sohbet Sonlandı...😕**")
         await Alem.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:
