@@ -46,25 +46,25 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
 
     # Fun and engaging sentences with progress bar
     if 10 < umm <= 20:
-        bar = "💞 ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ᴄʜᴀɴɴᴇʟs 💞"
+        bar = "💞 𝐀𝐋𝐄𝐌 𝐌𝐔𝐒𝐈𝐂 ⍣⃝♬ 💞"
     elif 20 <= umm < 35:
-        bar = "🎄 ᴛᴀᴘ ᴛᴏ ᴇɴᴛᴇʀ ᴍᴏʀᴇ ɢʀᴏᴜᴘs 🎄"
+        bar = "🎄 🎼🎹🎧 🎄"
     elif 35 <= umm < 50:
-        bar = "🎁 ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɪɴ ɴᴇᴡ ᴄʜᴀᴛ 🎁"
+        bar = "🎼Müzik Başlasın 😎"
     elif 50 <= umm < 75:
-        bar = "⚜️ ᴛᴀᴘ ʜᴇʀᴇ ғᴏʀ ᴄʜᴀᴛ ɪɴᴠɪᴛᴇ ⚜️"
+        bar = "⚜️ 𝓐𝓵𝓮𝓶𝓬𝓲𝔂𝓲𝔃° ⚜️"
     elif 75 <= umm < 80:
-        bar = "🔥 ᴄʟɪᴄᴋ ᴛᴏ ᴀᴄᴄᴇss ɪɴ ɢʀᴏᴜᴘ 🔥"
+        bar = "🔥 𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎° 🔥"
     elif 80 <= umm < 85:
-        bar = "🌟 ᴛᴀᴘ ᴛᴏ ᴇxᴘʟᴏʀᴇ ᴍᴏʀᴇ ᴄʜᴀᴛ 🌟"
+        bar = "🌟 Yayındayım Bebeğim 😏 🌟"
     elif 85 <= umm < 90:
-        bar = "🐥ᴄʟɪᴄᴋ ᴛᴏ ᴀᴅᴅ ɴᴇᴡ ᴄʜᴀᴛ ʀᴏᴏᴍ🐥"
+        bar = "🐥𝙴𝚔𝚕𝚎 𝙱𝚎𝚗𝚒°🐥"
     elif 90 <= umm < 95:
-        bar = "❣️ᴛᴀᴘ ᴛᴏ ᴀᴅᴅ ᴅɪғғᴇʀᴇɴᴛ ɢʀᴏᴜᴘ❣️"
+        bar = "❣️🎼🎹🎧❣️"
     elif 95 <= umm < 100:
-        bar = "⚡ᴄʟɪᴄᴋ ғᴏʀ ɢᴇᴛ ᴀᴅᴅ ɪɴ ᴄʜᴀᴛs⚡"
+        bar = "⚡🎼🎹🎧⚡"
     else:
-        bar = "✨ ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ɢʀᴏᴜᴘ ɪɴᴠɪᴛᴇs ✨"
+        bar = "✨ 𝐀𝐋𝐄𝐌 𝐌𝐔𝐒𝐈𝐂 ⍣⃝♬ ✨"
     buttons = [
         [
             InlineKeyboardButton(
@@ -77,21 +77,21 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
                 text="✚ ᴘʟᴀʏʟɪsᴛ", callback_data=f"Alem_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="ᴄᴏɴᴛʀᴏʟs ♻",
+                text="Kᴏɴᴛʀᴏʟs ♻",
                 callback_data=f"Pages Back|3|{videoid}|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="📥 ᴠɪᴅᴇᴏ", callback_data=f"downloadvideo {videoid}"
+                text="🎬Video⬇️", callback_data=f"downloadvideo {videoid}"
             ),
             InlineKeyboardButton(
-                text="📥 ᴀᴜᴅɪᴏ", callback_data=f"downloadaudio {videoid}"
+                text="🎶Ses⬇️", callback_data=f"downloadaudio {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
+                text="๏ 🔚♾️🔜 ๏",
                 callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
             ),
         ],
@@ -162,15 +162,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="📥 ᴠɪᴅᴇᴏ", callback_data=f"downloadvideo {videoid}"
+                text="🎬Video⬇️", callback_data=f"downloadvideo {videoid}"
             ),
             InlineKeyboardButton(
-                text="📥 ᴀᴜᴅɪᴏ", callback_data=f"downloadaudio {videoid}"
+                text="🎶Ses⬇️", callback_data=f"downloadaudio {videoid}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="๏ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs ๏",
+                text="๏ 🔚♾️🔜 ๏",
                 callback_data=f"Pages Forw|0|{videoid}|{chat_id}",
             ),
         ],
