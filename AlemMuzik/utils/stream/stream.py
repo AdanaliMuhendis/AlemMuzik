@@ -118,6 +118,7 @@ async def stream(
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:27],
+                        f"https://t.me/{app.username}?start=info_{vidid}",
                         duration_min,
                         user_name,
                     ),
@@ -210,6 +211,7 @@ async def stream(
                     original_chat_id,
                     text=_["stream_1"].format(
                         title[:27],
+                        f"https://t.me/{app.username}?start=info_{vidid}",
                         duration_min,
                         user_name,
                     ),
@@ -370,6 +372,7 @@ async def stream(
                 original_chat_id,
                 text=_["stream_1"].format(
                     title[:27],
+                    f"https://t.me/{app.username}?start=info_{vidid}",
                     duration_min,
                     user_name,
                 ),
@@ -417,7 +420,7 @@ async def stream(
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
-            run = await app.send_message(
+            run = await app.send_photo(
                 original_chat_id,
                 text=_["stream_2"].format(user_name),
                 reply_markup=InlineKeyboardMarkup(button),
