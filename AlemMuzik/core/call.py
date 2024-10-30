@@ -530,7 +530,12 @@ class Call(PyTgCalls):
                 button = telegram_markup(_, chat_id)
                 run = await app.send_message(
                     original_chat_id,
-                    text=_["stream_1"].format(title, user_name),
+                    text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -583,7 +588,12 @@ class Call(PyTgCalls):
                 await mystic.delete()
                 run = await app.send_message(
                     original_chat_id,
-                    text=_["stream_1"].format(title, user_name),
+                    text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -653,7 +663,12 @@ class Call(PyTgCalls):
                     button = telegram_markup(_, chat_id)
                     run = await app.send_message(
                         original_chat_id,
-                        text=_["stream_1"].format(title, user_name),
+                        text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
                     db[chat_id][0]["mystic"] = run
@@ -662,7 +677,12 @@ class Call(PyTgCalls):
                     button = telegram_markup(_, chat_id)
                     run = await app.send_message(
                         original_chat_id,
-                        text=_["stream_1"].format(title, user_name),
+                        text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
                     db[chat_id][0]["mystic"] = run
@@ -673,7 +693,12 @@ class Call(PyTgCalls):
                     try:
                         run = await app.send_message(
                             original_chat_id,
-                            text=_["stream_1"].format(title, user_name),
+                            text=_["stream_1"].format(
+                    title[:23],
+                    check[0]["dur"],
+                    f"https://t.me/{app.username}?start=info_{videoid}",
+                    user,
+                    ),
                             reply_markup=InlineKeyboardMarkup(button),
                         )
                     except FloodWait as e:
