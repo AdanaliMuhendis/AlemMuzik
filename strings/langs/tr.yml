@@ -67,14 +67,34 @@ admin_31 : "Verilen yüksek süre nedeniyle bot arama yapamıyor. Daha düşük 
 admin_32 : "➻ Lütfen bekleyin... Akış aranıyor."
 admin_33 : "➻ Akış başarıyla {0} dakikaya arandı."
 admin_34 : "➻ Mevcut akışı arama başarısız oldu."
+admin_35 : "**ᴛʜᴇ ᴠᴏᴛɪɴɢ ʜᴀs ᴇɴᴅᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴛʀᴀᴄᴋ ʜᴀs ᴇɴᴅᴇᴅ ғᴏʀ ᴡʜɪᴄʜ ᴛʜᴇ ᴠᴏᴛɪɴɢ ᴡᴀs ᴘʀᴏᴠɪᴅᴇᴅ.**"
+admin_36 : "**ғᴀɪʟᴇᴅ ᴛᴏ ᴘᴇʀғᴏʀᴍ ᴛʜɪs ᴀᴄᴛɪᴏɴ ʙᴇᴄᴀᴜsᴇ ғᴏʀ ᴡʜɪᴄʜ ᴛʀᴀᴄᴋ ᴛʜᴇ ᴠᴏᴛɪɴɢ ᴡᴀs ᴘʀᴏᴠɪᴅᴇᴅ ɪs ᴇɪᴛʜᴇʀ ᴇɴᴅᴇᴅ ᴏʀ sᴛᴏᴘᴘᴇᴅ.**"
+admin_37 : "**sᴜᴄᴄᴇssғᴜʟʟʏ ɢᴏᴛ <code>{0}</code> ᴜᴘᴠᴏᴛᴇs.**"
+admin_38 : "**» ᴀᴅᴅᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ.**"
+admin_39 : "**» ʀᴇᴍᴏᴠᴇᴅ 1 ᴜᴘᴠᴏᴛᴇ.**"
+admin_40 : "**ᴜᴘᴠᴏᴛᴇᴅ.**"
 
-start_1 : "нєу, ɪ ᴀᴍ {0} 🥀.\n\n➻ Ben bazı yararlı özelliklere sahip bir Telegram akış botuyum.\n\nDesteklenen platformlar: YouTube, Spotify, SoundCloud vb.\n\n๏ Beni gruplarınıza eklemekten çekinmeyin."
-start_2 : "ʜᴇʏ,\n  ᴛʜɪs ɪs {0}\n\nHızlı ve güçlü bir müzik oynatma botu, bazı harika özelliklere sahip.\n\nAsistan kullanıcı adı:- @{1}\nAsistan ID:- {2}"
-start_3 : "{0} sahibi {1} sohbetinize katıldı."
-start_4 : "{0} sudo kullanıcısı {1} sohbetinize katıldı."
-start_5 : "🦸 **SÜPERGRUP GEREKLİ** 🦸\n\nLütfen grubunuzu süpergrup'a dönüştürün ve ardından beni tekrar ekleyin.\n\n**Süpergrup nasıl yapılır?**\n🥱 Grubunuzun sohbet geçmişini bir kez görünür yapın."
-start_6 : "**KARA LİSTEDEKİ SOHBET**\n\nBu sohbet, botu kullanmak için kara listede. Sohbetinizi beyaz listeye almak için bir sudo kullanıcısına başvurun, sudo kullanıcıları [liste]({0})."
-start_7 : "{0} hayatta bebek.\n\n<b>✫ Çalışma Süresi :</b> {1}"
+# Speed
+speed_1 : "» ᴏɴʟʏ ʏᴏᴜᴛᴜʙᴇ sᴛʀᴇᴀᴍ's sᴘᴇᴇᴅ ᴄᴀɴ ʙᴇ ᴄᴏɴᴛʀᴏʟʟᴇᴅ ᴄᴜʀʀᴇɴᴛʟʏ."
+speed_2 : "<b><u>{0} sᴘᴇᴇᴅ ᴄᴏɴᴛʀᴏʟ ᴘᴀɴᴇʟ</b></u>\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴘʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+speed_3 : "» ʙᴏᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴘʟᴀʏɪɴɢ ᴏɴ ɴᴏʀᴍᴀʟ sᴘᴇᴇᴅ."
+speed_4 : "» ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...\n\nsᴏᴍᴇᴏɴᴇ ᴇʟsᴇ ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ sᴛʀᴇᴀᴍ."
+speed_5 : "ᴄʜᴀɴɢɪɴɢ sᴘᴇᴇᴅ..."
+speed_6 : "» ᴛʀʏɪɴɢ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ...\n\n<b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {0}"
+speed_7 : "» ғᴀɪʟᴇᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ."
+speed_8 : "» ᴄʜᴀɴɢᴇᴅ ᴛʜᴇ sᴘᴇᴇᴅ ᴏғ ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴛᴏ {0}x\n\n<b>ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :</b> {1}"
+speed_9 : "๏ ɴᴏʀᴍᴀʟ ๏"
+speed_10 : "» ᴘʟᴇᴀsᴇ ʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ : /reload"
+speed_11 : "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs.\n\nʀᴇʟᴏᴀᴅ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ /reload"
+
+# Start
+start_1 : "{0} cαnlí mísín вєвєğí̇m ?\ntєlєgrαmí αlєm müzí̇k вσtu í̇lє tí̇trєtєlí̇m ! 🎶💃\n<b>✫ çαlíşmα sürєsí̇:</b> {1}\n"
+start_2 : "<b>𝐇𝐄𝐘𝐘𝐘𝐎</b> {0}❤️ <b>\n\n\n🎵✨  𝐒𝐈𝐑𝐀𝐃𝐀𝐍𝐋𝐈𝐆̆𝐈 𝐔𝐍𝐔𝐓𝐔𝐍 - 𝐊𝐄𝐍𝐃𝐈̇ 𝐑𝐈̇𝐓𝐌𝐈̇𝐌𝐈̇𝐙𝐈̇𝐍 𝐑𝐈̇𝐓𝐌𝐈̇𝐍𝐄 𝐆𝐎̈𝐑𝐄 𝐃𝐀𝐍𝐒 𝐄𝐃𝐄𝐋𝐈̇𝐌!\n🎶 tєlєgrαm'dαkí̇ єn sєví̇mlí̇ vє єn вüчülü müzí̇k вσt'undα вαnα kαtílín! 🌟💃\n🎤 𝚂𝙾𝙽𝚂𝚄𝚉 𝙱𝙸̇𝚁 𝙼𝚄̈𝚉𝙸̇𝙺 𝙳𝚄̈𝙽𝚈𝙰𝚂𝙸𝙽𝙰 𝙳𝙰𝙻𝙸𝙽, 𝚂̧𝙸̇𝙼𝙳𝙸̇𝚈𝙴 𝙺𝙰𝙳𝙰𝚁 𝙴𝙽 𝙷𝙰𝚁𝙸̇𝙺𝙰 𝙼𝚄̈𝚉𝙸̇𝙺𝙻𝙴𝚁𝙻𝙴 𝚈𝙴𝙽𝙸̇ 𝚁𝙸̇𝚃𝙸̇𝙼𝙻𝙴𝚁𝙸̇ 𝚅𝙴 𝙴𝚃𝙺𝙸̇𝙻𝙴𝚂̧𝙸̇𝙼𝙻𝙴𝚁𝙸̇ 𝙺𝙴𝚂̧𝙵𝙴𝙳𝙸̇𝙽! 🌈🎧 mσdunuzα uчgun mükєmmєl şαrkílαr í̇lє çαlmα lí̇stєlєrí̇ní̇zí̇ σluşturup kєчí̇flí̇ müzí̇k чσlcuğunuzα çíkαвí̇lí̇rsí̇ní̇z!\n\n💌 𝚄𝙽𝚄𝚃𝚄𝙻𝙼𝙰𝚉 𝙱𝙸̇𝚁 𝙼𝚄̈𝚉𝙸̇𝙺𝙰𝙻 𝙼𝙰𝙲𝙴𝚁𝙰𝙳𝙰 𝚁𝙾𝙻 𝙰𝙻𝙼𝙰𝚈𝙰 𝙷𝙰𝚉𝙸𝚁 𝙼𝙸𝚂𝙸𝙽? 𝙷𝙴𝚁 𝙰𝙽𝙸 𝙱𝙸̇𝚁 𝙼𝙴𝙻𝙾𝙳𝙸̇ 𝙷𝙰𝙻𝙸̇𝙽𝙴 𝙶𝙴𝚃𝙸̇𝚁𝙴𝙻𝙸̇𝙼. 𝐁𝐀𝐆̆𝐋𝐀𝐍𝐓𝐈𝐘𝐀 𝐃𝐎𝐊𝐔𝐍𝐔𝐍 𝐕𝐄 𝐁𝐈̇𝐑𝐋𝐈̇𝐊𝐓𝐄 𝐎𝐘𝐍𝐀𝐘𝐀𝐋𝐈𝐌! 🌍🎶"
+start_3 : "𝐒𝐀𝐇𝐈̇𝐏° {0}, {1} Sҽɳι Gσ̈ɾԃϋɠ̆ϋɱҽ Sҽʋιɳԃιɱ 💞 𝓗𝓞𝓢̧ 𝓖𝓔𝓛𝓓𝓘̇𝓝 🎶"
+start_4 : "𝐀𝐋𝐄𝐌 𝐌𝐔̈𝐙𝐈̇𝐊 𝐁𝐨𝐭 𝐘𝐞𝐭𝐤𝐢𝐥𝐢𝐬𝐢 {0}, {1} 𝐇𝐨𝐬̧ 𝐆𝐞𝐥𝐝𝐢𝐧 🎶"
+start_5 : "🦸 **Süper Grup Olması Lazım** 🦸\n\nLütfen Grubunuzu SüperGruba Yükseltin Daha Sonra Beni Tekrar Ekleyiniz.\n\n**SüperGrup nasıl olur?**\n🥱 Grup Chatinin Geçmiş Yazışmalarını Görünür Yapın."
+start_6 : "**Yasaklı Grup**\n\nAlem Müzik Botunun Burda Kullanılması Yasaklanmıştır. Yasaklamanın Kaldırılması İçin Yetkililer İle Görüşünüz, Yetkililer [ʟɪsᴛ]({0}) ."
+start_7 : "{0} cαnlí mísín вєвєğí̇m ?.\n\n<b>✫ çαlíşmα sürєsí̇: :</b> {1}"
 
 # Yardım
 help_1 : "Daha fazla bilgi için aşağıdaki düğmelere tıklayın. Herhangi bir sorunla karşılaşıyorsanız, destek sohbetinde sorabilirsiniz.\n\nTüm komutlar şu şekilde kullanılabilir: /"
@@ -93,6 +113,7 @@ setting_13 : "Aktif grup çağrısında oynatma modunu değiştiremiyorum. Lütf
 setting_14 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot yürütülen komutlarını (/play, /pause, /shuffle, /stop vb.) hemen siler.\n\nBot, doğru çalışması için mesajları silme yönetici hakkına ihtiyaç duyacaktır."
 setting_15 : "Eş çözümleme başarısız oldu, botu kanalınıza eklediğinizden ve yönetici olarak terfi ettirdiğinizden emin olun.\n\nTekrar /channelplay ayarını deneyin.."
 setting_16 : "⁉️ Bu nedir?\n\nEtkinleştirildiğinde, Bot sohbetinize her 1-2 saatte bir bot komutları hakkında (nasıl kullanılır, hangi komutlar var ve daha birçok şey) rastgele önerilerde bulunacaktır."
+
 set_cb_1 : "Ses kalitesi paneli alınıyor..."
 set_cb_2 : "Video kalitesi paneli alınıyor..."
 set_cb_3 : "Yetkili kullanıcılar paneli alınıyor..."
@@ -106,7 +127,6 @@ set_cb_8 : "Geri alınıyor.."
 ustats_1 : "Kullanıcı istatistikleri bulunamadı."
 ustats_2 : "Şimdiye kadar **{0}** parça oynattınız, toplamda **{1}** kez.\n\nSizin tarafından en çok oynatılan ilk **{2}**:\n\n"
 
-
 gstats_1: "Küresel istatistikler alınıyor, bu biraz zaman alabilir..."
 gstats_2: "Küresel istatistik bulunamadı."
 gstats_3: "Küresel en iyi 10 {0} botu alınıyor, bu biraz zaman alabilir..."
@@ -119,6 +139,7 @@ gstats_9: "**Bot'un Küresel En İyi 10 İstatistiği**\n\nAşağıdaki düğmel
 gstats_10: "**{0} Küresel İstatistikleri**\n\nAşağıdaki düğmeleri seçin, hangi küresel istatistikleri görmek istediğinizi belirlemek için."
 gstats_11: "**{0} Genel İstatistikleri**\nAşağıdaki düğmeleri seçin, hangi küresel istatistikleri görmek istediğinizi belirlemek için.\n\nEn iyi parçaları, sohbetleri, kullanıcıları ve diğer birçok şeyi kontrol etmek için /gstats komutunu kullanın."
 
+#Play Callback 
 playcb_1: "Bu sizin için değil! Kendi aramanızı yapın."
 playcb_2: "Sonraki sonucu alınıyor..."
 
@@ -129,7 +150,8 @@ cplay_4: "Kanal alınamadı.\n\nBot'unuzu kanalınıza eklediğinizden ve yönet
 cplay_5: "Yalnızca kanallar desteklenir."
 cplay_6: "{0} kanalının **SAHİBİ** olmanız gerekiyor, bu gruba bağlanmak için.\n**Kanalın Sahibi:** @{1}\n\nAlternatif olarak, grubunuzu bu kanala bağlayabilir ve ardından `/channelplay linked` komutuyla bağlanmayı deneyebilirsiniz."
 
-play_1: "**🥀 İşleniyor...**"
+# Play 
+play_1: "💞"
 play_2: "🏷**Kanal Oynatma Modu**\n🔄 Sorgu işleniyor... Lütfen bekleyin!\n\n**Bağlantılı Kanal:** {0}"
 play_3: "Sorguyu işleme koyulamadı!"
 play_4: "🖇 **Yalnızca Yöneticiler Oynatabilir**\nYalnızca yöneticiler ve yetkili kullanıcılar bu grupta müzik çalabilir.\n\nModu değiştirmek için /playmode komutunu kullanın ve zaten yöneticiyseniz, /admincache veya /reload komutlarıyla admin önbelleğini yenileyin."
@@ -148,8 +170,21 @@ play_16: "Parça detaylarını almak başarısız oldu, belki bu parça YouTube'
 play_17: "Bu tür Spotify sorgularını çalamıyorum!\n\nYalnızca Spotify parçalarını, albümleri, sanatçıları ve çalma listelerini çalabilirim."
 play_18: "**Aktif Sesli Sohbet Yok**\n\nZorunlu oynatma için, aktif bir sesli sohbet bulunmalıdır."
 
+#Playlist Buttons
+PL_B_1 : "๏ ᴘʟᴀʏ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_2 : "๏ ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_3 : "๏ ᴍᴏʀᴇ ๏"
+PL_B_4 : "๏ ᴘʟᴀʏ ᴍᴏᴅᴇ ๏"
+PL_B_5 : "๏ ᴅᴇʟ ᴀʟʟ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_6 : "๏ ᴅᴇʟ ᴘʟᴀʏʟɪsᴛ ๏"
+PL_B_7 : "❗ʏᴇs ɪ ᴀᴍ sᴜʀᴇ."
+PL_B_8 : "๏ ᴘʟᴀʏ ᴛᴏᴘ 10 ๏"
+PL_B_9 : "๏ ᴘʟᴀʏ ɢʟᴏʙᴀʟ ᴛᴏᴘ 10 ๏"
+PL_B_10 : "๏ ᴘʟᴀʏ ɢʀᴏᴜᴘ ᴛᴏᴘ 10 ๏"
+PL_B_11 : "๏ ᴘʟᴀʏ ᴘᴇʀsᴏɴᴀʟ ᴛᴏᴘ 10 ๏"
+PL_B_12 : "๏ Pʟᴀʏ ɢʀᴏᴜᴘ's Pʟᴀʏʟɪsᴛ ๏"
 
-
+#Playlist
 playlist_1: "**Kullanım:** /play [Müzik Adı veya YouTube Linki veya Sesinize Yanıt Verin]\n\nBot'un sunucusundaki çalma listesini çalmak istiyorsanız! Aşağıdaki düğmeye basın."
 playlist_2: "Çalma listeniz alınıyor... Lütfen bekleyin!"
 playlist_3: "Bot'un sunucusunda çalma listeniz yok."
@@ -184,14 +219,11 @@ tracks_1: "**İşleniyor {0} Top 10 Çalma Listesi**\n\n**Talep Eden:** {1}\n\nT
 tracks_2: "**Hata**\n\nBot'un sunucularında **{0} Top 10 Çalma Listesi** bulunmuyor. Lütfen başka bir çalma listesi deneyin."
 
 # TOOLS
-
 #Lyrics
 lyrics_1: "**Kullanım:**\n\n/lyrics [Müzik Adı]"
 lyrics_2: "Şarkı sözleri aranıyor..."
 lyrics_3: "Şarkı sözlerini getirme başarısız oldu 🥲.\n\n**Aranan:** {0}"
 lyrics_4: "Aşağıdaki düğmeye tıklayın ve şarkı sözlerini almak için arama yapın, uzun spam türlerinden kaçının."
-
-
 
 #Ping
 ping_1 : "»{0} ᴘɪɴɢ ɪɴɢ..."
@@ -214,12 +246,12 @@ song_11 : "Yükleme başladı\n\nLütfen bekleyin..."
 queue_1 : "» Lütfen bekleyin..."
 queue_2 : "Sıra listesi boş. Hiçbir parça bulunamadı."
 queue_3 : "<u>**Sıralı Parçalar:</u>**  [Daha Fazla Sıralı Parçayı Buradan Kontrol Edin]({0})"
-queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🥀Başlık :** {1}\n**⏱ Süre :** {2}\n **🥀Ekleyen :** {3} ❄️"
+queue_4 : "**💫 Sıraya Eklendi #{0}**\n\n**🔘Başlık :** {1}\n**⏱ Süre :** {2}\n **☔️Ekleyen :** {3} ❄️"
 queue_5 : "Sıralamada yalnızca bir parça var, sıralamayı kontrol etmek için bazı parçalar ekleyin."
 
 # All Streaming Lines
-stream_1 : "**✮ Akış Başladı**\n\n**✯ Başlık :** [{0}]({1})\n**✬ Süre :** {2} dakika\n✭ Boyut :** {3}"
-stream_2 : "➲ **Akış Başladı |**\n\n**‣ Akış Türü :** Canlı akış [URL]\n**‣ Ekleyen :** {0}"
+stream_1 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b><a {0}>{1}</a>\n<b>⌛️Süre :</b> {2} 𝒟𝒶𝓀𝒾𝓀𝒶\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {3}"
+stream_2 : "➲ <b>Yαყıɳ Bαʂ̧ʅαԃı |</b>\n\n<b>🔘Başlık :</b> Cαɳʅı Yαყıɳ [ᴜʀʟ]\n<b>‣ 𝐓𝐚𝐥𝐞𝐩 𝐄𝐝𝐞𝐧° ☔️ :</b> {0}"
 
 V_C_1 : "Katılımcı listesi getiriliyor...."
 V_C_2 : "**İsim: {0}**\n   ID: {1}\n    **Kullanıcı Adı:** {2}\n    **Video Paylaşımı:** {3}\n    **Ekran Paylaşımı:** {4}\n    **El Kaldırdı:** {5}\n    **Sessize Alındı:** {6}\n     **Konuşuyor:** {7}\n    **Grupta Değil:** {8}"
@@ -230,23 +262,23 @@ V_C_5 : "Bu sohbette aktif bir çağrı yok."
 # Inline Buttons
 
 #General Buttons
-CLOSE_BUTTON  : "KAPAT"
-CLOSEMENU_BUTTON  : "KAPAT"
-BACK_BUTTON : "GERİ"
-UNBAN_BUTTON : "YASAKLAMAYI KALDIR"
+CLOSE_BUTTON  : "𝐊𝐀𝐏𝐀𝐓°"
+CLOSEMENU_BUTTON  : "𝐊𝐀𝐏𝐀𝐓°"
+BACK_BUTTON : "𝐆𝐄𝐑𝐢°"
+UNBAN_BUTTON : "𝐔𝐍𝐁𝐀𝐍°"
 
 #Lyrics
-L_B_1 : "🚀 Şarkı sözlerini şimdi kontrol et"
+L_B_1 : "Şαɾƙı ʂσ̈ȥʅҽɾιɳι ʂ̧ιɱԃι ƙσɳƚɾσʅ ҽƚ 🚀 "
 
 # Start
-S_B_1 : "🗒 Komutlar"
-S_B_2 : "🔧 Ayarlar"
-S_B_3 : "📨 Destek"
-S_B_4 : "📨 Kanal"
-S_B_5 : "✚ Beni Grupınıza Ekleyin ✚"
-S_B_6 : "💡 Git Repo"
-S_B_7 : "👤 Sahip"
-S_B_8 : "🔎 Nasıl Kullanılır? Komut Menüsü"
+S_B_1 : "Kσɱυƚʅαɾ°"
+S_B_2 : "Aყαɾʅαɾ°"
+S_B_3 : "Dҽʂƚҽƙ°"
+S_B_4 : "Kαɳαʅ°"
+S_B_5 : "𝐀𝐋𝐄𝐌 𝐌𝐔𝐒𝐈𝐂 ⍣⃝♬"
+S_B_6 : "Gιƚ Rҽρσ°"
+S_B_7 : "𝐒𝐀𝐇𝐈̇𝐏°"
+S_B_8 : "🔎 Nαʂıʅ Kυʅʅαɳıʅıɾ? Kσɱυƚ Mҽɳϋʂϋ"
 
 #PlayMode
 PM_B_1 : "Doğrudan Çal"
@@ -262,7 +294,6 @@ P_B_4 : "🎵 Çalma Listesini Çal"
 P_B_5 : "SUSTUR"
 P_B_6 : "SUSTURMAYI KALDIR"
 P_B_7 : "ÇALMA LISTESİNE EKLE"
-
 
 # Playlist
 PL_B_1 : "🚀 OYNAT ÇALMA LİSTESİ"
@@ -375,6 +406,7 @@ maint_3 : "Bakım modu devre dışı bırakıldı."
 log_1 : "**KULLANIM:**\n/logger [enable|disable]"
 log_2 : "Günlükleme etkinleştirildi."
 log_3 : "Günlükleme devre dışı bırakıldı."
+
 #videomode
 vidmode_1 : "**KULLANIM:**\n/videomode [download|m3u8]"
 vidmode_2 : "Video oynatma modu indirici olarak ayarlandı. Bot şimdi parçaları indirecek."
@@ -388,6 +420,7 @@ broad_4 : "Yardımcı {0} {1} sohbette yayın yaptı.\n"
 broad_5 : "**KULLANIM**:\n/broadcast [MESAJ] veya [Bir Mesaja Yanıtla]"
 broad_6 : "Lütfen yayına verecek bazı metinler sağlayın."
 broad_7 : "**{0} KULLANICISINA YAYINLANAN MESAJ.**"
+broad_8 : "**Yayın Başlıyor...**"
 
 #Heroku
 heroku_1 : "Lütfen **HEROKU API ANAHTARI** ve **UYGULAMA ADI** bilgilerinizin Heroku'da doğru şekilde yapılandırıldığından emin olun."
@@ -426,11 +459,10 @@ gban_1 : "Kendinizi gbanlayamazsınız mı? Korkak noob!"
 gban_2 : "Kendinizi gbanlamamı mı istiyorsunuz?"
 gban_3 : "Eski sevgilimi mi gbanlamamı istiyorsunuz?"
 gban_4 : "{0} zaten **GBANLANMIŞ** olarak bot'tan engellendi."
-gban_5 : "**GLOBAL BAN BOT VERİTABANINDA ÇALIŞIYOR - CHAMPU EKİBİ TARAFINDAN**\n\n**{0} ÜZERİNDE GABANLANIYOR**\n\n **BEKLENEN SÜRE** : {1}."
+gban_5 : "**GLOBAL BAN BOT VERİTABANINDA ÇALIŞIYOR - Alem EKİBİ TARAFINDAN**\n\n**{0} ÜZERİNDE GABANLANIYOR**\n\n **BEKLENEN SÜRE** : {1}."
 gban_6 : " **GBANLANMIŞ BAŞARILI BİR ŞEKİLDE BOT VERİTABANINA\n\n **{0}** SOHBETLERDEN **{1}** ENGELLENDİ\n **GBANLANMIŞ OLAN: AdanaliMuhendis**"
 gban_7 : "{0} **GBANLANMIŞ** DEĞİL, NASIL GERİ ALABİLİRİM?"
 gban_8 : "**{0} GBANINDAN ÇIKARILIYOR**\n\nBEKLENEN SÜRE : {1}."
 gban_9 : " **GBANINDAN BAŞARILI BİR ŞEKİLDE ÇIKARILDI BOT VERİTABANINA\n\n **{0}** SOHBETLERDE **{1}**\n **GBANINDAN ÇIKARILMIŞ: AdanaliMuhendis**"
 gban_10 : "Kimse gbanlanmamış."
 gban_11 : "GBANLANMIŞ KULLANICILAR LİSTESİ ALINIYOR..."
-
