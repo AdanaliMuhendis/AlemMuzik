@@ -21,7 +21,7 @@ from ..logging import LOGGER
 
 class AlemBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ʙᴏᴛ...")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...")
         super().__init__(
             "AlemMuzik",
             api_id=config.API_ID,
@@ -41,7 +41,7 @@ class AlemBot(Client):
             [
                 [
                     InlineKeyboardButton(
-                        text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
+                        text="𝙱𝚎𝚗𝚒 𝙶𝚛𝚞𝚋𝚞𝚗𝚊 𝙴𝚔𝚕𝚎°",
                         url=f"https://t.me/{self.username}?startgroup=true",
                     )
                 ]
@@ -53,26 +53,26 @@ class AlemBot(Client):
             try:
                 await self.send_message(
                     config.LOGGER_ID,
-                    text=f"╔════❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱════❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║┣⪼ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚════════════════❍⊱❁",
+                    text=f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
-                LOGGER(__name__).error(f"Bot cannot write to the log group: {e}")
+                LOGGER(__name__).error(f"Bot Log Grubuna Yazamıyor: {e}")
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔═══❰𝗪𝗘𝗟𝗖𝗢𝗠𝗘❱═══❍⊱❁۪۪\n║\n║┣⪼🥀ʙᴏᴛ sᴛᴀʀᴛᴇᴅ🎉\n║\n║◈ {self.name}\n║\n║┣⪼🎈ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼💖ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ😍\n║\n╚══════════════❍⊱❁",
+                        f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
-                    LOGGER(__name__).error(f"Failed to send message in log group: {e}")
+                    LOGGER(__name__).error(f"Log Grunda Mesaj Gönderilemedi: {e}")
             except Exception as e:
                 LOGGER(__name__).error(
-                    f"Unexpected error while sending to log group: {e}"
+                    f"Log Grubuna Mesaj Gönderilirken Beklenmedik Hata: {e}"
                 )
         else:
             LOGGER(__name__).warning(
-                "LOGGER_ID is not set, skipping log group notifications."
+                "LOGGER_ID ayarlanmadı, Günlük Bildirimleri Atlanıyor."
             )
 
         # Setting commands
@@ -80,22 +80,22 @@ class AlemBot(Client):
             try:
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("start", "sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
-                        BotCommand("help", "ɢᴇᴛ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ"),
-                        BotCommand("ping", "ᴄʜᴇᴄᴋ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ"),
+                        BotCommand("start", "Botu Başlat"),
+                        BotCommand("help", "Yardım Menüsü"),
+                        BotCommand("ping", "Botu Kontrol Et :)"),
                     ],
                     scope=BotCommandScopeAllPrivateChats(),
                 )
                 await self.set_bot_commands(
                     commands=[
-                        BotCommand("play", "Start playing requested song"),
-                        BotCommand("stop", "Stop the current song"),
-                        BotCommand("pause", "Pause the current song"),
-                        BotCommand("resume", "Resume the paused song"),
-                        BotCommand("queue", "Check the queue of songs"),
-                        BotCommand("skip", "Skip the current song"),
-                        BotCommand("volume", "Adjust the music volume"),
-                        BotCommand("lyrics", "Get lyrics of the song"),
+                        BotCommand("oynat", "play" "İstenen Şarkıyı Çalmaya Başla"),
+                        BotCommand("stop", "son", "Mevcut Şarkıyı Durdur"),
+                        BotCommand("pause", "dur", "Mevcut Şarkıyı Duraklat"),
+                        BotCommand("resume", "devam", "Durdurulan Şarkıyı Devam Ettirir"),
+                        BotCommand("queue", "liste", "Şarkıların Sırasını Kontrol Et"),
+                        BotCommand("skip", "atla", "Mevcut Şarkıyı Atla"),
+                        BotCommand("volume", "ses", "Müziğin Sesini Ayarla"),
+                        BotCommand("lyrics", "söz", "Şarkının Sözlerini Al"),
                     ],
                     scope=BotCommandScopeAllGroupChats(),
                 )
@@ -133,7 +133,7 @@ class AlemBot(Client):
                     scope=BotCommandScopeAllChatAdministrators(),
                 )
             except Exception as e:
-                LOGGER(__name__).error(f"Failed to set bot commands: {e}")
+                LOGGER(__name__).error(f"Bot Komutları Ayarlanamadı: {e}")
 
         # Check if bot is an admin in the logger group
         if config.LOGGER_ID:
@@ -143,9 +143,9 @@ class AlemBot(Client):
                 )
                 if chat_member_info.status != ChatMemberStatus.ADMINISTRATOR:
                     LOGGER(__name__).error(
-                        "Please promote Bot as Admin in Logger Group"
+                        "Lütfen Bota Log Grubunda Yetki Verin"
                     )
             except Exception as e:
-                LOGGER(__name__).error(f"Error occurred while checking bot status: {e}")
+                LOGGER(__name__).error(f"Bot Durumu Kontrol Edilirken Hata Oluştu: {e}")
 
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈... as {self.name}")

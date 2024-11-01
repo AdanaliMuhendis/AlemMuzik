@@ -43,10 +43,10 @@ class TeleAPI:
         try:
             file_name = file.file_name
             if file_name is None:
-                file_name = "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ ғɪʟᴇ" if audio else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ ғɪʟᴇ"
+                file_name = "Telegram Ses Dosyası" if audio else "Telegram Video Dosyası"
 
         except:
-            file_name = "ᴛᴇʟᴇɢʀᴀᴍ ᴀᴜᴅɪᴏ ғɪʟᴇ" if audio else "ᴛᴇʟᴇɢʀᴀᴍ ᴠɪᴅᴇᴏ ғɪʟᴇ"
+            file_name = "Telegram Ses Dosyası" if audio else "Telegram Video Dosyası"
         return file_name
 
     async def get_duration(self, file):
@@ -102,7 +102,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 ᴄᴀɴᴄᴇʟ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ",
+                                text="🚦 İndirme İptal Ediliyor...",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -121,14 +121,14 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{app.mention} ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**
+**{app.mention} Telegram Medya İndirici**
 
-**ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ:** {total_size}
-**ᴄᴏᴍᴘʟᴇᴛᴇᴅ:** {completed_size} 
-**ᴘᴇʀᴄᴇɴᴛᴀɢᴇ:** {percentage[:5]}%
+**Toplam Dosya Boyutu:** {total_size}
+**Tamamlanan:** {completed_size} 
+**Yükleniyor:** {percentage[:5]}%
 
-**sᴘᴇᴇᴅ:** {speed}/s
-**ᴇʟᴘᴀsᴇᴅ ᴛɪᴍᴇ:** {eta}"""
+**Hız:** {speed}/s
+**Tahmini Süre:** {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
@@ -147,7 +147,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ...\n ᴘʀᴏᴄᴇssɪɴɢ ғɪʟᴇ ɴᴏᴡ"
+                    "İndirme Tamamlandı...\n Dosya Hazırlanıyor..."
                 )
                 downloader.pop(message.id)
             except:

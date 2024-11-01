@@ -11,7 +11,7 @@ TEMP_MONGODB = "mongodb+srv://rohat6432:Lolo1907@cluster0.welyfih.mongodb.net/?r
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "ɴᴏ ᴍᴏɴɢᴏ  ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ.. sᴏ ɪ ᴡɪʟʟ ᴜsᴇ ᴍʏ ᴏᴡɴᴇʀ's ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ"
+        "MongoDB Bulunamadı... Bu Yüzden Sahibimin Mongodb Kullanacağım"
     )
     temp_client = Client(
         "Anon",

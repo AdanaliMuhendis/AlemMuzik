@@ -13,7 +13,7 @@ def dirr():
 
     if assets_folder not in listdir():
         logging.warning(
-            f"{assets_folder} Folder not Found. Please clone or fork repository again."
+            f"{assets_folder} Dosya Bulunamadı. Lütfen Reponuzu Yada Klonu Kontrol Ediniz."
         )
         sys.exit()
 
