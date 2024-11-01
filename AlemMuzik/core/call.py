@@ -605,7 +605,7 @@ class Call(PyTgCalls):
                         audio_parameters=audio_stream_quality,
                         video_parameters=video_stream_quality,
                     )
-                    if str(streamtype) == "video"
+                    if str(streamtype) == "audio"
                     else MediaStream(videoid, audio_parameters=audio_stream_quality)
                 )
                 try:
