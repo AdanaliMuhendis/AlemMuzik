@@ -531,8 +531,8 @@ class Call(PyTgCalls):
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                        title[:27],
                         f"https://t.me/{app.username}?start=info_{videoid}",
+                        title[:27],
                         check[0]["dur"],
                         user,
                     ),
@@ -589,8 +589,8 @@ class Call(PyTgCalls):
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                        title[:27],
                         f"https://t.me/{app.username}?start=info_{videoid}",
+                        title[:27],
                         check[0]["dur"],
                         user,
                     ),
@@ -664,7 +664,7 @@ class Call(PyTgCalls):
                     run = await app.send_message(
                         original_chat_id,
                         text=_["stream_1"].format(
-                            title, config.SUPPORT_GROUP, check[0]["dur"], user
+                            config.SUPPORT_GROUP, title[:23], check[0]["dur"], user
                         ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
@@ -675,7 +675,7 @@ class Call(PyTgCalls):
                     run = await app.send_message(
                         original_chat_id,
                         text=_["stream_1"].format(
-                            title, config.SUPPORT_GROUP, check[0]["dur"], user
+                            config.SUPPORT_GROUP, title[:23], check[0]["dur"], user
                         ),
                         reply_markup=InlineKeyboardMarkup(button),
                     )
@@ -688,11 +688,11 @@ class Call(PyTgCalls):
                         run = await app.send_message(
                             original_chat_id,
                             text=_["stream_1"].format(
-                        title[:27],
-                        f"https://t.me/{app.username}?start=info_{videoid}",
-                        check[0]["dur"],
-                        user,
-                    ),
+                            f"https://t.me/{app.username}?start=info_{videoid}",
+                            title[:23],
+                            check[0]["dur"],
+                            user,
+                        ),
                             reply_markup=InlineKeyboardMarkup(button),
                         )
                     except FloodWait as e:
