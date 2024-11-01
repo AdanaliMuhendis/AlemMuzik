@@ -210,11 +210,11 @@ async def stream(
                 run = await app.send_message(
                     original_chat_id,
                     text=_["stream_1"].format(
-                        title[:27],
-                        f"https://t.me/{app.username}?start=info_{vidid}",
-                        duration_min,
-                        user_name,
-                    ),
+                    f"https://t.me/{app.username}?start=info_{vidid}",
+                    title[:27],
+                    duration_min,
+                    user_name,
+                ),
                     reply_markup=InlineKeyboardMarkup(button),
                 )
                 db[chat_id][0]["mystic"] = run
@@ -235,7 +235,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "video",
+                "audio",
             )
             position = len(db.get(chat_id)) - 1
             await app.send_message(
@@ -255,7 +255,7 @@ async def stream(
                 user_name,
                 streamtype,
                 user_id,
-                "video",
+                "audio",
                 forceplay=forceplay,
             )
             button = telegram_markup(_, chat_id)
