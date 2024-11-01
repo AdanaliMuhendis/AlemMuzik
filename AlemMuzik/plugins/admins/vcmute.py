@@ -8,7 +8,7 @@ from AlemMuzik.utils.database import is_muted, mute_off, mute_on
 from AlemMuzik.utils.decorators import AdminRightsCheck
 
 
-@app.on_message(filters.command(["vcmute"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["vcmute", "sessiz"]) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def mute_admin(cli, message: Message, _, chat_id):
     if not len(message.command) == 1 or message.reply_to_message:
@@ -22,7 +22,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     )
 
 
-@app.on_message(filters.command(["vcunmute"]) & filters.group & ~BANNED_USERS)
+@app.on_message(filters.command(["vcunmute", "sesli"]) & filters.group & ~BANNED_USERS)
 @AdminRightsCheck
 async def unmute_admin(Client, message: Message, _, chat_id):
     if not len(message.command) == 1 or message.reply_to_message:
