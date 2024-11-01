@@ -112,16 +112,16 @@ __MODULE__ = "Speed"
 __HELP__ = """
 **Speed Control**
 
-This module allows administrators to control the playback speed of audio files in the group.
+Bu Modül Yöneticilerin Ses Dosyalarının Hızını Kontrol Etmelerini Sağlar.
 
 Commands:
-- /cspeed: Speed up the playback.
-- /speed: Speed up the playback.
-- /cslow: Slow down the playback.
-- /slow: Slow down the playback.
-- /playback: Control the playback speed.
-- /cplayback: Control the playback speed.
+- /speed: Oynatmayı Hızlandırır.
+- /cspeed: Oynatmayı Hızlandırır.
+- /slow: Oynatmayı Yavaşlatır.
+- /cslow: Oynatmayı Yavaşlatır.
+- /playback: Oynatma Hızını Kontrol Edin.
+- /cplayback: Oynatma Hızını Kontrol Edin.
 
 Note:
-- Only administrators can use these commands.
+- Komutları Sadece Yöneticiler Kullanabilir.
 """

@@ -144,11 +144,11 @@ async def authusers(client, message: Message, _):
 __MODULE__ = "Auᴛʜ"
 __HELP__ = """
 
-<b>Aᴜᴛʜ Usᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.</b>
+<b>Aᴜᴛʜ (Yetkili) Kullanıcılar Grup İçerisinde Admin Yetkilerine Sahiptir</b>
 
-<b>✧ /auth</b> [Usᴇʀɴᴀᴍᴇ] - Aᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ AUTH LIST ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+<b>✧ /auth</b> [Usᴇʀɴᴀᴍᴇ] - Grubun Yetkili Kullanıcılarına Eklenir.
 
-<b>✧ /unauth</b> [Usᴇʀɴᴀᴍᴇ] - Rᴇᴍᴏᴠᴇ ᴀ ᴜsᴇʀ ғʀᴏᴍ AUTH LIST ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+<b>✧ /unauth</b> [Usᴇʀɴᴀᴍᴇ] - Grup Yetkili Listesinden Sİlinir.
 
-<b>✧ /authusers</b> - Cʜᴇᴄᴋ AUTH LIST ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+<b>✧ /authusers</b> - Yetkililerin Listesini Kontrol Eder.
 """

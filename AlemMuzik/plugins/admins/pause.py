@@ -19,10 +19,10 @@ async def pause_admin(cli, message: Message, _, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                text="Devam", callback_data=f"ADMIN Resume|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
+                text="Yinele", callback_data=f"ADMIN Replay|{chat_id}"
             ),
         ],
     ]
@@ -37,12 +37,12 @@ __MODULE__ = "Pause"
 __HELP__ = """
 **Pause Music**
 
-This module allows administrators to pause the music playback in the group.
+Bu Modül Yöneticilerin Grupta Müziği Duraklatmalarını Sağlar.
 
 Commands:
-- /pause: Pause the music playback in groups.
-- /cpause: Pause the music playback in channels.
+- /pause: Oynatılan Müziği Duraklatır.
+- /dur: Oynatılan Müziği Duraklatır.
 
 Note:
-- Only administrators can use these commands.
+- Komutları Sadece Yöneticiler Kullanabilir.
 """

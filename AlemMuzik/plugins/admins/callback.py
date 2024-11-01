@@ -181,12 +181,12 @@ async def unban_assistant(_, callback: CallbackQuery):
     try:
         await app.unban_chat_member(chat_id, userbot.id)
         await callback.answer(
-            "𝗠𝘆 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗜𝗱 𝗨𝗻𝗯𝗮𝗻𝗻𝗲𝗱 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆🥳\n\n➻ 𝗡𝗼𝘄 𝗬𝗼𝘂 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗦𝗼𝗻𝗴𝘀🔉\n\n𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂💝",
+            "Alem Müzik Asistanın Yasağı Kaldırıldı🥳\n\n➻ Şimdi Parça Oynatabilirsiniz🔉\n\nTeşekkürler...💝",
             show_alert=True,
         )
     except Exception as e:
         await callback.answer(
-            f"𝙁𝙖𝙞𝙡𝙚𝙙 𝙏𝙤 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙄 𝘿𝙤𝙣'𝙩 𝙃𝙖𝙫𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧\n\n➻ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 𝙈𝙚 𝘽𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 𝙎𝙤 𝙏𝙝𝙖𝙩 𝙄 𝙘𝙖𝙣 𝙐𝙣𝙗𝙖𝙣 𝙈𝙮 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩 𝙄𝙙",
+            f"Alem Müzik Asistanın Yasağını Kaldırabilmeniz İçin Ban Yetkiniz Olmalı\n\n➻ Ver Yetkiyi Gör Etkiyi 🥳🥳🥳",
             show_alert=True,
         )
 
@@ -250,7 +250,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 pass
             command = counter
-            mention = "ᴜᴘᴠᴏᴛᴇs"
+            mention = "Oy Ver"
         else:
             if (
                 CallbackQuery.from_user.id
@@ -292,17 +292,17 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="ʀᴇsᴜᴍᴇ", callback_data=f"ADMIN Resume|{chat_id}"
+                    text="Devam", callback_data=f"ADMIN Resume|{chat_id}"
                 ),
                 InlineKeyboardButton(
-                    text="ʀᴇᴘʟᴀʏ", callback_data=f"ADMIN Replay|{chat_id}"
+                    text="Yinele", callback_data=f"ADMIN Replay|{chat_id}"
                 ),
             ],
         ]
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention), reply_markup=InlineKeyboardMarkup(buttons)
         )
-    elif command == "Resume":
+    elif command == "Resume" or command == "devam":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
@@ -311,15 +311,15 @@ async def del_back_playlist(client, CallbackQuery, _):
         buttons_resume = [
             [
                 InlineKeyboardButton(
-                    text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+                    text="Atla", callback_data=f"ADMIN Skip|{chat_id}"
                 ),
                 InlineKeyboardButton(
-                    text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"
+                    text="Son", callback_data=f"ADMIN Stop|{chat_id}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="ᴘᴀᴜsᴇ",
+                    text="Dur",
                     callback_data=f"ADMIN Pause|{chat_id}",
                 ),
             ],
@@ -329,7 +329,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_4"].format(mention),
             reply_markup=InlineKeyboardMarkup(buttons_resume),
         )
-    elif command == "Stop" or command == "End":
+    elif command == "Stop" or command == "End" or command == "Son" or command == "Bitir":
         await CallbackQuery.answer()
         await Alem.st_stream(chat_id)
         await set_loop(chat_id, 0)
@@ -337,25 +337,25 @@ async def del_back_playlist(client, CallbackQuery, _):
             _["admin_9"].format(mention), reply_markup=close_markup(_)
         )
         await CallbackQuery.message.delete()
-    elif command == "Mute":
+    elif command == "Mute" or command == "Sessiz":
         if await is_muted(chat_id):
             return await CallbackQuery.answer(_["admin_5"], show_alert=True)
         await CallbackQuery.answer()
         await mute_on(chat_id)
         await Alem.mute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_6"].format(mention))
-    elif command == "Unmute":
+    elif command == "Unmute" or command == "Sesli":
         if not await is_muted(chat_id):
             return await CallbackQuery.answer(_["admin_7"], show_alert=True)
         await CallbackQuery.answer()
         await mute_off(chat_id)
         await Alem.unmute_stream(chat_id)
         await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
-    elif command == "Loop":
+    elif command == "Loop" or command == "Tekrar":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
         await CallbackQuery.message.reply_text(_["admin_25"].format(mention, 3))
-    elif command == "Shuffle":
+    elif command == "Shuffle" or command == "Kar":
         check = db.get(chat_id)
         if not check:
             return await CallbackQuery.answer(_["admin_22"], show_alert=True)
@@ -371,10 +371,10 @@ async def del_back_playlist(client, CallbackQuery, _):
         random.shuffle(check)
         check.insert(0, popped)
         await CallbackQuery.message.reply_text(_["admin_23"].format(mention))
-    elif command == "Skip" or command == "Replay":
+    elif command == "Skip" or command == "Replay" or command == "Atla":
         check = db.get(chat_id)
         if command == "Skip":
-            txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ Parça Atlandı 🙃\n│ \n↬ Tarafından : {mention} 😏"
             popped = None
             try:
                 popped = check.pop(0)
@@ -382,7 +382,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
                 if not check:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f"➻ Parça Atlandı 🙃\n│ \n↬ Tarafından : {mention} 😏"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_10"].format(
@@ -397,7 +397,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f"➻ Parça Atlandı 🙃\n│ \n↬ Tarafından : {mention} 😏"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -409,7 +409,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     return
         else:
-            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ Yayın Yeniden Başlattıldı 😅\n│ \n↬ Tarafından : {mention} 😏"
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()
@@ -573,7 +573,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_played - duration_to_skip) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
+                    f"» Süre Sınırı Aşıldı.\n\nİzin Verilen Süre:** {bet}** Alınan Süre: **{duration}** Dakika",
                     show_alert=True,
                 )
             to_seek = duration_played - duration_to_skip + 1
@@ -581,7 +581,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_seconds - (duration_played + duration_to_skip)) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
+                    f"» Süre Sınırı Aşıldı.\n\nİzin Verilen Süre:** {bet}** Alınan Süre: **{duration}** Dakika",
                     show_alert=True,
                 )
             to_seek = duration_played + duration_to_skip + 1
@@ -606,7 +606,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         else:
             db[chat_id][0]["played"] += duration_to_skip
         string = _["admin_33"].format(seconds_to_min(to_seek))
-        await mystic.edit_text(f"{string}\n\nᴄʜᴀɴɢᴇs ᴅᴏɴᴇ ʙʏ : {mention} !")
+        await mystic.edit_text(f"{string} \nDeğişim Tamamlandı. │ \n↬ Tarafından : {mention} !")
 
 
 """async def markup_timers():
@@ -636,7 +636,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -652,7 +652,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     mystic = playing[0]["mystic"]
                     markup = playing[0]["markup"]
@@ -668,7 +668,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     language = await get_lang(chat_id)
                     _ = get_string(language)
                 except:
-                    _ = get_string("en")
+                    _ = get_string("tr")
                 try:
                     buttons = (
                         stream_markup_timer(
@@ -706,17 +706,17 @@ __HELP__ = """
 
 <b>c sᴛᴀɴᴅs ғᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.</b>
 
-<b>✧ /pause</b> ᴏʀ <b>/cpause</b> - Pᴀᴜsᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
-<b>✧ /resume</b> ᴏʀ <b>/cresume</b> - Rᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ ᴍᴜsɪᴄ.
-<b>✧ /mute</b> ᴏʀ <b>/cmute</b> - Mᴜᴛᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
-<b>✧ /unmute</b> ᴏʀ <b>/cunmute</b> - Uɴᴍᴜᴛᴇ ᴛʜᴇ ᴍᴜᴛᴇᴅ ᴍᴜsɪᴄ.
-<b>✧ /skip</b> ᴏʀ <b>/cskip</b> - Sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
-<b>✧ /stop</b> ᴏʀ <b>/cstop</b> - Sᴛᴏᴘ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
-<b>✧ /shuffle</b> ᴏʀ <b>/cshuffle</b> - Rᴀɴᴅᴏᴍʟʏ sʜᴜғғʟᴇs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ.
-<b>✧ /seek</b> ᴏʀ <b>/cseek</b> - Fᴏʀᴡᴀʀᴅ Sᴇᴇᴋ ᴛʜᴇ ᴍᴜsɪᴄ ᴛᴏ ʏᴏᴜʀ ᴅᴜʀᴀᴛɪᴏɴ.
-<b>✧ /seekback</b> ᴏʀ <b>/cseekback</b> - Bᴀᴄᴋᴡᴀʀᴅ Sᴇᴇᴋ ᴛʜᴇ ᴍᴜsɪᴄ ᴛᴏ ʏᴏᴜʀ ᴅᴜʀᴀᴛɪᴏɴ.
+<b>✧ /pause</b> ᴏʀ <b>/dur</b> - Çalan ŞArkıyı Duraklatır.
+<b>✧ /resume</b> ᴏʀ <b>/devam</b> - Duraklatılmış Şarkıyı Devam ettirir.
+<b>✧ /mute</b> ᴏʀ <b>/sessiz</b> - Müziği Sessize Alır.
+<b>✧ /unmute</b> ᴏʀ <b>/sesli</b> - Müziğin Sesini Açar.
+<b>✧ /skip</b> ᴏʀ <b>/atla</b> - Çalan Parçayı Atlar.
+<b>✧ /stop</b> ᴏʀ <b>/son</b> - Müzik Yayınını Sonlandırır.
+<b>✧ /shuffle</b> ᴏʀ <b>/kar</b> - Parça Listesini Karışık Oynatır.
+<b>✧ /seek</b> ᴏʀ <b>/cseek</b> - Belli Bir Süre Parçayı İleri Alır.
+<b>✧ /seekback</b> ᴏʀ <b>/cseekback</b> - Belli Bir Süre Parçayı Geri Alır.
 <b>✧ /reboot</b> - Rᴇʙᴏᴏᴛ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.
 
-<b>✧ /skip</b> ᴏʀ <b>/cskip</b> [Nᴜᴍʙᴇʀ (ᴇxᴀᴍᴘʟᴇ: 𝟹)] - Sᴋɪᴘs ᴍᴜsɪᴄ ᴛᴏ ᴀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ǫᴜᴇᴜᴇᴅ ɴᴜᴍʙᴇʀ. Exᴀᴍᴘʟᴇ: <b>/skip 𝟹</b> ᴡɪʟʟ sᴋɪᴘ ᴍᴜsɪᴄ ᴛᴏ ᴛʜɪʀᴅ ǫᴜᴇᴜᴇᴅ ᴍᴜsɪᴄ ᴀɴᴅ ᴡɪʟʟ ɪɢɴᴏʀᴇ 𝟷 ᴀɴᴅ 𝟸 ᴍᴜsɪᴄ ɪɴ ǫᴜᴇᴜᴇ.
+<b>✧ /skip</b> ᴏʀ <b>/atla</b> [Nᴜᴍʙᴇʀ (ᴇxᴀᴍᴘʟᴇ: 𝟹)] - Parça Sırasına Göre Atlama Yapılabilir. Örneğin: <b>/skip 𝟹</b> 1 ve 2 Numaralı Parçaları Atlar ve Tekrar Oynatmaz 3.Parça Çalmaya Devam Eder.
 
-<b>✧ /loop</b> ᴏʀ <b>/cloop</b> [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ᴏʀ [Nᴜᴍʙᴇʀs ʙᴇᴛᴡᴇᴇɴ 𝟷-𝟷𝟶] - Wʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ, ʙᴏᴛ ʟᴏᴏᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴛᴏ 𝟷-𝟷𝟶 ᴛɪᴍᴇs ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. Dᴇғᴀᴜʟᴛ ᴛᴏ 𝟷𝟶 ᴛɪᴍᴇs."""
+<b>✧ /loop</b> ᴏʀ <b>/tekrar</b> [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ᴏʀ [Nᴜᴍʙᴇʀs ʙᴇᴛᴡᴇᴇɴ 𝟷-𝟷𝟶] - Oynatılan Parçayı Döngüye Alır ve 1 ile 10 Arasında Sayı Boyunca TEkrarlar."""

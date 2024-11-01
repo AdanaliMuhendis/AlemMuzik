@@ -17,12 +17,12 @@ async def resume_com(cli, message: Message, _, chat_id):
     await Alem.resume_stream(chat_id)
     buttons_resume = [
         [
-            InlineKeyboardButton(text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="sᴛᴏᴘ", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="Atla", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="Son", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
             InlineKeyboardButton(
-                text="ᴘᴀᴜsᴇ",
+                text="Dur",
                 callback_data=f"ADMIN Pause|{chat_id}",
             ),
         ],
@@ -37,12 +37,12 @@ __MODULE__ = "Resume"
 __HELP__ = """
 **Resume**
 
-This module allows administrators to resume playback of the currently paused track.
+Bu Modül Duraklatılmış Parçanın Tekrar Oynatılmasına Olanak Tanır.
 
 Commands:
-- /resume: Resumes playback of the currently paused track for group.
-- /cresume: Resumes playback of the currently paused track for channel.
+- /resume: Duraklatılmış parçanın Yeniden Oynatılmasını Sağlar.
+- /devam: Duraklatılmış parçanın Yeniden Oynatılmasını Sağlar.
 
 Note:
-- Only administrators can use these commands.
+- Komutları Sadece Yöneticiler Kullanabilir.
 """
