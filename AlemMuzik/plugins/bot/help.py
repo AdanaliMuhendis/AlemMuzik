@@ -478,17 +478,17 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
             InlineKeyboardButton(
-                text="⚜️ 𝓔𝓚𝓛𝓔 𝓑𝓔𝓝𝓘̇° ⚜️",
+                text="⚜️ 𝐄𝐊𝐋𝐄 𝐁𝐄𝐍𝐈̇° ⚜️",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            InlineKeyboardButton(text=" 𝓜𝓤̈𝓩𝓘̇𝓚° ", callback_data="music"),
-            InlineKeyboardButton(text=" 𝓨𝓞̈𝓝𝓔𝓣𝓘̇𝓜° ", callback_data="management"),
+            InlineKeyboardButton(text=" 𝐌𝐔̈𝐙𝐈̇𝐊° ", callback_data="music"),
+            InlineKeyboardButton(text=" 𝐘𝐎̈𝐍𝐄𝐓𝐈̇𝐌° ", callback_data="management"),
         ],
         [
-            InlineKeyboardButton(text=" 𝓐𝓡𝓐𝓒̧𝓛𝓐𝓡° ", callback_data="tools"),
-            InlineKeyboardButton(text=" 𝓗𝓔𝓟𝓢𝓘̇° ", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text=" 𝐀𝐑𝐀𝐂̧𝐋𝐀𝐑° ", callback_data="tools"),
+            InlineKeyboardButton(text=" 𝐇𝐄𝐏𝐒𝐈̇° ", callback_data="settings_back_helper"),
         ],
         [InlineKeyboardButton(text="✯ 𝐀𝐍𝐀 𝐌𝐄𝐍𝐔̈° ✯", callback_data="go_to_start")],
     ]
@@ -498,10 +498,12 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
 ❖ ᴛʜɪs ɪs ϻᴧηᴧɢєϻєηᴛ | ϻυsɪᴄ ʙσᴛ
 ❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ
 ❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ
+
 Kısaca İyi Bot :)
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
     ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
+
 Aşağıdaki Butonlara Dikkat et...
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━**"""
     await callback_query.message.edit_text(
@@ -669,17 +671,17 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [
         [
             InlineKeyboardButton(
-                text="⚜️ 𝓔𝓚𝓛𝓔 𝓑𝓔𝓝𝓘̇° ⚜️",
+                text="⚜️ 𝐄𝐊𝐋𝐄 𝐁𝐄𝐍𝐈̇° ⚜️",
                 url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="music"),
-            InlineKeyboardButton(text="ϻᴧηᴧɢєϻєηᴛ", callback_data="management"),
+            InlineKeyboardButton(text=" 𝐌𝐔̈𝐙𝐈̇𝐊° ", callback_data="music"),
+            InlineKeyboardButton(text=" 𝐘𝐎̈𝐍𝐄𝐓𝐈̇𝐌° ", callback_data="management"),
         ],
         [
-            InlineKeyboardButton(text="ᴛσσʟs", callback_data="tools"),
-            InlineKeyboardButton(text="ᴀʟʟ", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text=" 𝐀𝐑𝐀𝐂̧𝐋𝐀𝐑° ", callback_data="tools"),
+            InlineKeyboardButton(text=" 𝐇𝐄𝐏𝐒𝐈̇° ", callback_data="settings_back_helper"),
         ],
         [InlineKeyboardButton(text="✯ 𝐀𝐍𝐀 𝐌𝐄𝐍𝐔̈° ✯", callback_data="go_to_start")],
     ]
@@ -690,10 +692,12 @@ async def feature_callback(client: Client, callback_query: CallbackQuery):
 ❖ ᴛʜɪs ɪs ϻᴧηᴧɢєϻєηᴛ | ϻυsɪᴄ ʙσᴛ
 ❖ ησ ʟᴧɢ | ᴧᴅs ϻυsɪᴄ | ησ ᴘʀσϻσ
 ❖ 24x7 ʀυη | ʙєsᴛ sσυηᴅ ǫυᴧʟɪᴛʏ
+
 Kısaca İyi Bot :)
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
     ᴧʙσυᴛ ϻʏ ϻσᴅυʟєs ᴧηᴅ ᴄσϻϻᴧηᴅs...!
+
 Aşağıdaki Butonlara Dikkat et...
 ━━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━━**"""
     await callback_query.message.edit_text(
@@ -748,12 +752,12 @@ def back_to_management(_):
 async def about_callback(client: Client, callback_query: CallbackQuery):
     buttons = [
         [
-            InlineKeyboardButton(text="✨ᴅᴇᴠᴇʟᴏᴘᴇʀ✨", callback_data="developer"),
-            InlineKeyboardButton(text="⚡ғᴇᴀᴛᴜʀᴇ⚡", callback_data="feature"),
+            InlineKeyboardButton(text="✨ 𝐘𝐀𝐙𝐈𝐋𝐈𝐌° ✨", callback_data="developer"),
+            InlineKeyboardButton(text="⚡ 𝐎̈𝐙𝐄𝐋𝐋𝐈̇𝐊𝐋𝐄𝐑° ⚡", callback_data="feature"),
         ],
         [
-            InlineKeyboardButton(text="📓ʙᴀsɪᴄ ɢᴜɪᴅᴇ📓", callback_data="basic_guide"),
-            InlineKeyboardButton(text="⚜️ᴅᴏɴᴀᴛᴇ⚜️", callback_data="donate"),
+            InlineKeyboardButton(text="📓 𝐊𝐔𝐋𝐋𝐀𝐍𝐌𝐀 𝐊𝐋𝐀𝐕𝐔𝐙𝐔° 📓", callback_data="basic_guide"),
+            InlineKeyboardButton(text="⚜️ 𝐘𝐀𝐑𝐃𝐈𝐌° ⚜️", callback_data="donate"),
         ],
         [InlineKeyboardButton(text="🔙 𝐆𝐄𝐑𝐢° ", callback_data="go_to_start")],
     ]
@@ -800,7 +804,7 @@ async def settings_back_callback(client: Client, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("basic_guide"))
 async def settings_back_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [[InlineKeyboardButton(text="✯ 𝐆𝐄𝐑𝐢°  ✯", callback_data="about")]]
-    guide_text = f"**𝐇𝐄𝐘 ! 𝐁𝐔 𝐇𝐈𝐙𝐋𝐈 𝐕𝐄 𝐁𝐀𝐒𝐈̇𝐓 𝐁𝐈̇𝐑 𝐊𝐔𝐋𝐋𝐀𝐍𝐈𝐌 𝐊𝐈𝐋𝐀𝐕𝐔𝐙𝐔𝐃𝐔𝐑** {app.mention} **🎉**\n\n**𝟷. ᴛɪᴋʟᴀʏɪɴɪᴢ '𝓔𝓚𝓛𝓔 𝓑𝓔𝓝𝓘̇°' ʙᴜᴛᴏɴᴜɴᴀ...**\n**𝟸. ʙᴏᴛᴜ ᴇᴋʟᴇʏᴇᴄᴇɢ̆ɪ̇ɴɪ̇ᴢ ɢʀᴜᴘ ɪ̇sᴍɪ̇ɴɪ̇ sᴇᴄ̧ɪ̇ɴɪ̇ᴢ...**\n**𝟹. ʙᴏᴛ'ᴀ sᴏʀᴜɴsᴜᴢ ᴠᴇ ᴛᴀᴍ ɪ̇şʟᴇᴠsᴇʟʟɪ̇ᴋ ɪ̇ᴄ̧ɪ̇ɴ ɢᴇʀᴇᴋʟɪ̇ ᴛᴜ̈ᴍ ɪ̇ᴢɪ̇ɴʟᴇʀɪ̇ ᴠᴇʀɪ̇ɴ.**\n\n**ᴋᴏᴍᴜᴛʟᴀʀᴀ ᴇʀɪ̇şᴍᴇᴋ ɪ̇ᴄ̧ɪ̇ɴ ᴍᴜ̈ᴢɪ̇ᴋ ᴠᴇʏᴀ ʏᴏ̈ɴᴇᴛɪ̇ᴍ ᴛᴇʀᴄɪ̇ʜʟᴇʀɪ̇ ᴀʀᴀsɪɴᴅᴀ sᴇᴄ̧ɪ̇ᴍ ʏᴀᴘᴀʙɪ̇ʟɪ̇ʀsɪ̇ɴɪ̇ᴢ.**\n**𝐇𝐄𝐑𝐇𝐀𝐍𝐆𝐈̇ 𝐁𝐈̇𝐑 𝐒𝐎𝐑𝐔𝐍𝐋𝐀 𝐊𝐀𝐑𝐒̧𝐈𝐑𝐒𝐀𝐍𝐈𝐙 𝐃𝐄𝐒𝐓𝐄𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐁𝐈̇𝐙𝐄 𝐔𝐋𝐀𝐒̧𝐌𝐀𝐊𝐓𝐀𝐍 𝐂̧𝐄𝐊𝐈̇𝐍𝐌𝐄𝐘𝐈̇𝐍...✨**"
+    guide_text = f"**𝐇𝐄𝐘 ! 𝐁𝐔 𝐇𝐈𝐙𝐋𝐈 𝐕𝐄 𝐁𝐀𝐒𝐈̇𝐓 𝐁𝐈̇𝐑 𝐊𝐔𝐋𝐋𝐀𝐍𝐈𝐌 𝐊𝐈𝐋𝐀𝐕𝐔𝐙𝐔𝐃𝐔𝐑** {app.mention} **🎉**\n\n**𝟷. ᴛɪᴋʟᴀʏɪɴɪᴢ '⚜️ 𝐄𝐊𝐋𝐄 𝐁𝐄𝐍𝐈̇° ⚜️' ʙᴜᴛᴏɴᴜɴᴀ...**\n**𝟸. ʙᴏᴛᴜ ᴇᴋʟᴇʏᴇᴄᴇɢ̆ɪ̇ɴɪ̇ᴢ ɢʀᴜᴘ ɪ̇sᴍɪ̇ɴɪ̇ sᴇᴄ̧ɪ̇ɴɪ̇ᴢ...**\n**𝟹. ʙᴏᴛ'ᴀ sᴏʀᴜɴsᴜᴢ ᴠᴇ ᴛᴀᴍ ɪ̇şʟᴇᴠsᴇʟʟɪ̇ᴋ ɪ̇ᴄ̧ɪ̇ɴ ɢᴇʀᴇᴋʟɪ̇ ᴛᴜ̈ᴍ ɪ̇ᴢɪ̇ɴʟᴇʀɪ̇ ᴠᴇʀɪ̇ɴ.**\n\n**ᴋᴏᴍᴜᴛʟᴀʀᴀ ᴇʀɪ̇şᴍᴇᴋ ɪ̇ᴄ̧ɪ̇ɴ ᴍᴜ̈ᴢɪ̇ᴋ ᴠᴇʏᴀ ʏᴏ̈ɴᴇᴛɪ̇ᴍ ᴛᴇʀᴄɪ̇ʜʟᴇʀɪ̇ ᴀʀᴀsɪɴᴅᴀ sᴇᴄ̧ɪ̇ᴍ ʏᴀᴘᴀʙɪ̇ʟɪ̇ʀsɪ̇ɴɪ̇ᴢ.**\n**𝐇𝐄𝐑𝐇𝐀𝐍𝐆𝐈̇ 𝐁𝐈̇𝐑 𝐒𝐎𝐑𝐔𝐍𝐋𝐀 𝐊𝐀𝐑𝐒̧𝐈𝐑𝐒𝐀𝐍𝐈𝐙 𝐃𝐄𝐒𝐓𝐄𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐁𝐈̇𝐙𝐄 𝐔𝐋𝐀𝐒̧𝐌𝐀𝐊𝐓𝐀𝐍 𝐂̧𝐄𝐊𝐈̇𝐍𝐌𝐄𝐘𝐈̇𝐍...✨**"
     await callback_query.message.edit_text(
         text=guide_text, reply_markup=InlineKeyboardMarkup(keyboard)
     )
