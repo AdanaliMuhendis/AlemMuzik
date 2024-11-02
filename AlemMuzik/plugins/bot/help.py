@@ -758,7 +758,7 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
         [InlineKeyboardButton(text="🔙 𝐆𝐄𝐑𝐢° ", callback_data="go_to_start")],
     ]
     await callback_query.message.edit_text(
-        f"**𝐇𝐄𝐘𝐘𝐘𝐎 {app.mention} ✨**\n\n**ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴀɴᴅ ᴀᴡᴇsᴏᴍᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴀɴᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴛʜᴀᴛ ɢɪᴠᴇs ʏᴏᴜ sᴘᴀᴍ-ғʀᴇᴇ ᴀɴᴅ ғᴜɴ ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ғᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘs :)**\n\n**● ɪ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs.**\n**● ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴄᴜsᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs ᴀɴᴅ ᴇᴠᴇɴ sᴇᴛ ᴀ ɢʀᴏᴜᴘ's ʀᴜʟᴇs.**\n**● ɪ ʜᴀᴠᴇ ᴀ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ sʏsᴛᴇᴍ.**\n**● ɪ ʜᴀᴠᴇ ᴀʟᴍᴏsᴛ ᴀʟʟ ᴀᴡᴀɪᴛᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ғᴇᴀᴛᴜʀᴇs ʟɪᴋᴇ ʙᴀɴ, ᴍᴜᴛᴇ, ᴡᴇʟᴄᴏᴍᴇ, ᴋɪᴄᴋ, ғᴇᴅᴇʀᴀᴛɪᴏɴ, ᴀɴᴅ ᴍᴀɴʏ ᴍᴏʀᴇ.**\n**● ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ-ᴋᴇᴇᴘɪɴɢ sʏsᴛᴇᴍ, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇs ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅs.**\n**● ɪ ᴄʜᴇᴄᴋ ғᴏʀ ᴀᴅᴍɪɴs' ᴘᴇʀᴍɪssɪᴏɴs ʙᴇғᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ sᴛᴜғғ.**\n\n**➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʙᴏᴛ 🦚.**",
+        f"**𝐇𝐄𝐘𝐘𝐘𝐎 {app.mention} ✨**\n\n**ɢʀᴜʙᴜɴᴜᴢ ɪ̇ᴄ̧ɪ̇ɴ sɪ̇ᴢᴇ sᴘᴀᴍ'sɪᴢ ᴠᴇ ᴇɢ̆ʟᴇɴᴄᴇʟɪ̇ ʙɪ̇ʀ ᴏʀᴛᴀᴍ sᴜɴᴀɴ ɢᴜ̈ᴄ̧ʟᴜ̈ ᴠᴇ ʜᴀʀɪ̇ᴋᴀ ʙɪ̇ʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴜᴘ ʏᴏ̈ɴᴇᴛɪ̇ᴍɪ̇ ᴠᴇ ᴍᴜ̈ᴢɪ̇ᴋ ᴄ̧ᴀʟᴀʀ ʙᴏᴛᴜ :)**\n\n**● kullαnícílαrí kísítlαчαвí̇lí̇rí̇m.**\n**● kullαnícílαrí kí̇şí̇sєllєştí̇rí̇lєвí̇lí̇r hσşgєldí̇ní̇z mєsαjlαríчlα sєlαmlαчαвí̇lí̇r vє hαttα вí̇r grup kurαllαrí вєlí̇rlєчєвí̇lí̇rí̇m.**\n**● müzí̇k çαlαr sí̇stєmí̇m vαr.**\n**● вαn, mutє, hσşgєldí̇ní̇z, kíck, fєdєrαsчσn dαhα вí̇rçσk gí̇вí̇ grup чσ̈nєtí̇m σ̈zєllí̇klєrí̇ní̇n hєmєn tümünє sαhí̇вí̇m.**\n**● вí̇r nσt tutmα sí̇stєmí̇m, kαrα lí̇stєlєrí̇m vє hαttα вєlí̇rlí̇ αnαhtαr kєlí̇mєlєrє í̇lí̇şkí̇n σ̈ncєdєn вєlí̇rlєnmí̇ş cєvαplαrím vαr.**\n**● hєrhαngí̇ вí̇r kσmutu vє dαhα fαzlα í̇şlєmí̇ чürütmєdєn σ̈ncє чσ̈nєtí̇cí̇ í̇zí̇nlєrí̇ní̇ kσntrσl єdí̇чσrum. **\n\n**➻ 𝐁𝐎𝐓 𝐇𝐀𝐊𝐊𝐈𝐍𝐃𝐀 𝐃𝐀𝐇𝐀 𝐅𝐀𝐙𝐋𝐀 𝐁𝐈̇𝐋𝐆𝐈̇ 𝐀𝐋𝐌𝐀𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐃𝐔̈𝐆̆𝐌𝐄𝐘𝐄 𝐓𝐈𝐊𝐋𝐀𝐘𝐈𝐍 🦚.**",
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
@@ -782,7 +782,7 @@ async def back_button_callback(client: Client, callback_query: CallbackQuery):
     ]
 
     await callback_query.message.edit_text(
-        "**๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ**\n\n**ɪғ ʏᴏᴜ ғɪɴᴅ ᴀɴʏ ᴇʀʀᴏʀ ᴏʀ ʙᴜɢ ᴏɴ ʙᴏᴛ ᴏʀ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ᴀɴʏ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ ᴛʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ  (✿◠‿◠)**",
+        "**๏ 𝐇𝐀𝐊𝐊𝐈𝐌𝐃𝐀 𝐃𝐀𝐇𝐀 𝐅𝐀𝐙𝐋𝐀 𝐁𝐈̇𝐋𝐆𝐈̇ 𝐀𝐋𝐌𝐀𝐊 𝐈̇𝐂̧𝐈̇𝐍 𝐃𝐔̈𝐆̆𝐌𝐄𝐘𝐄 𝐓𝐈𝐊𝐋𝐀𝐘𝐈𝐍**\n\n**вσt'tα hєrhαngí̇ вí̇r hαtα, sσrun вulursαníz vєчα вσt hαkkíndα hєrhαngí̇ вí̇r gєrí̇ вí̇ldí̇rí̇m чαpmαk í̇stєrsєní̇z dєstєk gruвumuzα gєlєвí̇lí̇rsí̇ní̇z  (✿◠‿◠)**",
         reply_markup=InlineKeyboardMarkup(keyboard),
     )
 
@@ -790,9 +790,9 @@ async def back_button_callback(client: Client, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("donate"))
 async def settings_back_callback(client: Client, callback_query: CallbackQuery):
     close = [[InlineKeyboardButton(text="✯ 𝐊𝐀𝐏𝐀𝐓° ✯", callback_data="close")]]
-    await callback_query.message.reply_photo(
-        photo="https://envs.sh/TS-.jpg",
-        caption=f"**sᴜᴘᴘᴏʀᴛ ᴍʏ ᴄᴏᴅɪɴɢ ᴊᴏᴜʀɴᴇʏ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ᴅɪʀᴇᴄᴛʟʏ ᴛᴏ ʜᴇʟᴘ ᴇɴʜᴀɴᴄᴇ ᴍʏ ʙᴏᴛ's ғᴇᴀᴛᴜʀᴇs ᴀɴᴅ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ.**\n\n**ʏᴏᴜʀ ᴄᴏɴᴛʀɪʙᴜᴛɪᴏɴ ᴡɪʟʟ ᴅɪʀᴇᴄᴛʟʏ ғᴜɴᴅ ᴛʜᴇ ᴄʀᴇᴀᴛɪᴏɴ ᴏғ ɪɴɴᴏᴠᴀᴛɪᴠᴇ, ᴜsᴇʀ-ғʀɪᴇɴᴅʟʏ ᴛᴏᴏʟs ᴀɴᴅ ᴇxᴄɪᴛɪɴɢ ʙᴏᴛ ᴄᴀᴘᴀʙɪʟɪᴛɪᴇs.**\n\n**sɪᴍᴘʟʏ sᴄᴀɴ ᴛʜᴇ ᴄᴏᴅᴇ ᴀɴᴅ ᴍᴀᴋᴇ ᴀ ᴘᴀʏᴍᴇɴᴛ—ɴᴏ ʜᴀssʟᴇ, ᴊᴜsᴛ ᴀ ǫᴜɪᴄᴋ ᴡᴀʏ ᴛᴏ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ʜᴇʟᴘ ʙʀɪɴɢ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs ᴛᴏ ʟɪғᴇ.**\n\n**ᴇᴠᴇʀʏ ᴅᴏɴᴀᴛɪᴏɴ, ʙɪɢ ᴏʀ sᴍᴀʟʟ, ɢᴏᴇs ᴀ ʟᴏɴɢ ᴡᴀʏ ɪɴ ᴘᴜsʜɪɴɢ ᴛʜɪs ᴘʀᴏᴊᴇᴄᴛ ғᴏʀᴡᴀʀᴅ. ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʙᴇɪɴɢ ᴀ ᴘᴀʀᴛ ᴏғ ᴛʜɪs ᴇxᴄɪᴛɪɴɢ ᴊᴏᴜʀɴᴇʏ!**",
+    await callback_query.message.reply_video(
+        video="assets/AdanaliMuhendis.mp4",
+        caption=f"**𝐵𝒪𝒯'𝒰𝑀𝒰𝒩 𝒪̈𝒵𝐸𝐿𝐿𝐼̇𝒦𝐿𝐸𝑅𝐼̇𝒩𝐸 𝒱𝐸 𝒢𝐸𝐿𝐼̇𝒮̧𝐼̇𝑀𝐼̇𝒩𝐸 𝒴𝒜𝑅𝒟𝐼𝑀𝒞𝐼 𝒪𝐿𝑀𝒜𝒦 𝐼̇𝒞̧𝐼̇𝒩 𝒟𝒪𝒢̆𝑅𝒰𝒟𝒜𝒩 𝐵𝒜𝒩𝒜 𝑀𝐸𝒮𝒜𝒥 𝒜𝒯𝒜𝐵𝐼̇𝐿𝐼̇𝑅𝒮𝐼̇𝒩𝐼̇𝒵**\n\n** @AdanaliMuhendis",
         reply_markup=InlineKeyboardMarkup(close),
     )
 
@@ -800,7 +800,7 @@ async def settings_back_callback(client: Client, callback_query: CallbackQuery):
 @app.on_callback_query(filters.regex("basic_guide"))
 async def settings_back_callback(client: Client, callback_query: CallbackQuery):
     keyboard = [[InlineKeyboardButton(text="✯ 𝐆𝐄𝐑𝐢°  ✯", callback_data="about")]]
-    guide_text = f"**ʜᴇʏ! ᴛʜɪs ɪs ᴀ ǫᴜɪᴄᴋ ᴀɴᴅ sɪᴍᴘʟᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴜsɪɴɢ** {app.mention} **🎉**\n\n**1. ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʟᴀɴ' ʙᴜᴛᴛᴏɴ.**\n**2. sᴇʟᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴀᴍᴇ.**\n**3. ɢʀᴀɴᴛ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ɴᴇᴄᴇssᴀʀʏ ᴘᴇʀᴍɪssɪᴏɴs ғᴏʀ sᴍᴏᴏᴛʜ ᴀɴᴅ ғᴜʟʟ ғᴜɴᴄᴛɪᴏɴᴀʟɪᴛʏ.**\n\n**ᴛᴏ ᴀᴄᴄᴇss ᴄᴏᴍᴍᴀɴᴅs, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴍᴜsɪᴄ ᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘʀᴇғᴇʀᴇɴᴄᴇs.**\n**ɪғ ʏᴏᴜ sᴛɪʟʟ ғᴀᴄᴇ ᴀɴʏ ɪssᴜᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ ʀᴇᴀᴄʜ ᴏᴜᴛ ғᴏʀ sᴜᴘᴘᴏʀᴛ ✨**"
+    guide_text = f"**𝐇𝐄𝐘 ! 𝐁𝐔 𝐇𝐈𝐙𝐋𝐈 𝐕𝐄 𝐁𝐀𝐒𝐈̇𝐓 𝐁𝐈̇𝐑 𝐊𝐔𝐋𝐋𝐀𝐍𝐈𝐌 𝐊𝐈𝐋𝐀𝐕𝐔𝐙𝐔𝐃𝐔𝐑** {app.mention} **🎉**\n\n**1. ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʟᴀɴ' ʙᴜᴛᴛᴏɴ.**\n**2. sᴇʟᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴀᴍᴇ.**\n**3. ɢʀᴀɴᴛ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ɴᴇᴄᴇssᴀʀʏ ᴘᴇʀᴍɪssɪᴏɴs ғᴏʀ sᴍᴏᴏᴛʜ ᴀɴᴅ ғᴜʟʟ ғᴜɴᴄᴛɪᴏɴᴀʟɪᴛʏ.**\n\n**ᴛᴏ ᴀᴄᴄᴇss ᴄᴏᴍᴍᴀɴᴅs, ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏsᴇ ʙᴇᴛᴡᴇᴇɴ ᴍᴜsɪᴄ ᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ᴘʀᴇғᴇʀᴇɴᴄᴇs.**\n**ɪғ ʏᴏᴜ sᴛɪʟʟ ғᴀᴄᴇ ᴀɴʏ ɪssᴜᴇs, ғᴇᴇʟ ғʀᴇᴇ ᴛᴏ ʀᴇᴀᴄʜ ᴏᴜᴛ ғᴏʀ sᴜᴘᴘᴏʀᴛ ✨**"
     await callback_query.message.edit_text(
         text=guide_text, reply_markup=InlineKeyboardMarkup(keyboard)
     )
