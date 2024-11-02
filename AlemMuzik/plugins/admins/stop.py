@@ -131,11 +131,11 @@ async def assistant_banned(client: app, member: ChatMemberUpdated):
 
             # Construct message
             left_message = (
-                f"╔══❰#𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁_𝗕𝗮𝗻𝗻𝗲𝗱❱══❍⊱❁۪۪\n║\n"
+                f"╔══❰#𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻_BaNLaNDı❱══❍⊱❁۪۪\n║\n"
                 f"║┣⪼ **𝐂ʜᴀᴛ »** {title}\n║\n"
-                f"║┣⪼ **𝐀ssɪsᴛᴀɴᴛ 𝐈ᴅ »** {userbot.id}\n║\n"
+                f"║┣⪼ **𝐀ssɪsᴛᴀɴ 𝐈ᴅ »** {userbot.id}\n║\n"
                 f"║┣⪼ **𝐍ᴀᴍᴇ »** @{userbot.username}\n║\n"
-                f"║┣⪼ **𝐁ᴀɴ 𝐁ʏ »** {remove_by}\n"
+                f"║┣⪼ **𝐁ᴀɴLaYaN  »** {remove_by}\n"
                 f"╚══════════════════❍⊱❁"
             )
 
@@ -187,10 +187,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
             and member.old_chat_member
         ):
             left_message = (
-                f"**Assistant Has Left This Chat**\n\n"
+                f"**Assistan Gruptan Ayrıldı**\n\n"
                 f"**Id:** `{userbot.id}`\n"
-                f"**Name:** @{userbot.username}\n\n"
-                f"**Invite Assistant By: /userbotjoin**"
+                f"**İsim:** @{userbot.username}\n\n"
+                f"**Asistanı Davet Eden: /userbotjoin**"
             )
             await app.send_message(
                 chat_id,
@@ -203,10 +203,10 @@ async def assistant_left(client: app, member: ChatMemberUpdated):
             await asyncio.sleep(10)
     except UserNotParticipant:
         left_message = (
-            f"**Assistant Has Left This Chat**\n\n"
+            f"**Assistan Gruptan Ayrıldı**\n\n"
             f"**Id:** `{userbot.id}`\n"
-            f"**Name:** @{userbot.username}\n\n"
-            f"**Invite Assistant By: /userbotjoin**"
+            f"**İsim:** @{userbot.username}\n\n"
+            f"**Asistanı Davet Eden: /userbotjoin**"
         )
         await app.send_message(
             chat_id,
@@ -230,7 +230,7 @@ async def brah(_, msg):
         if isinstance(e, ChatWriteForbidden):
             print(f"Hata: Alem Müzik Bot Mesaj Gönderemiyor {chat_id}. Lüten İzinleri Kontrol Ediniz...")
         else:
-            return await msg.reply(f"**Error {e}**")
+            return await msg.reply(f"**Hata! {e}**")
 
 # vc off
 @app.on_message(filters.video_chat_ended & filters.group)
@@ -244,4 +244,4 @@ async def brah2(_, msg):
         if isinstance(e, ChatWriteForbidden):
             print(f"Hata: Alem Müzik Bot Mesaj Gönderemiyor {chat_id}. Lüten İzinleri Kontrol Ediniz...")
         else:
-            return await msg.reply(f"**Error {e}**")
+            return await msg.reply(f"**Hata! {e}**")

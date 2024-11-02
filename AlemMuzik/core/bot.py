@@ -53,7 +53,7 @@ class AlemBot(Client):
             try:
                 await self.send_message(
                     config.LOGGER_ID,
-                    text=f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
+                    text=f"╔════❰HOŞ GELDİNİZ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                     reply_markup=button,
                 )
             except pyrogram.errors.ChatWriteForbidden as e:
@@ -61,7 +61,7 @@ class AlemBot(Client):
                 try:
                     await self.send_message(
                         config.LOGGER_ID,
-                        f"╔════❰ HOŞ GELDİNİZ ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
+                        f"╔════❰HOŞ GELDİNİZ❱════❍⊱❁۪۪\n║\n║┣⪼ Yαყıɳԃαყıɱ 🌈...\n║\n║┣⪼ {self.name}\n║\n║┣⪼ ɪᴅ:- `{self.id}` \n║\n║┣⪼🎄@{self.username} \n║ \n║┣⪼ Teşekkürler...\n║\n╚════════════════❍⊱❁",
                         reply_markup=button,
                     )
                 except Exception as e:
