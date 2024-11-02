@@ -36,24 +36,24 @@ async def inline_query_handler(client, query):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ",
+                            text="🎥 ʏᴏᴜᴛᴜʙᴇ",
                             url=link,
                         )
                     ],
                 ]
             )
             searched_text = f"""
-❇️**ᴛɪᴛʟᴇ:** [{title}]({link})
+❇️**BAŞLIK:** [{title}]({link})
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-👀**ᴠɪᴇᴡs:** `{views}`
-⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
-🎥**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
-📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ғʀᴏᴍ ʜᴇʀᴇ]({channellink})
+⏳**SÜRE:** {duration} Mins
+👀**ÖN İZLEME:** `{views}`
+⏰**PAYLAŞIM ZAMANI:** {published}
+🎥**KANAL İSMİ:** {channel}
+📎**KANAL LİNKİ:** [Buraya Tıkla]({channellink})
 
-__ʀᴇᴘʟʏ ᴡɪᴛʜ /play ᴏɴ ᴛʜɪs sᴇᴀʀᴄʜᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴛʀᴇᴀᴍ ɪᴛ ᴏɴ ᴠᴏɪᴄᴇᴄʜᴀᴛ.__
+__Mesajı Yanıtla /oynat dedikten sonra medya sesli sohbette yayınlanır.__
 
-⚡️ ** ɪɴʟɪɴᴇ sᴇᴀʀᴄʜ ʙʏ {app.mention} **"""
+⚡️ ** Tarafından Yayınlandı {app.mention} **"""
             answers.append(
                 InlineQueryResultPhoto(
                     photo_url=thumbnail,
